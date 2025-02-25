@@ -1,0 +1,745 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #271e5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    perspective: 1200px; /* Increased perspective to give more space for the flip */
+    margin: 20px;
+}
+.nave{
+    color: #333;
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    perspective: 1200px; /* Increased perspective to give more space for the flip */
+    margin: 20px;
+}/* Reset Styles for This Section Only */
+
+/* Ensure Navbar is Fixed & Always Visible */
+/* Thought Section */
+.thought-section {
+    background-position: center;
+    background-size: cover;
+    color: #64e6e6;
+    background-color: #3f6d70;
+    text-align: center;
+    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+}
+
+/* Heading */
+.thought-section h1 {
+    font-size: clamp(24px, 5vw, 40px); /* Responsive font size */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+}
+
+/* Ensure proper spacing on larger screens */
+@media (min-width: 1024px) {
+    .thought-section {
+        max-width: 70%;
+    }
+}
+
+
+
+
+/* <!-- About Us Section  our story why choose us--> */
+/* Main Section */
+/* Ensure both cards take equal width */
+
+.our-story {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Story Section */
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+/* Image Card */
+.image-card {
+    position: relative;
+    width: 465px; /* Fixed size for consistency */
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text Content */
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        text-align: center;
+        order: 1; /* Ensures text appears first */
+    }
+
+    .image-card {
+        order: 2; /* Image appears after text */
+    }
+}
+
+.why-choose-container {
+    text-align: center;
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+.why-choose-container h2 {
+    font-size: 22px;
+    color: #222;
+}
+
+.why-choose-container p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+.why-choose {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-left: 5px solid #007bff;
+}
+
+
+/* Styling for Why Choose Us Section */
+.why-choose-us-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    width: 90%;
+    max-width: 1200px; /* Limits the max width */
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #d4edff;
+    border-radius: 10px;
+}
+
+/* Section Title */
+.why-choose-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox Layout for One-Row Cards */
+.why-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Space between cards */
+    flex-wrap: wrap;  /* Wraps to multiple rows if needed */
+    padding-bottom: 10px;
+}
+
+/* Card Styling */
+.why-card {
+    background: white;
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 160px; /* Reduced width */
+    max-width: 180px; /* Prevents cards from becoming too big */
+    flex: 1 1 calc(33.33% - 20px); /* Default: 3 cards in a row */
+}
+
+/* SVG Styling */
+.why-card svg {
+    width: 30px; /* Reduced size */
+    height: 30px;
+    margin-bottom: 8px;
+    fill: #007bff;
+}
+
+/* Text Styling */
+.why-card p {
+    font-size: 14px; /* Smaller font size */
+    margin: 3px 0;
+    font-weight: bold;
+}
+
+.why-card small {
+    font-size: 10px; /* Reduced font size */
+    color: #555;
+}
+.why-img{
+    height: 30px;
+    width: 30px;
+
+}
+
+/* Mobile View: 2 Cards per Row */
+@media (max-width: 600px) {
+    .why-grid {
+        justify-content: center;
+    }
+
+    .why-card {
+        flex: 1 1 calc(50% - 10px); /* 2 cards per row */
+    }
+}
+
+
+
+/* General Container Styles */
+.client-review {
+    min-width: 320px; /* Ensure each review has a fixed width */
+    max-width: 320px;
+    overflow: hidden;
+    white-space: normal; /* Allow text to wrap properly */
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.client-review img {
+    width: 80px;
+    border-radius: 50%;
+}
+.client-reviews-container, .video-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #59aab4;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-reviews-container:hover .carousel-track,
+.video-container:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+/* Carousel Wrapper */
+.review-carousel, .video-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Carousel Track */
+.carousel-track {
+    display: flex;
+    width: max-content;
+    gap: 20px; /* Adds spacing between the reviews */
+    animation: scrollLoop 20s linear infinite;
+    animation: scrollLoop 20s linear infinite;
+}
+
+/* Individual Review Box */
+
+
+/* Video Testimonials */
+.video-testimonial video {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Smooth Infinite Scrolling Animation */
+@keyframes scrollLoop {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves exactly half the duplicated content */
+}
+
+
+.gallery-carousel-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Reduced height to allow margin */
+    background-color: #ffffff;
+    margin: o; /* Adds margin at the top and bottom */
+    padding: 20px; /* Adds inner spacing */
+}
+
+
+.gallery-carousel {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 20px auto; /* Adds space around the carousel */
+}
+
+.gallery-carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.gallery-slide {
+    min-width: 100%;
+    transition: transform 0.5s;
+}
+.gallery-slide img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    display: block;
+}
+.gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.gallery-prev { left: 10px; }
+.gallery-next { right: 10px; }
+
+@media (max-width: 600px) {
+    .gallery-carousel {
+        width: 100%;
+    }
+    .gallery-prev, .gallery-next {
+        padding: 5px;
+    }
+}
+
+
+/* our vision our mission our values */
+
+/* Container Styling */
+.mission-vision-values {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.mission-card,
+.vision-card,
+.values-card {
+    width: 370px;
+    height: 470px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures everything is closely packed */
+}
+
+.mission-card {
+    background-color: #5cbda0;
+}
+
+.vision-card {
+    background-color: #5cbda0;
+}
+
+.values-card {
+    background-color: #5cbda0;
+}
+
+.mission-card h2,
+.vision-card h2,
+.values-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px; /* Reduced bottom space */
+}
+
+.cust {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 5px 0; /* Less space around image */
+}
+
+.cust img {
+    width: 60px; /* Slightly smaller */
+    height: 60px;
+    margin: 0; /* No extra space */
+}
+
+.mission-card p,
+.vision-card p,
+.values-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 5px; /* Less space between image and text */
+    padding: 5px 10px; /* Reduce padding */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision-values {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .mission-card,
+    .vision-card,
+    .values-card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .cust img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+
+/* services Style */
+ /* Container for the flip cards */
+    .visa-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Individual card */
+    .visa-card {
+        width: 220px;
+        height: 270px;
+        perspective: 1000px;
+    }
+    .service-img{
+        width: 220px;
+        height: 270px;
+
+    }
+
+
+    /* Inner card (for flipping effect) */
+    .visa-card-inner {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    /* Flip effect on hover */
+    .visa-card:hover .visa-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Front and back sides of the card */
+    .visa-card-front, .visa-card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+    }
+
+    /* Front card design */
+    .visa-card-front {
+        background: url('world-map.jpg') center/cover no-repeat;
+        color: black;
+        font-size: 18px;
+        border: 2px solid #ccc;
+    }
+    .visa-card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 10px;/* Ensures the image fully covers the card */
+    }
+
+    /* Back card design */
+    .visa-card-back {
+        background-color: white;
+        transform: rotateY(180deg);
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid #007bff;
+        padding: 10px;
+    }
+
+    /* List styles on the back side */
+    .visa-card-back ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .visa-card-back li {
+        font-size: 16px;
+        color: #007bff;
+        margin: 5px 0;
+    }
+
+    .data-form {
+        background: #60adb8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .form-content {
+        display: flex;
+        flex-direction: row;  /* Keep items in a row */
+        justify-content: space-between; /* Space between form and FAQ */
+        align-items: flex-start; /* Align both to top */
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        gap: 20px;
+    }
+    
+    
+    .form-section, .faq-section {
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .form-section {
+        width: 60%;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .faq-section {
+        width: 35%;
+        background: #e3f2fd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-section {
+        background: white;
+    }
+    
+    .faq-section {
+        background: #e3f2fd;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    /* Form Fields */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .row div {
+        width: 48%;
+    }
+    
+    input, select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    
+    .submit-btn {
+        display: block;
+        width: 100%;
+        background: rgb(85, 197, 164);
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* FAQ Section */
+    .faq-item {
+        background: white;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .faq-question {
+        background: #72bcd4;
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+    }
+    
+    .faq-answer {
+        display: none;
+        padding: 10px;
+        background: white;
+        color: #333;
+    }
+    
+    .faq-item.active .faq-question {
+        background: black;
+    }
+    
+    .faq-item.active .faq-answer {
+        display: block;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .form-content {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .form-section, .faq-section {
+            width: 100%;
+        }
+    }
+    
+    
+
+    footer {
+        display:flex;
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: auto; /* Pushes footer to bottom */
+        position: relative;
+        width: 100%;
+    }
+    footer {
+        display: block !important;
+        height: auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .footer-img {
+        width: 30px;  /* Adjust size */
+        height: 30px;
+        border-radius: 50%; /* Make icons round */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    /* Hover effect */
+    .footer-img:hover {
+        transform: scale(1.2); /* Slight zoom effect */
+        opacity: 0.8; /* Slight fade */
+    }
+
+/* Social Icons Styling */
+.social-icons a {
+    display: inline-block;
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px;
+    color: #000; /* Change color as needed */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
