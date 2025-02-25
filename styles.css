@@ -8,8 +8,7 @@ body {
     background-color: #ffffff;
     color: #333;
 }
-
-h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
     color: #271e5a;
     display: flex;
     justify-content: center;
@@ -39,26 +38,37 @@ p{
     background-position: center;
     background-size: cover;
     color: #64e6e6;
-    background-color: #3f6d70;
+    background-color: #609dc0;
     text-align: center;
     padding: 5vw;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    margin: 25px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 90%;
     width: 100%;
+    min-height: 40vh; /* Ensure proper height for centering */
 }
 
-/* Heading */
+/* Center the h1 inside .home */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
 .thought-section h1 {
-    font-size: clamp(24px, 5vw, 40px); /* Responsive font size */
+    font-size: clamp(24px, 5vw, 40px);
     color: #fff;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     max-width: 80%;
+    margin: 0; /* Remove default margin */
 }
 
 /* Ensure proper spacing on larger screens */
@@ -67,8 +77,6 @@ p{
         max-width: 70%;
     }
 }
-
-
 
 
 /* <!-- About Us Section  our story why choose us--> */
