@@ -8,6 +8,7 @@ body {
     background-color: #ffffff;
     color: #333;
 }
+
  h2, h3, h4, h5, h6 {
     color: #271e5a;
     display: flex;
@@ -78,8 +79,6 @@ p{
     }
 }
 
-
-
 /* <!-- About Us Section  our story why choose us--> */
 /* Main Section */
 /* Ensure both cards take equal width */
@@ -97,6 +96,7 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     padding: 40px;
     gap: 20px;
 }
@@ -156,9 +156,9 @@ p{
 }
 
 .why-choose-container {
-    text-align: center;
+    text-align: justify;
     padding: 40px;
-    background: #f8f8f8;
+    background: #ffff;
 }
 
 .why-choose-container h2 {
@@ -232,7 +232,7 @@ p{
     width: 30px; /* Reduced size */
     height: 30px;
     margin-bottom: 8px;
-    fill: #007bff;
+    fill: #8fcad3;
 }
 
 /* Text Styling */
@@ -271,7 +271,7 @@ p{
     max-width: 320px;
     overflow: hidden;
     white-space: normal; /* Allow text to wrap properly */
-    background: white;
+    background: rgb(255, 255, 255);
     width: 320px;
     border-radius: 10px;
     padding: 20px;
@@ -289,7 +289,7 @@ p{
     margin: 20px auto;
     overflow: hidden;
     padding: 20px;
-    background-color: #59aab4;
+    background-color: #8fcad3;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -331,7 +331,7 @@ p{
 /* Smooth Infinite Scrolling Animation */
 @keyframes scrollLoop {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); } /* Moves exactly half the duplicated content */
+    to { transform: translateX(-20%); } /* Moves exactly half the duplicated content */
 }
 
 
@@ -365,7 +365,7 @@ p{
 }
 .gallery-slide img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 7 / 5;
     border-radius: 10px;
     display: block;
 }
@@ -422,15 +422,15 @@ p{
 }
 
 .mission-card {
-    background-color: #5cbda0;
+    background-color: #8fcad3;
 }
 
 .vision-card {
-    background-color: #5cbda0;
+    background-color:#8fcad3;
 }
 
 .values-card {
-    background-color: #5cbda0;
+    background-color: #8fcad3;
 }
 
 .mission-card h2,
@@ -460,9 +460,23 @@ p{
     color: #555;
     line-height: 1.4;
     font-weight: bold;
+    text-align: justify;
     margin-top: 5px; /* Less space between image and text */
     padding: 5px 10px; /* Reduce padding */
 }
+
+.mission-card,
+.vision-card,
+.values-card {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.mission-card:hover,
+.vision-card:hover,
+.values-card:hover {
+    transform: scale(0.9); /* Increase size by 10% */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -543,10 +557,11 @@ p{
 
     /* Front card design */
     .visa-card-front {
-        background: url('world-map.jpg') center/cover no-repeat;
+        /* background: url('world-map.jpg') center/cover no-repeat; */
         color: black;
         font-size: 18px;
         border: 2px solid #ccc;
+        
     }
     .visa-card-front img {
         width: 100%;
@@ -555,6 +570,18 @@ p{
         border-radius: 10px;/* Ensures the image fully covers the card */
     }
 
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 10px;
+        border-radius: 5px;
+      }
     /* Back card design */
     .visa-card-back {
         background-color: white;
@@ -580,7 +607,7 @@ p{
     }
 
     .data-form {
-        background: #60adb8;
+        background: #8fcad3 ;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -651,8 +678,11 @@ p{
     }
     
     .submit-btn {
-        display: block;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:fit-content;
         background: rgb(85, 197, 164);
         color: white;
         padding: 14px;
@@ -661,12 +691,13 @@ p{
         cursor: pointer;
         font-size: 16px;
         text-align: center;
+        
     }
     
     /* FAQ Section */
     .faq-item {
         background: white;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         border-radius: 8px;
         overflow: hidden;
     }
