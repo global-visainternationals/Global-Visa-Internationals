@@ -575,10 +575,10 @@ p{
         bottom: 10px; /* Adjust to place the text above the image */
         left: 50%;
         transform: translateX(-50%);
-        color: black;
+        color: rgb(68, 207, 196);
         font-size: 18px;
         font-weight: bold;
-        background: rgba(27, 18, 18, 0.76); /* Semi-transparent background */
+        background: rrgba(43, 44, 44, 0.76); /* Semi-transparent background */
         padding: 5px 10px;
         border-radius: 5px;
         text-align: center;
