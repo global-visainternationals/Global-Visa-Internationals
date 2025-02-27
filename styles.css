@@ -578,7 +578,7 @@ p{
         color: rgb(68, 207, 196);
         font-size: 18px;
         font-weight: bold;
-        background: rrgba(43, 44, 44, 0.76); /* Semi-transparent background */
+        background: rgba(43, 44, 44, 0.76); /* Semi-transparent background */
         padding: 5px 10px;
         border-radius: 5px;
         text-align: center;
