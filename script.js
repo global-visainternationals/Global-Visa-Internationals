@@ -51,91 +51,43 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".gallery-prev").addEventListener("click", () => moveGallerySlide(-1));
         document.querySelector(".gallery-next").addEventListener("click", () => moveGallerySlide(1));
     });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("inquiry-form");
     
-
-    document.getElementById("inquiry-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        var form = event.target;
-        var formData = new FormData(form);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log("Success:", data);
-            document.getElementById("response-message").style.display = "block"; // Show success message
-            form.reset(); // Clear form fields after submission
-        })
-        .catch(error => console.error("Error:", error));
-    });
-
-    // FAQ Toggle
-    document.querySelectorAll('.faq-question').forEach(item => {
-        item.addEventListener('click', () => {
-            document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
-            item.parentElement.classList.add('active');
-        });
-    });
-
-
-
-    document.getElementById("inquiry-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent page from redirecting
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
     
-        var form = event.target;
-        var formData = new FormData(form);
+            var formData = new FormData(form);
     
-        // Send form data to Google Sheets
-        fetch(form.action, {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log("Success:", data);
-    
-            // Show the popup window
-            document.getElementById("popup").style.display = "flex";
-    
-            // Clear the form fields
-            form.reset();
-        })
-        .catch(error => console.error("Error:", error));
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data.trim().toLowerCase() === "success") {
+                    showPopup(); // Show success popup
+                    form.reset(); // Clear form fields
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        }, { once: true }); // ✅ Ensures event runs only once
     });
     
-    // Close the popup when clicking "OK"
-    document.getElementById("close-popup").addEventListener("click", function() {
-        document.getElementById("popup").style.display = "none";
-    });
-
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById("success-popup").style.display = "block";
+    }
     
-
-    document.getElementById("inquiry-form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent redirection
-
-        var form = event.target;
-        var formData = new FormData(form);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            console.log("Success:", data);
-
-            // Show the checkbox confirmation
-            document.getElementById("confirmation-box").style.display = "block";
-
-            // Clear the form fields
-            form.reset();
-        })
-        .catch(error => console.error("Error:", error));
-    });
-
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("success-popup").style.display = "none";
+    }
+    
+    
+    
     // FAQ Toggle
     document.querySelectorAll('.faq-question').forEach(item => {
         item.addEventListener('click', () => {
