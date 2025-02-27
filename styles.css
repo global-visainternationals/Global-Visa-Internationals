@@ -146,7 +146,7 @@ p{
     }
 
     .text-content {
-        text-align: center;
+        text-align: justify;
         order: 1; /* Ensures text appears first */
     }
 
@@ -158,7 +158,7 @@ p{
 .why-choose-container {
     text-align: justify;
     padding: 40px;
-    background: #ffff;
+    background: #fff;
 }
 
 .why-choose-container h2 {
@@ -173,7 +173,7 @@ p{
     color: #444;
 }
 .why-choose {
-    background-color: #f4f4f4;
+    background-color: #8fcad3;
     padding: 30px;
     border-left: 5px solid #007bff;
 }
@@ -194,7 +194,7 @@ p{
     max-width: 1200px; /* Limits the max width */
     margin: 30px auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #8fcad3;
     border-radius: 10px;
 }
 
@@ -572,16 +572,19 @@ p{
 
     .text-overlay {
         position: absolute;
-        top: 50%;
+        bottom: 10px; /* Adjust to place the text above the image */
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 20px;
+        transform: translateX(-50%);
+        color: black;
+        font-size: 18px;
         font-weight: bold;
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        padding: 10px;
+        background: rgba(27, 18, 18, 0.76); /* Semi-transparent background */
+        padding: 5px 10px;
         border-radius: 5px;
-      }
+        text-align: center;
+        width: auto;
+    }
+    
     /* Back card design */
     .visa-card-back {
         background-color: white;
@@ -768,6 +771,27 @@ p{
     .footer-img:hover {
         transform: scale(1.2); /* Slight zoom effect */
         opacity: 0.8; /* Slight fade */
+    }
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 10px gray;
+        border-radius: 8px;
+        text-align: center;
+        z-index: 1000;
+    }
+    .popup-content button {
+        margin-top: 10px;
+        padding: 5px 15px;
+        background: green;
+        color: white;
+        border: none;
+        cursor: pointer;
     }
 
 /* Social Icons Styling */
