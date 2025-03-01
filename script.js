@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-
-
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiry-form");
     
@@ -75,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.getElementById("g-recaptcha-response").value = token;
     
                     const formData = new FormData(form);
+                    
+                    console.log("📤 Sending Form Data:", Object.fromEntries(formData.entries())); // Debugging
     
                     fetch(form.action, {
                         method: "POST",
@@ -82,27 +82,22 @@ document.addEventListener("DOMContentLoaded", function() {
                     })
                     .then(response => response.text())
                     .then(data => {
-                        console.log("Server Response:", data); // Debugging
+                        console.log("📩 Server Response:", data); // Debugging
     
                         if (data.trim() === "Success") {
                             document.getElementById("success-popup").style.display = "block";
-                            form.reset(); // Clear form fields after submission
+                            form.reset();
                         } else {
-                            console.error("Server Error:", data);
+                            console.error("❌ Server Error:", data);
                             alert("❌ Error: " + data);
                         }
                     })
                     .catch(error => {
-                        console.error("Network Error:", error);
+                        console.error("❌ Network Error:", error);
                         alert("❌ Submission failed. Please try again.");
                     });
                 });
             });
         });
     });
-    
-    // Close Success Popup
-    function closePopup() {
-        document.getElementById("success-popup").style.display = "none";
-    }
     
