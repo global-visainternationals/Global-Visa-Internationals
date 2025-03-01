@@ -8,7 +8,6 @@ body {
     background-color: #ffffff;
     color: #333;
 }
-
  h2, h3, h4, h5, h6 {
     color: #11bbb2;
     display: flex;
@@ -21,7 +20,6 @@ body {
 }
 .nave{
     color: #333;
-
 }
 p{
     display: flex;
@@ -32,8 +30,8 @@ p{
     font-weight: bold;
     perspective: 1200px; /* Increased perspective to give more space for the flip */
     margin: 20px;
-}/* Reset Styles for This Section Only */
-
+}
+/* Reset Styles for This Section Only */
 /* Ensure Navbar is Fixed & Always Visible */
 /* Thought Section */
 .thought-section {
@@ -54,7 +52,6 @@ p{
     width: 100%;
     min-height: 40vh; /* Ensure proper height for centering */
 }
-
 /* Center the h1 inside .home */
 .home {
     display: flex;
@@ -72,14 +69,12 @@ p{
     max-width: 80%;
     margin: 0; /* Remove default margin */
 }
-
 /* Ensure proper spacing on larger screens */
 @media (min-width: 1024px) {
     .thought-section {
         max-width: 70%;
     }
 }
-
 .bio {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -94,31 +89,20 @@ p{
 .founder strong, .commitment strong, .global-reach strong, .vision strong {
     color: #2ba4c9;
 }
-
 .services {
     font-weight: bold;
     margin-top: 20px;
 }
-
 .service-list ul {
     list-style-type: disc;
     margin-left: 20px;
 }
-
 .service-list ul li {
     margin: 5px 0;
 }
-
-
-
-
-
-
-
 /* <!-- About Us Section  our story why choose us--> */
 /* Main Section */
 /* Ensure both cards take equal width */
-
 .our-story {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -136,7 +120,6 @@ p{
     padding: 40px;
     gap: 20px;
 }
-
 /* Image Card */
 .image-card {
     position: relative;
@@ -145,7 +128,6 @@ p{
     overflow: hidden;
     border-radius: 10px;
 }
-
 .story-image {
     width: 100%;
     height: 100%;
@@ -200,21 +182,32 @@ p{
 }
 
 .why-choose-container h2 {
-    font-size:medium;
-    text-align: justify;
-    color: #222;
+    font-size: 26px; /* Increased size */
+    /* text-align: center; */
+    color: #11bbb2;
+    margin-bottom: 15px;
+    font-weight: bold; /* Makes it stand out more */
 }
+
 
 .why-choose-container p {
     font-size: 16px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     color: #444;
 }
-.why-choose {
-    background-color: #8fcad3;
+.why-choose-us {
+    width: 90%;
+    max-width: 1200px; /* Limits the max width */
+    margin: 30px auto;
     padding: 30px;
-    border-left: 5px solid #007bff;
+    background-color: #8fcad3;
+    border-radius: 10px;
+}
+.why-choose {
+    background-color: #ffffff;
+    padding: 30px;
+   
 }
 
 
@@ -228,20 +221,10 @@ p{
 }
 
 /* Why Choose Us Section */
-.why-choose-us {
-    width: 90%;
-    max-width: 1200px; /* Limits the max width */
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #8fcad3;
-    border-radius: 10px;
-}
+
 
 /* Section Title */
-.why-choose-us h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+
 
 /* Flexbox Layout for One-Row Cards */
 .why-grid {
@@ -739,7 +722,7 @@ p{
         border: 1px solid #ccc;
     }
     
-    .submit-btn {
+    .g-recaptcha {
         display: flex;
         flex-direction: column;
         align-items: center;
