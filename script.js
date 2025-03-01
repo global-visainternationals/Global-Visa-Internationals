@@ -95,3 +95,39 @@ document.addEventListener("DOMContentLoaded", function() {
             item.parentElement.classList.add('active');
         });
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("inquiry-form");
+    
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            grecaptcha.ready(function () {
+                grecaptcha.execute("6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y", { action: "submit" }).then(function (token) {
+                    document.getElementById("g-recaptcha-response").value = token;
+    
+                    // Submit the form via Fetch API
+                    const formData = new FormData(form);
+                    fetch(form.action, {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        if (data.includes("Success")) {
+                            alert("Form submitted successfully!");
+                            form.reset();
+                        } else {
+                            alert("Error: " + data);
+                        }
+                    })
+                    .catch(error => {
+                        alert("Submission failed. Please try again.");
+                        console.error("Error:", error);
+                    });
+                });
+            });
+        });
+    });
+    
