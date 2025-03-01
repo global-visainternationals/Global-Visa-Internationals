@@ -621,7 +621,13 @@
                     <!-- Hidden reCAPTCHA Input -->
 <!-- Hidden reCAPTCHA Input -->
 <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-
+<button class="g-recaptcha" 
+    data-sitekey="6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y" 
+    data-callback="onSubmit" 
+    data-action="submit" 
+    type="submit">
+    Submit
+</button>
 <!-- Submit Button with Correct Site Key -->
 <div id="success-popup" style="display: none;">
     <p>✅ Your form has been submitted successfully!</p>
@@ -629,13 +635,8 @@
 </div>
 
 
-<!-- Confirmation Popup -->
-<div id="success-popup" class="popup">
-    <div class="popup-content">
-        <p>Form submitted successfully!</p>
-        <button onclick="closePopup()">OK</button>
-    </div>
-</div>
+
+
 
                 <!-- Confirmation Popup -->
             </form>
