@@ -161,7 +161,7 @@
 <section class="content-section">
     <!-- First Row (Image Left, Text Right) -->
     <!-- Second Row (Text Left, Image Right) -->
-   
+     <h2 id="about-us">About Us</h2>
     <section class="our-story">
         
         <section class="story-container">
@@ -172,10 +172,6 @@
 <h2 class="section-title">Our Story</h2>
 <p class="story">
     At Global Visa Internationals, we don't simply process visas—we assist in making dreams come true. With 11+ years of experience, 55,000+ successful visa approvals, and 75,000+ clients advised, we have made ourselves a leader of trust in international immigration.
-
-
-
-
 
 
 </p>
@@ -235,13 +231,19 @@
     
         <section class="why-choose-container">
             <h2 class="why-gvi">Why Choose Global Visa Internationals?</h2>
-            <p>At Global Visa Internationals, we don't simply process visas—we assist in making dreams come true. With 11+ years of experience, 55,000+ successful visa approvals, and 75,000+ clients advised, we have made ourselves a leader of trust in international immigration.
+            <p>At Global Visa Internationals, we take pride in our 11+ years of expertise in visa and immigration consultancy, delivering transparent, hassle-free, and personalized solutions for individuals and businesses. With a strong presence through our company-owned offices in India and London, we provide end-to-end assistance, ensuring a smooth and successful visa application process.
+
                 </p>
-                <p>Our range of expertise includes work, study, travel, business, and permanent residence visas, making individuals and families have a smooth and trouble-free immigration experience. From career growth, access to top-class education, business growth, or a new beginning in a foreign land, we are present at every step to assist you.
+                <p>We specialize in Visitor Visas, Work Visas, Work Permits, Student Visas, Dependent Visas, Business Visas, and Visa Refusal Cases, offering expert guidance tailored to each client's unique needs. Our dedicated team of immigration professionals works closely with applicants to navigate complex visa procedures, minimizing risks and maximizing success rates.
                 </p>
-                <p>What differentiates us is our absolute commitment to transparency, efficiency, and personalized service. We know that immigration isn't simply a matter of paperwork—it's about new beginnings, brighter futures, and life-altering experiences. Our experienced team demystifies the intricacies of the process, providing customized solutions tailored to your individual needs.
+                <p>Our high success rate, genuine approach, and comprehensive support set us apart from the rest. We believe in transparency, efficiency, and integrity, ensuring that our clients feel confident and well-informed throughout their immigration journey. Whether you aim to travel, study, work, reunite with family, or expand your business overseas, we are here to make the process seamless and stress-free.
+
+
+                </p>
+                <p>With thousands of successful visa approvals and a strong reputation for excellence, Global Visa Internationals is your trusted partner in making your global aspirations a reality. Contact us today and take the first step toward a brighter future abroad! 🌍
+
                     </p>
-                    <p>Be part of the thousands who have trusted Global Visa Internationals. Get started on your world of opportunities—because your international journey starts with us!</p>
+                  
         </section>
     </section>
 </section>
@@ -545,7 +547,7 @@
         <!-- Form Section -->
         <div class="form-section">
             <h2>Immigration Inquiry Form</h2>
-            <form id="inquiry-form" action="https://script.google.com/macros/s/AKfycbxGRPkzDzetMUnsLC4oqYIQ3RXXjhUrg5ALhhZcpJbqXkXYgGYLbFa7V-fmWmV7WdcXTg/exec" method="post">
+            <form id="inquiry-form" action="https://script.google.com/macros/s/AKfycbx0O6_eBfp6V0lSxwazSCwyXudQimkXuZ_YzFOtLIEsvEnpAWuiAtRYIJprluvaNCh2Cw/exec" method="post">
                 <div class="row">
                     <div>
                         
@@ -621,13 +623,11 @@
 <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
 
 <!-- Submit Button with Correct Site Key -->
-<button class="g-recaptcha" 
-    data-sitekey="6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y" 
-    data-callback="onSubmit" 
-    data-action="submit" 
-    type="submit">
-    Submit
-</button>
+<div id="success-popup" style="display: none;">
+    <p>✅ Your form has been submitted successfully!</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
 
 <!-- Confirmation Popup -->
 <div id="success-popup" class="popup">
