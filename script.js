@@ -64,13 +64,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const form = document.getElementById("inquiry-form");
     
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission (Stops redirect)
+            event.preventDefault(); // Prevent default form submission
     
             grecaptcha.ready(function () {
                 grecaptcha.execute("6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y", { action: "submit" }).then(function (token) {
                     document.getElementById("g-recaptcha-response").value = token;
     
-                    // Submit the form via Fetch API
+                    // Submit form data via Fetch API
                     const formData = new FormData(form);
                     fetch(form.action, {
                         method: "POST",
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.log("Server Response:", data); // Debugging
     
                         if (data.includes("Success")) {
-                            // Show Success Popup
+                            // Show success message
                             document.getElementById("success-popup").style.display = "block";
                             form.reset(); // Clear form fields after submission
                         } else {
