@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     flex-wrap: wrap;
     perspective: 1200px; /* Increased perspective to give more space for the flip */
     margin: 20px;
@@ -87,7 +87,7 @@ p{
 }
 
 .founder strong, .commitment strong, .global-reach strong, .vision strong {
-    color: #2ba4c9;
+    color: #222020;
 }
 .services {
     font-weight: bold;
@@ -128,6 +128,7 @@ p{
     overflow: hidden;
     border-radius: 10px;
 }
+
 .story-image {
     width: 100%;
     height: 100%;
@@ -191,9 +192,9 @@ p{
 
 
 .why-choose-container p {
-    font-size: 16px;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-size: 15px;
+    max-width: 1150px;
+    margin: 0 auto 15px;
     color: #444;
 }
 .why-choose-us {
@@ -245,8 +246,8 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 160px; /* Reduced width */
-    max-width: 180px; /* Prevents cards from becoming too big */
+    min-width: 190px; /* Reduced width */
+    max-width: 200px; /* Prevents cards from becoming too big */
     flex: 1 1 calc(33.33% - 20px); /* Default: 3 cards in a row */
 }
 
@@ -668,26 +669,38 @@ p{
         width: 90%;
         max-width: 1200px;
         margin: auto;
-        gap: 20px;
+        gap: 10px;
     }
     
     
     .form-section, .faq-section {
         width: 50%;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         box-sizing: border-box;
     }
     .form-section {
-        width: 60%;
+        width: 50%;
+        height: 400px;
         background: white;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    
+    .faq-section h2{
+        color: #11bbb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: -10px;
+    flex-wrap: wrap;
+    perspective: 1200px; /* Increased perspective to give more space for the flip */
+    margin: 10px;
+
+    }
     .faq-section {
-        width: 35%;
+        width: 50%;
         background: #e3f2fd;
         padding: 20px;
         border-radius: 10px;
@@ -742,19 +755,19 @@ p{
     /* FAQ Section */
     .faq-item {
         background: white;
-        margin-bottom: 8px;
-        border-radius: 8px;
+        margin-bottom: 4px;
+        border-radius: 4px;
         overflow: hidden;
     }
     
     .faq-question {
         background: #72bcd4;
         color: white;
-        padding: 12px;
+        padding: 10px;
         font-weight: bold;
         cursor: pointer;
         text-align: center;
-        border-radius: 8px;
+        border-radius: 4px;
     }
     
     .faq-answer {
