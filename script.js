@@ -60,18 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
             item.parentElement.classList.add('active');
         });
     });
+
+
+
+
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiry-form");
     
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); // Prevent page reload
     
             grecaptcha.ready(function () {
-                grecaptcha.execute("6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y", { action: "submit" }).then(function (token) {
+                grecaptcha.execute("6Ld-WeYqAAAAAPXgC3iT9J5a4ZFHEo_SAc69eXwN", { action: "submit" }).then(function (token) {
                     document.getElementById("g-recaptcha-response").value = token;
     
-                    // Submit form data via Fetch API
                     const formData = new FormData(form);
+    
                     fetch(form.action, {
                         method: "POST",
                         body: formData
@@ -80,17 +84,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     .then(data => {
                         console.log("Server Response:", data); // Debugging
     
-                        if (data.includes("Success")) {
-                            // Show success message
+                        if (data.trim() === "Success") {
                             document.getElementById("success-popup").style.display = "block";
                             form.reset(); // Clear form fields after submission
                         } else {
+                            console.error("Server Error:", data);
                             alert("❌ Error: " + data);
                         }
                     })
                     .catch(error => {
+                        console.error("Network Error:", error);
                         alert("❌ Submission failed. Please try again.");
-                        console.error("Error:", error);
                     });
                 });
             });
