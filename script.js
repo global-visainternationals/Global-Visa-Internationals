@@ -51,41 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".gallery-prev").addEventListener("click", () => moveGallerySlide(-1));
         document.querySelector(".gallery-next").addEventListener("click", () => moveGallerySlide(1));
     });
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const form = document.getElementById("inquiry-form");
-    
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent page reload
-    
-            var formData = new FormData(form);
-    
-            fetch(form.action, {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                if (data.trim().toLowerCase() === "success") {
-                    showPopup(); // Show success popup
-                    form.reset(); // Clear form fields
-                }
-            })
-            .catch(error => console.error("Error:", error));
-        }, { once: true }); // ✅ Ensures event runs only once
-    });
-    
-    // Function to show the popup
-    function showPopup() {
-        document.getElementById("success-popup").style.display = "block";
-    }
-    
-    // Function to close the popup
-    function closePopup() {
-        document.getElementById("success-popup").style.display = "none";
-    }
-    
     
     
     // FAQ Toggle
@@ -95,13 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
             item.parentElement.classList.add('active');
         });
     });
-
-
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiry-form");
     
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); // Prevent default form submission (Stops redirect)
     
             grecaptcha.ready(function () {
                 grecaptcha.execute("6LdyVeUqAAAAAPGcUhFNHmgzoDGx7Mx4ArYMl22Y", { action: "submit" }).then(function (token) {
@@ -115,19 +78,27 @@ document.addEventListener("DOMContentLoaded", function() {
                     })
                     .then(response => response.text())
                     .then(data => {
+                        console.log("Server Response:", data); // Debugging
+    
                         if (data.includes("Success")) {
-                            alert("Form submitted successfully!");
-                            form.reset();
+                            // Show Success Popup
+                            document.getElementById("success-popup").style.display = "block";
+                            form.reset(); // Clear form fields after submission
                         } else {
-                            alert("Error: " + data);
+                            alert("❌ Error: " + data);
                         }
                     })
                     .catch(error => {
-                        alert("Submission failed. Please try again.");
+                        alert("❌ Submission failed. Please try again.");
                         console.error("Error:", error);
                     });
                 });
             });
         });
     });
+    
+    // Close Success Popup
+    function closePopup() {
+        document.getElementById("success-popup").style.display = "none";
+    }
     
