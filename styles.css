@@ -681,7 +681,7 @@ p{
     }
     .form-section {
         width: 50%;
-        height: 400px;
+        height: 475px;
         background: white;
         padding: 10px;
         border-radius: 10px;
@@ -740,17 +740,70 @@ p{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width:fit-content;
-        background: rgb(85, 197, 164);
-        color: white;
+        width: fit-content;
         padding: 14px;
+        background: #55c5a4; /* Consistent with theme */
+        color: white;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 10px;
         text-align: center;
-        
+        margin: 10px auto; /* Centering */
     }
+    
+    /* Submit Button */
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        background-color: #007bff; /* Primary Blue */
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        transition: background 0.3s ease-in-out;
+        margin: 10px auto;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+    
+    /* Success Popup */
+    #success-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #28a745; /* Green Success */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+    #success-popup button {
+        background: white;
+        color: #28a745;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    #success-popup button:hover {
+        background: #d4edda;
+    }
+    
     
     /* FAQ Section */
     .faq-item {
