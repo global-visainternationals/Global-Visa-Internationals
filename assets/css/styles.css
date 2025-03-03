@@ -59,7 +59,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 1170px;
   margin-inline: 1.5rem;
 }
 
@@ -101,18 +101,21 @@ a {
 
 /* Logo Styling */
 .gvilogo {
-  width: 100px;  /* Default size for desktop */
+  width: 150px;  /* Default size for desktop */
+  margin-right: 5px;
   height: auto;
 }
 
 /* Hide text & Increase Logo Size for Mobile */
 @media (max-width: 768px) {
   .nav__text {
-      /* display: none;  Hides the text */
+       display: none; /* Hides the text */
   }
 
   .gvilogo {
-      width: 60px; /* Increase logo size for mobile */
+      width: 100px; /* Increase logo size for mobile */
+      margin-left: 10px;
+      margin-top: 5px;
   }
 }
 
@@ -141,6 +144,9 @@ a {
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
+  .nav__text {
+    display: none; /* Hides the text */
+}
   .nav__menu {
     position: absolute;
     left: 0;
