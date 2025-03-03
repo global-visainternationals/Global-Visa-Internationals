@@ -60,38 +60,53 @@ document.addEventListener("DOMContentLoaded", function() {
             item.parentElement.classList.add('active');
         });
     });
-
+    
+    
+    
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiry-form");
+        const submitButton = form.querySelector("button[type='submit']");
+        const popup = document.getElementById("success-popup");
+        const closeButton = document.getElementById("close-popup");
     
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Stop default form submission
+            event.preventDefault(); // Prevent default form submission
     
-            grecaptcha.ready(function () {
-                grecaptcha.execute("6Ld-WeYqAAAAAPXgC3iT9J5a4ZFHEo_SAc69eXwN", { action: "submit" }).then(function (token) {
-                    document.getElementById("g-recaptcha-response").value = token; // Set token in hidden field
-                    
-                    // Now submit the form
-                    fetch(form.action, {
-                        method: "POST",
-                        body: new FormData(form)
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log("📩 Server Response:", data);
-                        if (data.trim().toLowerCase() === "success") {
-                            alert("✅ Form submitted successfully!");
-                            form.reset();
-                        } else {
-                            alert("❌ Error: " + data);
-                        }
-                    })
-                    .catch(error => {
-                        console.error("❌ Network Error:", error);
-                        alert("❌ Submission failed. Please check your network or Google Apps Script.");
-                    });
-                });
+            if (!grecaptcha.getResponse()) {
+                alert("❌ Please verify that you're not a robot.");
+                return;
+            }
+    
+            submitButton.disabled = true;
+            submitButton.innerText = "Submitting..."; // Show user feedback
+    
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+            })
+            .then(response => response.text())
+            .then(data => {
+                submitButton.disabled = false;
+                submitButton.innerText = "Submit"; // Reset button text
+    
+                if (data.trim().toLowerCase() === "success") {
+                    popup.style.display = "block"; // Show popup
+                    form.reset();
+                    grecaptcha.reset(); // Reset reCAPTCHA
+                } else {
+                    alert("❌ Error: " + data);
+                }
+            })
+            .catch(error => {
+                submitButton.disabled = false;
+                submitButton.innerText = "Submit"; // Reset button text
+                alert("❌ Submission failed. Please check your network or Google Apps Script.");
             });
+        });
+    
+        // Close popup when clicking the close button
+        closeButton.addEventListener("click", function () {
+            popup.style.display = "none";
         });
     });
     
