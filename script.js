@@ -61,40 +61,34 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("inquiry-form");
     
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent page reload
+            event.preventDefault(); // Stop default form submission
     
             grecaptcha.ready(function () {
                 grecaptcha.execute("6Ld-WeYqAAAAAPXgC3iT9J5a4ZFHEo_SAc69eXwN", { action: "submit" }).then(function (token) {
-                    document.getElementById("g-recaptcha-response").value = token;
-    
-                    const formData = new FormData(form);
+                    document.getElementById("g-recaptcha-response").value = token; // Set token in hidden field
                     
-                    console.log("📤 Sending Form Data:", Object.fromEntries(formData.entries())); // Debugging
-    
+                    // Now submit the form
                     fetch(form.action, {
                         method: "POST",
-                        body: formData
+                        body: new FormData(form)
                     })
                     .then(response => response.text())
                     .then(data => {
-                        console.log("📩 Server Response:", data); // Debugging
-    
-                        if (data.trim() === "Success") {
-                            document.getElementById("success-popup").style.display = "block";
+                        console.log("📩 Server Response:", data);
+                        if (data.trim().toLowerCase() === "success") {
+                            alert("✅ Form submitted successfully!");
                             form.reset();
                         } else {
-                            console.error("❌ Server Error:", data);
                             alert("❌ Error: " + data);
                         }
                     })
                     .catch(error => {
                         console.error("❌ Network Error:", error);
-                        alert("❌ Submission failed. Please try again.");
+                        alert("❌ Submission failed. Please check your network or Google Apps Script.");
                     });
                 });
             });
