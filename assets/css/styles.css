@@ -7,11 +7,11 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: hsl(220, 24%, 12%);
-  --black-color-light: hsl(220, 24%, 15%);
-  --black-color-lighten: hsl(220, 20%, 18%);
-  --white-color: #fff;
-  --body-color: hsl(220, 100%, 97%);
+  --black-color: #967345;
+  --black-color-light: #d8a36e;
+  /* --black-color-lighten: #273653; */
+  --white-color: #000000;
+  --body-color: #ffffff;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -152,9 +152,10 @@ a {
 }
   .nav__menu {
     position: absolute;
-    left: 0;
+    /* left: 0; */
+    right: 0;
     top: 2.5rem;
-    width: 100%;
+    width: fit-content;
     height: calc(100vh - 3.5rem);
     overflow: auto;
     pointer-events: none;
@@ -165,6 +166,7 @@ a {
     width: 0;
   }
   .nav__list {
+    
     background-color: var(--black-color);
     padding-top: 1rem;
   }
