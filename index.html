@@ -155,30 +155,30 @@
  
 <!-- Our thought  Section -->
 <section class="thought-section" id="home">
+    <div class="home" id="text"></div>
+</section>
+
+<script>
+    const words = ["Your Passport To The World Starts With Us"];
+    const container = document.getElementById("text");
     
-    <div class="home" id="text"></div> <!-- Added missing container -->
-  </section>
-  
-  <script>
-      const words = ["Your", "Passport", "To", "The", "World", "Starts", "With", "Us"];
-      const container = document.getElementById("text");
-      words.forEach((word, index) => {
-          const span = document.createElement("span");
-          span.textContent = word;
-          span.classList.add("word");
-          span.style.animationDelay = `${index * 0.2}s`;
-          container.appendChild(span);
-          
-          // Add space between words
-          if (index < words.length - 1) {
-              const space = document.createTextNode(" ");
-              container.appendChild(space);
-          }
-      });
-  </script>
+    // Function to generate random color
+    function getRandomColor() {
+        return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    }
+
+    words.forEach((word) => {
+        const span = document.createElement("span");
+        span.textContent = word;
+        span.classList.add("word");
+        span.style.animationDelay = "0.2s"; // Keep animation delay constant
+        span.style.color = getRandomColor(); // Assign random color
+        container.appendChild(span);
+    });
+</script>
   
 
-<section class="content-section">
+
 
     
     <section class="our-story">
@@ -265,7 +265,7 @@
                   
         </section>
     </section>
-</section>
+
 
 <section id="achievements">
     <section class="why-choose-us-container">
