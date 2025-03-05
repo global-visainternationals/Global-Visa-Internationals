@@ -102,8 +102,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                    <li><a href="#home" class="nav__link">Home</a></li>
-
-                  <li><a href="#about-us" class="nav__link">About</a></li>
+                   <li><a href="#about-us" class="nav__link">About</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
@@ -164,7 +163,7 @@
     
     // Function to generate random color
     function getRandomColor() {
-        return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+        return `rgb(${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)})`;
     }
 
     words.forEach((word) => {
@@ -180,10 +179,12 @@
 
 
 
+<section id="about-us">
     
+
     <section class="our-story">
         
-        <section class="story-container">
+        <section  class="story-container" id="about-us" >
             <div class="image-card">
                 <img src="./logo/OIG3.jpg" alt="Building" class="story-image">
             </div>
@@ -264,6 +265,7 @@
                     </p>
                   
         </section>
+    </section>
     </section>
 
 
