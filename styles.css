@@ -16,7 +16,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     perspective: 1200px; 
-    margin: 20px;
+    /* margin: 20px; */
 }
 .nave{
     color: #333;
@@ -31,6 +31,7 @@ p{
     perspective: 1200px;
     margin: 20px;
 }
+
 
 .thought-section {
     background-position: center;
@@ -51,7 +52,6 @@ p{
     margin-bottom: 0;
 }
 
-/* Animations */
 .word {
     display: inline-block;
     position: relative;
@@ -60,29 +60,6 @@ p{
     animation: move 2s linear infinite, jump 1s ease-in-out infinite alternate;
 }
 
-@keyframes move {
-    from {
-        transform: translateX(-200vw);
-    }
-    to {
-        transform: translateX(100vw);
-    }
-}
-
-@keyframes jump {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-17px); }
-}
-
-/* Color each word differently */
-.word:nth-child(1) { color: red; }
-.word:nth-child(2) { color: blue; }
-.word:nth-child(3) { color: green; }
-.word:nth-child(4) { color: orange; }
-.word:nth-child(5) { color: purple; }
-.word:nth-child(6) { color: rgb(0, 113, 128); }
-.word:nth-child(7) { color: rgb(126, 128, 0); }
-.word:nth-child(8) { color: rgb(128, 0, 90); }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -98,6 +75,18 @@ p{
 }
 
 @media (max-width: 480px) {
+    .thought-section {
+       
+        padding-top: 15vw;
+        min-height: 25vh;
+    }
+    .word {
+        padding-top: 10px;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 340px){
     .thought-section {
        
         padding-top: 15vw;
@@ -140,7 +129,7 @@ p{
 .our-story {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
 }
 
@@ -151,7 +140,7 @@ p{
     align-items: center;
     justify-content: center;
     text-align: justify;
-    padding: 40px;
+    padding: 20px;
     gap: 20px;
 }
 /* Image Card */
@@ -212,7 +201,7 @@ p{
 
 .why-choose-container {
     text-align: justify;
-    padding: 40px;
+    padding: 10px;
     background: #fff;
 }
 
@@ -414,8 +403,8 @@ p{
 
 .gallery-slide {
     position: absolute;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 450x;
     transition: all 0.5s ease-in-out;
     display: none;
     opacity: 0;
@@ -804,16 +793,18 @@ p{
     .row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
+        /* margin-bottom: 10px; */
     }
     
     .row div {
         width: 48%;
+        padding-bottom: 10px;
     }
     
     input, select {
         width: 100%;
         padding: 10px;
+        padding-bottom: 10px;
         border-radius: 8px;
         border: 1px solid #ccc;
     }
@@ -919,41 +910,79 @@ p{
     .faq-item.active .faq-answer {
         display: block;
     }
-    @media screen and (max-width: 340px){
+
+    @media screen and (max-width: 768px) {
         .form-content {
-            flex-direction: column;
-            width: 100%;
+            flex-direction: column; /* Stack form and FAQ vertically */
+            align-items: center;
         }
     
         .form-section, .faq-section {
             width: 100%;
         }
-    }
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .form-content {
+    
+        .row {
             flex-direction: column;
+        }
+    
+        .row div {
             width: 100%;
         }
     
-        .form-section, .faq-section {
-            width: 100%;
-        }
-    }
-    @media (max-width: 600px){
-        .form-content {
-            flex-direction: column;
-            width: 100%;
+        input, select {
+            font-size: 14px;
+            padding: 8px;
         }
     
-        .form-section, .faq-section {
-            width: 100%;
+        .faq-section h2 {
+            font-size: 18px;
         }
     }
     
-        .form-section, .faq-section {
-            width: 100%;
+    @media screen and (max-width: 600px) {
+        .data-form {
+            padding: 20px;
         }
+    
+        .form-section {
+            height: auto;
+        }
+    
+        .faq-section {
+            padding: 15px;
+        }
+    
+        button[type="submit"] {
+            font-size: 14px;
+            padding: 10px;
+        }
+    
+        .faq-question {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+    
+    @media screen and (max-width: 340px) {
+        .data-form {
+            padding: 10px;
+        }
+    
+        .form-section, .faq-section {
+            padding: 10px;
+        }
+    
+        input, select {
+            font-size: 12px;
+            padding: 6px;
+        }
+    
+        button[type="submit"] {
+            font-size: 12px;
+            padding: 8px;
+        }
+    }
+      
     
 
     
@@ -1031,6 +1060,73 @@ p{
     color: #1b1b1b;
 
 }
+@media screen and (max-width: 768px) {
+    .map iframe {
+        height: 250px;
+    }
+
+    .container-loc {
+        padding: 10px;
+    }
+
+    .map-label {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .get-direction {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .contact-section {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .map iframe {
+        height: 200px;
+    }
+
+    .get-direction {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .map-label {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .contact-section {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .map iframe {
+        height: 150px;
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .map-label {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .get-direction {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+}
+
 
 .call-icon, .whatsapp-icon {
     position: fixed;
