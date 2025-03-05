@@ -27,31 +27,73 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    //  gallery functions
-    document.addEventListener("DOMContentLoaded", function () {
-        let galleryIndex = 0;
-        const galleryTrack = document.querySelector('.gallery-carousel-track');
-        const gallerySlides = document.querySelectorAll('.gallery-slide');
-        const totalGallerySlides = gallerySlides.length;
-    
-        function moveGallerySlide(step) {
-            galleryIndex += step;
-            if (galleryIndex < 0) {
-                galleryIndex = totalGallerySlides - 1;
-            } else if (galleryIndex >= totalGallerySlides) {
-                galleryIndex = 0;
+        // Galleary
+        jQuery(document).ready(function($) {
+            var $slides = $('.gallery-carousel .gallery-slide');
+            var currentIndex = 0;
+            var isAnimating = false;
+            var autoSlideInterval;
+        
+            function updateSlides() {
+                if (isAnimating) return;
+                isAnimating = true;
+        
+                $slides.removeClass('active prev next').hide();
+        
+                var prev = (currentIndex - 1 + $slides.length) % $slides.length;
+                var next = (currentIndex + 1) % $slides.length;
+        
+                $($slides[prev]).addClass('prev').show();
+                $($slides[currentIndex]).addClass('active').show();
+                $($slides[next]).addClass('next').show();
+        
+                setTimeout(function() {
+                    isAnimating = false;
+                }, 500);
             }
-            galleryTrack.style.transform = `translateX(-${galleryIndex * 100}%)`;
-        }
-    
-        // Auto-slide every 3 seconds
-        setInterval(() => moveGallerySlide(1), 3000);
-    
-        // Add event listeners for buttons
-        document.querySelector(".gallery-prev").addEventListener("click", () => moveGallerySlide(-1));
-        document.querySelector(".gallery-next").addEventListener("click", () => moveGallerySlide(1));
-    });
-    
+        
+            function moveGallerySlide(direction) {
+                if (isAnimating) return;
+                currentIndex = (currentIndex + direction + $slides.length) % $slides.length;
+                updateSlides();
+            }
+        
+            function autoSlide() {
+                autoSlideInterval = setInterval(function() {
+                    moveGallerySlide(1);
+                }, 3000); // Change every 3 seconds
+            }
+        
+            // Initialize
+            updateSlides();
+            autoSlide();
+        
+            // Next button
+            $('.gallery-next-btn').click(function() {
+                clearInterval(autoSlideInterval);
+                moveGallerySlide(1);
+                autoSlide();
+            });
+        
+            // Previous button
+            $('.gallery-prev-btn').click(function() {
+                clearInterval(autoSlideInterval);
+                moveGallerySlide(-1);
+                autoSlide();
+            });
+        
+            // Click on slides
+            $slides.click(function() {
+                if (isAnimating) return;
+                var newIndex = $(this).index();
+                if (newIndex !== currentIndex) {
+                    currentIndex = newIndex;
+                    updateSlides();
+                }
+            });
+        });
+        
+ 
     
     // FAQ Toggle
     document.querySelectorAll('.faq-question').forEach(item => {
