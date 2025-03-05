@@ -101,21 +101,24 @@ a {
 
 /* Logo Styling */
 .gvilogo {
-  width: 150px;  /* Default size for desktop */
+  width: 170px;  /* Default size for desktop */
   margin-right: 5px;
-  height: auto;
+  margin-top: 8px;
+  height: min-content;
+  margin: 0;
 }
 
 /* Hide text & Increase Logo Size for Mobile */
 @media (max-width: 768px) {
   .nav__text {
-       display: none; /* Hides the text */
+       display: none; 
   }
 
   .gvilogo {
-      width: 100px; /* Increase logo size for mobile */
+      width: 120px; 
       margin-left: 10px;
-      margin-top: 5px;
+      margin-top: 8px;
+      height: min-content;
   }
 }
 
