@@ -48,6 +48,7 @@
 <!-- JavaScript -->
 <script src="assets/js/main.js"></script>
 <script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?render=6Lf7xOcqAAAAAHiIeB-IbVEZ6K_z1QRmR5D0iQ8_"></script>
 
 
@@ -154,12 +155,28 @@
  
 <!-- Our thought  Section -->
 <section class="thought-section" id="home">
-  <div class="home">
-    <h1>Your Passport to the World Starts with Us</h1>
-
-      
-  </div>
-</section>
+    
+    <div class="home" id="text"></div> <!-- Added missing container -->
+  </section>
+  
+  <script>
+      const words = ["Your", "Passport", "To", "The", "World", "Starts", "With", "Us"];
+      const container = document.getElementById("text");
+      words.forEach((word, index) => {
+          const span = document.createElement("span");
+          span.textContent = word;
+          span.classList.add("word");
+          span.style.animationDelay = `${index * 0.2}s`;
+          container.appendChild(span);
+          
+          // Add space between words
+          if (index < words.length - 1) {
+              const space = document.createTextNode(" ");
+              container.appendChild(space);
+          }
+      });
+  </script>
+  
 
 <section class="content-section">
 
@@ -221,7 +238,7 @@
                     </div>
                 
                     <div class="vision">
-                        <strong>✨ Visionary leader making an impact through international opportunities!</strong>
+                        <strong> Visionary leader making an impact through international opportunities!</strong>
                     </div>
                 </p>
                 
@@ -242,7 +259,7 @@
 
 
                 </p>
-                <p>With thousands of successful visa approvals and a strong reputation for excellence, Global Visa Internationals is your trusted partner in making your global aspirations a reality. Contact us today and take the first step toward a brighter future abroad! 🌍
+                <p>With thousands of successful visa approvals and a strong reputation for excellence, Global Visa Internationals is your trusted partner in making your global aspirations a reality. Contact us today and take the first step toward a brighter future abroad!
 
                     </p>
                   
@@ -300,102 +317,99 @@
 
 
 <!-- Video and Reviews Section -->
-<section id="client-review">
-    <h2>Client Reviews</h2>
-    <div class="client-reviews-container">
-        <div class="review-carousel">
-            <div class="carousel-track">
-                <div class="client-review">
-                    <div class="cust"><img src="logo/boy.png" alt="Customer Image"></div>
-                    <p> I got my UK visitor visa within 3 weeks time. They assisted me through all the documentations. They did the legal formalities like affidavits etc. I had a stressfree time as opposed to the time I had applied by myself.</p>
-                    <strong>Mr. Vinoj KV</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
+        <section id="client-review">
+            <h2>Client Reviews</h2>
+            <div class="client-reviews-container">
+                <div class="review-carousel">
+                    <div class="carousel-track">
+                        <div class="client-review">
+                            <div class="cust"><img src="logo/boy.png" alt="Customer Image"></div>
+                            <p> I got my UK visitor visa within 3 weeks time. They assisted me through all the documentations. They did the legal formalities like affidavits etc. I had a stressfree time as opposed to the time I had applied by myself.</p>
+                            <strong>Mr. Vinoj KV</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
 
-                <div class="client-review">
-                    <div class="cust"><img src="logo/bussiness-man.png" alt="Customer Image"></div>
-                    <p>The team here helped me attain my UK tourist visa and meticulously helped me arrange all documents in order for the process. They are super knowledgeable and helpful. Would strongly recommend everyone to avail their services.</p>
-                    <strong>Mr.Soumya Sen</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
-                <div class="client-review">
-                    <div class="cust"><img src="./logo/user.png" alt="Customer Image"></div>
-                    <p>I am elated to share my heartfelt appreciation for the extraordinary services during the process of obtaining my Australia visa. Their exceptional guidance and unwavering support have played an integral role in fulfilling my dreams.</p>
-                    <strong>Mr. Aakarsh GV</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
-     
-                <div class="client-review">
-                    <div class="cust"><img src="./logo/man.png" alt="Customer Image"></div>
-                    <p>Global Visa Internationals is the right place to find solutions to all your immigration and visa process. Their team works so well I got my things done with in a week. Their team put a lot of efforts and dedication to my profile. I received an amazing service from them must recommend immigration and visa consultant in Bangalore.</p>
-                    <strong>Ms.Pavan Maruthi</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
+                        <div class="client-review">
+                            <div class="cust"><img src="logo/bussiness-man.png" alt="Customer Image"></div>
+                            <p>The team here helped me attain my UK tourist visa and meticulously helped me arrange all documents in order for the process. They are super knowledgeable and helpful. Would strongly recommend everyone to avail their services.</p>
+                            <strong>Mr.Soumya Sen</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="client-review">
+                            <div class="cust"><img src="./logo/user.png" alt="Customer Image"></div>
+                            <p>I am elated to share my heartfelt appreciation for the extraordinary services during the process of obtaining my Australia visa. Their exceptional guidance and unwavering support have played an integral role in fulfilling my dreams.</p>
+                            <strong>Mr. Aakarsh GV</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+            
+                        <div class="client-review">
+                            <div class="cust"><img src="./logo/man.png" alt="Customer Image"></div>
+                            <p>Global Visa Internationals is the right place to find solutions to all your immigration and visa process. Their team works so well I got my things done with in a week. Their team put a lot of efforts and dedication to my profile. I received an amazing service from them must recommend immigration and visa consultant in Bangalore.</p>
+                            <strong>Ms.Pavan Maruthi</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
 
-                <div class="client-review">
-                    <div class="cust"><img src="./logo/user.png" alt="Customer Image"></div>
-                    <p>Got my Australian sports visa within 10 days as promised. Professional and efficient visa agency.
-                    </p>
-                    <strong>Mr. Pranit Ramchandani</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
-                <div class="client-review">
-                    <div class="cust"><img src="./logo/man.png" alt="Customer Image"></div>
-                    <p>We got our Japanese visitor visa through Global Visa Internationals for four us in the family. Our experience has been good and the team is fantastic. Paperwork, document submission and getting the visa all done in 2 weeks.
+                        <div class="client-review">
+                            <div class="cust"><img src="./logo/user.png" alt="Customer Image"></div>
+                            <p>Got my Australian sports visa within 10 days as promised. Professional and efficient visa agency.
+                            </p>
+                            <strong>Mr. Pranit Ramchandani</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="client-review">
+                            <div class="cust"><img src="./logo/man.png" alt="Customer Image"></div>
+                            <p>We got our Japanese visitor visa through Global Visa Internationals for four us in the family. Our experience has been good and the team is fantastic. Paperwork, document submission and getting the visa all done in 2 weeks.
 
-                    </p>
-                    <strong>Ms.Lakshminarayana U</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
+                            </p>
+                            <strong>Ms.Lakshminarayana U</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
 
-                <div class="client-review">
-                    <div class="cust"><img src="logo/boy.png" alt="Customer Image"></div>
-                    <p>I approached Global Visa Internationals for my wife's tourist visa to Austria. Excellent work was done by Anusha and her team at GVI. From writing the cover letter to collecting and verifying all the documents as per the checklist, this team did a great job. My wife was granted an Austrian tourist visa within a week of submitting the documents. We are extremely happy and grateful for this. I highly recommend Global Visa Internationals to anyone who is looking for help with their visa process.</p>
-                    <strong>Mr. Shridhar patil</strong>
-                    <span>⭐⭐⭐⭐⭐</span>
+                        <div class="client-review">
+                            <div class="cust"><img src="logo/boy.png" alt="Customer Image"></div>
+                            <p>I approached Global Visa Internationals for my wife's tourist visa to Austria. Excellent work was done by Anusha and her team at GVI. From writing the cover letter to collecting and verifying all the documents as per the checklist, this team did a great job. My wife was granted an Austrian tourist visa within a week of submitting the documents. We are extremely happy and grateful for this. I highly recommend Global Visa Internationals to anyone who is looking for help with their visa process.</p>
+                            <strong>Mr. Shridhar patil</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <h2 id="client-video">Visa Services</h2>
+            <div class="video-container">
+                <div class="video-carousel">
+                    <div class="carousel-track">
+                        <div class="video-testimonial"><video src="./logo/Videos/1.mp4" controls loop autoplay muted></video></div>
+                        <div class="video-testimonial"><video src="./logo/Videos/2.mp4" controls loop autoplay muted></video></div>
+                        <div class="video-testimonial"><video src="./logo/Videos/3.mp4" controls loop autoplay muted></video></div>
+                        <div class="video-testimonial"><video src="./logo/Videos/4.mp4" controls loop autoplay muted></video></div>
+                        <div class="video-testimonial"><video src="./logo/Videos/5.mp4" controls loop autoplay muted></video></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> 
+        </section>
 
-    <h2 id="client-video">Visa Services</h2>
-    <div class="video-container">
-        <div class="video-carousel">
-            <div class="carousel-track">
-                <div class="video-testimonial"><video src="./logo/Videos/1.mp4" controls loop autoplay muted></video></div>
-                <div class="video-testimonial"><video src="./logo/Videos/2.mp4" controls loop autoplay muted></video></div>
-                <div class="video-testimonial"><video src="./logo/Videos/3.mp4" controls loop autoplay muted></video></div>
-                <div class="video-testimonial"><video src="./logo/Videos/4.mp4" controls loop autoplay muted></video></div>
-                <div class="video-testimonial"><video src="./logo/Videos/5.mp4" controls loop autoplay muted></video></div>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-carousel-wrapper">
+                <div class="gallery-carousel">
+                    <div class="gallery-slide active"><img src="./gallery/1.jpg" alt="Slide 1"></div>
+                    <div class="gallery-slide next"><img src="./gallery/2.jpg" alt="Slide 2"></div>
+                    <div class="gallery-slide prev"><img src="./gallery/3.jpg" alt="Slide 3"></div>
+                    <div class="gallery-slide"><img src="./gallery/4.jpg" alt="Slide 4"></div>
+                    <div class="gallery-slide"><img src="./gallery/5.jpg" alt="Slide 5"></div>
+                    <div class="gallery-slide"><img src="./gallery/6.jpg" alt="Slide 6"></div>
+                    <div class="gallery-slide"><img src="./gallery/7.jpg" alt="Slide 7"></div>
+                    <div class="gallery-slide"><img src="./gallery/8.jpg" alt="Slide 8"></div>
+                    <div class="gallery-slide"><img src="./gallery/9.jpg" alt="Slide 9"></div>
+                </div>
+                <button class="gallery-nav-btn gallery-prev-btn">&#10094;</button>
+                <button class="gallery-nav-btn gallery-next-btn">&#10095;</button>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-  
-<section id="gallery">
-    <h2 id="gallery">Gallery</h2>
-  <div class="gallery-carousel-container">
-    
-      <div class="gallery-carousel">
-          <div class="gallery-carousel-track">
-              <div class="gallery-slide"><img src="./gallery/1.jpg" alt="Slide 1"></div>
-              <div class="gallery-slide"><img src="./gallery/2.jpg" alt="Slide 2"></div>
-              <div class="gallery-slide"><img src="./gallery/3.jpg" alt="Slide 3"></div>
-              <div class="gallery-slide"><img src="./gallery/4.jpg" alt="Slide 4"></div>
-              <div class="gallery-slide"><img src="./gallery/5.jpg" alt="Slide 5"></div>
-              <div class="gallery-slide"><img src="./gallery/6.jpg" alt="Slide 6"></div>
-              <div class="gallery-slide"><img src="./gallery/7.jpg" alt="Slide 7"></div>
-              <div class="gallery-slide"><img src="./gallery/8.jpg" alt="Slide 8"></div>
-              <div class="gallery-slide"><img src="./gallery/9.jpg" alt="Slide 9"></div>
-          </div>
-          <button class="gallery-prev" onclick="moveGallerySlide(-1)">&#10094;</button>
-          <button class="gallery-next" onclick="moveGallerySlide(1)">&#10095;</button>
-      </div>
-  </div>
-
-  
-  </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
 
 <h2>Our-Values</h2>
       <section class="mission-vision-values" id="ourvalues">
@@ -674,8 +688,36 @@
             item.parentElement.classList.add('active');
         });
     });
-
 </script>
+
+
+<section class="map">
+    <div class="container-loc">
+        <div class="map-container">
+            <div class="map">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d486.00853848403034!2d77.60577367689068!3d12.967480835531479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d5613d9a4b%3A0xea0b2fbdf4f08876!2sGlobal%20Visa%20Internationals!5e0!3m2!1sen!2sin!4v1741000774951!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div>
+        </div>
+        <div class="contact-section">
+           <p > <a class="text" href="https://www.google.com/maps/dir//Global+Visa+Internationals+GF-9,+Business+Point+Brigade+Rd,+next+to+Brigade+Tower,+Shanthala+Nagar,+Ashok+Nagar+Bengaluru,+Karnataka+560025/@12.967478,77.606117,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae15d5613d9a4b:0xea0b2fbdf4f08876!2m2!1d77.606117!2d12.967478?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"><strong class="bold">Address :</strong> G F9 Business Point 137 Brigade Road, Next to Brigade Tower, Bangalore, 560025, Karnataka</a>
+           </p>
+           <p >
+            <a class="text" href="tel:+917022213466"><strong class="bold">Phone :</strong> +91-7022213466</a></p>
+            <p >
+            <a class="text" href="mailto:operations@globalvisainternationals.com"><strong class="bold">Mail :</strong> operations@globalvisainternationals.com</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+<a href="https://wa.me/917022213466" target="_blank">
+    <img src="./logo/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+<a href="tel:+917022213466">
+    <img src="./logo/phone.png" alt="Call" class="call-icon">
+</a>
 <footer>
     <p>&copy; 2025 Global Visa International. All Rights Reserved.</p>
     <div class="social-icons">
@@ -690,10 +732,10 @@
         </a>
     </div>
     <div class="top-bar">
-        <span class="contact-info">📞 +91-7022213466 |☎️ 080-4971-6272 | ✉️ 
-            <a href="mailto:operations@globalvisainternationals.com">operations@globalvisainternationals.com</a>
-        </span>
-        <span class="location">📍 Brigade Road</span>
+        <a href="tel:+91702221346" class="contact-info">📞 +91-7022213466  </a> |
+        <a href="tel:080-4971-6272"class="contact-info">☎️ 080-4971-6272  </a> |
+        <a class="contact-info" href="mailto:operations@globalvisainternationals.com">operations@globalvisainternationals.com  </a> |
+        <a href="https://www.google.com/maps/dir//Global+Visa+Internationals+GF-9,+Business+Point+Brigade+Rd,+next+to+Brigade+Tower,+Shanthala+Nagar,+Ashok+Nagar+Bengaluru,+Karnataka+560025/@12.967478,77.606117,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae15d5613d9a4b:0xea0b2fbdf4f08876!2m2!1d77.606117!2d12.967478?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" class="contact-info">📍 Brigade Road </a>
     </div>
 </footer>
    </body>
