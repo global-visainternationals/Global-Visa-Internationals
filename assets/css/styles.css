@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: #967345;
-  --black-color-light: #d8a36e;
+  --black-color: #335352;
+  --black-color-light: #153130;
   /* --black-color-lighten: #273653; */
   --white-color: #000000;
   --body-color: #ffffff;
@@ -16,7 +16,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
-  --normal-font-size: .938rem;
+  --normal-font-size: 1rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -60,7 +60,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1170px;
-  margin-inline: 1.5rem;
+  margin-inline: 1rem;
 }
 
 /*=============== HEADER ===============*/
@@ -101,11 +101,10 @@ a {
 
 /* Logo Styling */
 .gvilogo {
-  width: 170px;  /* Default size for desktop */
+  width: 150px;  
   margin-right: 5px;
-  margin-top: 8px;
-  height: min-content;
-  margin: 0;
+  margin-top: 10px;
+  height: auto;
 }
 
 /* Hide text & Increase Logo Size for Mobile */
@@ -115,11 +114,11 @@ a {
   }
 
   .gvilogo {
-      width: 120px; 
-      margin-left: 10px;
-      margin-top: 8px;
-      height: min-content;
-  }
+    width: 150px;  
+    margin-right: 5px;
+    margin-top: 10px;
+    height: auto;
+}
 }
 
 
@@ -136,7 +135,7 @@ a {
   height: max-content;
   inset: 0;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: opacity .1s, transform .4s;
 }
@@ -149,6 +148,12 @@ a {
 @media screen and (max-width: 1118px) {
   .nav__text {
     display: none; /* Hides the text */
+}
+.gvilogo {
+  width: 120px;  
+  margin-right: 5px;
+  margin-top: 10px;
+  height: auto;
 }
   .nav__menu {
     position: absolute;
@@ -230,7 +235,7 @@ a {
 
 .dropdown__link i, 
 .dropdown__sublink i {
-  font-size: 1.25rem;
+  font-size: .650rem;
   font-weight: initial;
 }
 
@@ -277,6 +282,12 @@ a {
   .nav__link {
     padding-inline: 1rem;
   }
+  .gvilogo {
+    width: 120px;  
+    margin-right: 5px;
+    margin-top: 10px;
+    height: auto;
+}
 }
 
 /* For large devices */
@@ -284,6 +295,12 @@ a {
   .container {
     margin-inline: auto;
   }
+  .gvilogo {
+    width: 150px;  
+    margin-right: 5px;
+    margin-top: 10px;
+    height: auto;
+}
 
   .nav {
     height: calc(var(--header-height) + 2rem);
