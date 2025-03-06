@@ -898,7 +898,6 @@ p{
         color: #fff;
         border: none;
         border-radius: 8px;
-        box-shadow: 0 4px 8px #000;
         cursor: pointer;
         font-size: 10px;
         text-align: center;
@@ -919,6 +918,7 @@ p{
         border-radius: 8px;
         cursor: pointer;
         text-align: center;
+        box-shadow: 0 3px 6px #000;
         transition: background 0.3s ease-in-out;
         margin: 10px auto;
     }
