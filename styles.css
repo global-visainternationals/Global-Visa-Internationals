@@ -8,8 +8,9 @@ body {
     background-color: #ffffff;
     color: #333;
 }
- h2, h3, h4, h5, h6 {
-    color: #11bbb2;
+
+h2, h3, h4, h5, h6 {
+    color: #4b3417;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,16 @@ body {
     perspective: 1200px; 
     /* margin: 20px; */
 }
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
 .nave{
     color: #333;
 }
@@ -101,12 +112,16 @@ p{
 .bio {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #333;
+    color: #444;
     line-height: 1.6;
 }
 
 .founder, .commitment, .global-reach, .vision {
     margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    
+    font-weight: bold;
 }
 
 .founder strong, .commitment strong, .global-reach strong, .vision strong {
@@ -119,9 +134,17 @@ p{
 .service-list ul {
     list-style-type: disc;
     margin-left: 20px;
+    font-size: 16px;
+    color: #444;
+    
+    font-weight: bold;
 }
 .service-list ul li {
     margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+    
+    font-weight: bold;
 }
 /* <!-- About Us Section  our story why choose us--> */
 /* Main Section */
@@ -167,12 +190,12 @@ p{
 
 .text-content h2 {
     font-size: 24px;
-    color: #333;
+    color: #4b3417;
 }
 
 .text-content p {
     font-size: 16px;
-    color: #555;
+    color: #444;
     line-height: 1.5;
     
 }
@@ -205,16 +228,11 @@ p{
     background: #fff;
 }
 
-.why-choose-container h2 {
-    font-size: 26px; /* Increased size */
-    /* text-align: center; */
-    color: #11bbb2;
-    margin-bottom: 15px;
-    font-weight: bold; /* Makes it stand out more */
-}
+
 
 
 .why-choose-container p {
+    padding-top: 20px;
     font-size: 15px;
     max-width: 1150px;
     margin: 0 auto 15px;
@@ -387,7 +405,7 @@ p{
 .gallery-carousel-wrapper {
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 10px auto;
     position: relative;
     overflow: hidden;
 }
@@ -670,7 +688,7 @@ p{
         bottom: 10px; /* Adjust to place the text above the image */
         left: 50%;
         transform: translateX(-50%);
-        color: rgb(68, 207, 196);
+        color: #000000;
         font-size: 18px;
         font-weight: bold;
         background: rgba(43, 44, 44, 0.76); /* Semi-transparent background */
@@ -686,7 +704,7 @@ p{
         transform: rotateY(180deg);
         flex-direction: column;
         justify-content: center;
-        border: 2px solid #007bff;
+        border: 2px solid #00af92;
         padding: 10px;
     }
 
@@ -700,7 +718,7 @@ p{
 
     .visa-card-back li {
         font-size: 16px;
-        color: #007bff;
+        color: #2faa0a;
         margin: 5px 0;
     }
 
@@ -732,48 +750,56 @@ p{
     }
     .form-content {
         display: flex;
-        flex-direction: row;  /* Keep items in a row */
-        justify-content: space-between; /* Space between form and FAQ */
-        align-items: flex-start; /* Align both to top */
-        width: 90%;
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        justify-content: center; /* Center items */
+        align-items: center;
+        width: 100%;
         max-width: 1200px;
         margin: auto;
-        gap: 10px;
+        gap: 20px; /* More spacing for clarity */
     }
+    
     
     
     .form-section, .faq-section {
-        width: 50%;
-        padding: 10px;
-        border-radius: 10px;
-        box-sizing: border-box;
+        flex: 1; /* Allow both sections to grow */
+        min-width: 300px; /* Prevent shrinking too much */
+        max-width: 600px; /* Prevent excessive stretching */
+        width: 100%; /* Full width by default */
+        padding: 20px;
     }
+    
     .form-section {
         width: 50%;
-        height: 475px;
+        height: fit-content;
         background: #6ed1cc;
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .form-section h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
+        padding: 20px;
     }
     .faq-section h2{
         color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-top: -10px;
-    flex-wrap: wrap;
-    perspective: 1200px; /* Increased perspective to give more space for the flip */
-    margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        padding: 20px;
+        flex-wrap: wrap;
+        font-size: 20px;
+        perspective: 1200px; /* Increased perspective to give more space for the flip */
+        
 
     }
     .faq-section {
         width: 50%;
-        background: #e3f2fd;
+        background: #8fcad3;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -783,11 +809,6 @@ p{
         background: #8fcad3;
     }
     
-    .faq-section {
-        background: #8fcad3;
-        padding: 20px;
-        border-radius: 10px;
-    }
     
     /* Form Fields */
     .row {
@@ -802,10 +823,15 @@ p{
     }
     
     input, select {
+        display: flex;
         width: 100%;
+        max-width: 250px;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
         padding-bottom: 10px;
         border-radius: 8px;
+        font-size: 16px;
         border: 1px solid #ccc;
     }
     
@@ -847,6 +873,42 @@ p{
         background-color: #0056b3; /* Darker shade on hover */
     }
     
+    
+    /* FAQ Section */
+    .faq-item {
+        background: white;
+        margin-bottom: 4px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .faq-question {
+        font-size: 16px;
+        background: #1ec1f8;
+        color: white;
+        padding: 5px;
+        /* font-weight: bold; */
+        cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+    }
+    
+    .faq-answer {
+        font-size: 16px;
+        display: none;
+        padding: 10px;
+        background: white;
+        color: #333;
+    }
+    
+    .faq-item.active .faq-question {
+        background: black;
+    }
+    
+    .faq-item.active .faq-answer {
+        display: block;
+    }
+/*      */
     /* Success Popup */
     #success-popup {
         display: none;
@@ -878,112 +940,6 @@ p{
     }
     
     
-    /* FAQ Section */
-    .faq-item {
-        background: white;
-        margin-bottom: 4px;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    
-    .faq-question {
-        background: #1ec1f8;
-        color: white;
-        padding: 10px;
-        font-weight: bold;
-        cursor: pointer;
-        text-align: center;
-        border-radius: 4px;
-    }
-    
-    .faq-answer {
-        display: none;
-        padding: 10px;
-        background: white;
-        color: #333;
-    }
-    
-    .faq-item.active .faq-question {
-        background: black;
-    }
-    
-    .faq-item.active .faq-answer {
-        display: block;
-    }
-
-    @media screen and (max-width: 768px) {
-        .form-content {
-            flex-direction: column; /* Stack form and FAQ vertically */
-            align-items: center;
-        }
-    
-        .form-section, .faq-section {
-            width: 100%;
-        }
-    
-        .row {
-            flex-direction: column;
-        }
-    
-        .row div {
-            width: 100%;
-        }
-    
-        input, select {
-            font-size: 14px;
-            padding: 8px;
-        }
-    
-        .faq-section h2 {
-            font-size: 18px;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        .data-form {
-            padding: 20px;
-        }
-    
-        .form-section {
-            height: auto;
-        }
-    
-        .faq-section {
-            padding: 15px;
-        }
-    
-        button[type="submit"] {
-            font-size: 14px;
-            padding: 10px;
-        }
-    
-        .faq-question {
-            font-size: 14px;
-            padding: 8px;
-        }
-    }
-    
-    @media screen and (max-width: 340px) {
-        .data-form {
-            padding: 10px;
-        }
-    
-        .form-section, .faq-section {
-            padding: 10px;
-        }
-    
-        input, select {
-            font-size: 12px;
-            padding: 6px;
-        }
-    
-        button[type="submit"] {
-            font-size: 12px;
-            padding: 8px;
-        }
-    }
-      
-    
 
     
 
@@ -997,7 +953,7 @@ p{
 
 .container-loc {
     gap: 20px;
-    width: fit-content;
+    
     margin: auto;
     padding: 20px;
 }
@@ -1039,14 +995,14 @@ p{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-section {
+/* .contact-section {
     width: fit-content;
     background-color: #a6d3cd;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .contact-section h2 {
     color: #333;
@@ -1229,7 +1185,7 @@ p{
 }
 
 .text{
-    color: #222020;
+    color: #ffffff;
 }
 
     
@@ -1283,12 +1239,7 @@ footer {
     border: none;
     cursor: pointer;
 }
-.contact-info{
-    color: #fff;
-    font-size: larger;
 
-
-}
 /* Social Icons Styling */
 .social-icons a {
 display: inline-block;
