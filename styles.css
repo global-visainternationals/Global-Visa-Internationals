@@ -550,6 +550,7 @@ p{
 .vision-card h2,
 .values-card h2 {
     font-size: 20px;
+    padding-top: 20px;
     color: #333;
     margin-bottom: 10px; /* Reduced bottom space */
 }
@@ -573,6 +574,7 @@ p{
     color: #555;
     line-height: 1.4;
     font-weight: bold;
+    align-items: center;
     text-align: justify;
     margin-top: 5px; /* Less space between image and text */
     padding: 5px 10px; /* Reduce padding */
