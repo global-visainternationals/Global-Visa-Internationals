@@ -10,7 +10,7 @@ body {
 }
 
 h2 {
-    color: #4b3417;
+    color: #006b5d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +206,7 @@ p{
 
 .text-content h2 {
     font-size: 24px;
-    color: #4b3417;
+    color: #006b5d;
 }
 
 .text-content p {
@@ -253,7 +253,7 @@ p{
 
 .why-choose-container h2 {
     
-    color: #4b3417;
+    color: #006b5d;
     margin-bottom: 15px;
 }
 
@@ -898,6 +898,7 @@ p{
         color: #fff;
         border: none;
         border-radius: 8px;
+        box-shadow: 0 4px 8px #000;
         cursor: pointer;
         font-size: 10px;
         text-align: center;
@@ -918,7 +919,6 @@ p{
         border-radius: 8px;
         cursor: pointer;
         text-align: center;
-        box-shadow: 0 3px 6px #000;
         transition: background 0.3s ease-in-out;
         margin: 10px auto;
     }
@@ -1219,7 +1219,7 @@ p{
     }
 }
 .bold{
-    color: #000;
+    color: #fff;
     font-size: 2ch;
 }
 .cont{
@@ -1252,7 +1252,8 @@ footer {
 .footer-img {
     width: 40px;  /* Adjust size */
     height: 40px;
-    border-radius: 50%; /* Make icons round */
+    /* background-color: #ccc; */
+   border-radius: 15px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
