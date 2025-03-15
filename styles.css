@@ -742,8 +742,8 @@ p{
         color: #000000;
         font-size: 18px;
         font-weight: bold;
-        background: rgba(43, 44, 44, 0.76); /* Semi-transparent background */
-        padding: 5px 10px;
+        background: rgba(16, 146, 146, 0.76); /* Semi-transparent background */
+        padding: 5px 5px;
         border-radius: 5px;
         text-align: center;
         width: auto;
@@ -1218,6 +1218,7 @@ p{
         right: 15px;
     }
 }
+
 .bold{
     color: #fff;
     font-size: 2ch;
