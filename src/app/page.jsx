@@ -71,8 +71,14 @@ export default function Home() {
     duplicateCarouselItems(reviewCarouselRef);
     duplicateCarouselItems(videoCarouselRef);
   },[]);
-
-
+// Clint Review
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apps.elfsight.com/p/platform.js";
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+  
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -327,11 +333,11 @@ const visaTypes = [
           {/* Text Section */}
           <div className={styles.textContent}>
             <h2 className={styles.subtitle}>Our Story</h2>
-            <p>In <strong>Global Visa Internationals,</strong> we convert aspirations into reality. <strong>With  over 11+ years of experience, 55,000+ successful visas Approvels, and 75,000+ advises for clients</strong> we are the trusted people in visa and immigration consultation services.</p>
-            
-            <p>We are specialize in <strong>work, study, business, travel, Dependent ,PR and Refusal visas,</strong>   and ensuring a smooth and Stress-free process for clients. Whether you seek career growth, quality education, or a fresh start in abroad, we provide expert guidance to  our clients.</p>
-            <p>Our commitment to Clients is <strong>transparency, efficiency, and personalized service</strong> this what sets us apart. <strong>Trust Global Visa Internationals</strong> to simplify your visa and immigration journey. Your world of opportunities starts here!
+            <p>We, at <strong>Global Visa Internationals</strong>, are the leading visa consultants in Bangalore, turning your dreams into reality. With over 11+ years of experience in visa consultation services, we have successfully processed more than 55,000+ visas for our clients and provided 75,000+ pieces of advice. Our clients trust us for our expertise in visa and immigration consultation.</p>
+              
+            <p>At our firm, we take pride in providing comprehensive services for a wide range of visa options, including work, study, business, travel, dependent, permanent residency, and assistance with refusals. Our mission is to make the entire process as seamless and stress-free as possible for our clients. Whether you are pursuing career advancement, aiming for quality education, or looking for a new beginning in a foreign land, we are here to offer expert guidance tailored to your unique circumstances and aspirations. Let us help you turn your dreams of international opportunities into reality.</p>
 
+            <p>At Global Visa Internationals, we prioritize transparency, efficiency, and personalized service in our approach to client relations. This commitment distinguishes us in the visa and immigration sector. Rely on us to navigate the complexities of your visa and immigration process, making it simpler and more accessible. Begin your journey to a world of opportunities with us today!
             </p>
           </div>
         </section>
@@ -340,19 +346,37 @@ const visaTypes = [
 
       
 <section className={styles.whyChooseContainer} id="why-us">
-      <h2 className={styles.subtitle}>Why Choose Global Visa Internationals?</h2>
-
-      <p>
-        With <strong>11+ years</strong> of expertise in visa and immigration consultancy Services, w we have successfully assisted more than <strong>75,000+</strong> clients and processed thousands of visa applications across various categories. 
-      </p>
-      <p>We have a team of experienced and certified immigration consultants specializes in <strong>Skilled Immigration, Business Visas, Work Visas, Visit Visas, Student Visas, and Family Visas.</strong> In addition to helping with visa applications, we offer post-landing services to ensure a smooth transition to your destination country.
-
-      </p>                                                                                        
-      <p>With a deep understanding of global immigration laws and policies, we guide you through the entire process, ensuring fast and successful approvals. Our extensive expertise and global reach help clients migrate to top destinations such as <strong> Canada, Australia, the UK, the USA, Europe, and more.</strong>
-        
-      </p>
-      <p>Over the years, we have successfully supported thousands of individuals and families in achieving their migration goals. Whether you are seeking immigration, study abroad opportunities, or citizenship by investment, Global Visa Internationals is here to assist you at every step.</p>
-
+      <h2 className={styles.subtitle}>Why Global Visa Internationals?</h2>
+<ul>
+  <li>11+ Years of Proven Expertise in visa and immigration consultancy services since 2013.</li>
+  <li>75,000+ Clients Assisted across diverse visa categories with high success rates.</li>
+  <li>Thousands of Visa Applications Processed, including:
+    <ul>
+      <li>Permanent Residency</li>
+      <li>Work Visas</li>
+      <li>Student Visas</li>
+      <li>Visitor/Tourist Visas</li>
+      <li>Business Visas</li>
+      <li>Skilled Immigration</li>
+      <li>Family/Dependent Visas</li>
+      and more
+    </ul>
+  </li>
+  <li>In-depth Knowledge of Global Immigration Laws ensures accurate guidance and faster approvals.</li>
+  <li>Top Destinations Covered: Canada, Australia, UK, USA, Europe, and more.</li>
+  <li>Experienced & Certified Consultants guiding you every step of the way.</li>
+  <li> Personalized Immigration Solutions for individuals, students, professionals, and families.</li>
+  <li>Transparent and Trustworthy Process with complete support from start to finish.</li>
+</ul>
+      
+      
+     
+      
+      
+                                                                                              
+      
+     
+      
     </section>
     <section >
             <div className={styles.whyGrid}>
@@ -393,66 +417,8 @@ const visaTypes = [
     </section>
 
     <h2 className={styles.subtitle}>Client Reviews</h2>
-            <div className={styles.clientReviewsContainer}>
-                <div className={styles.reviewCarousel}>
-                    <div className={styles.carouselTrack}>
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/boy.png" alt="Customer Image" loading="lazy"/></div>
-                            <p> I got my UK visitor visa within 3 weeks time. They assisted me through all the documentations. They did the legal formalities like affidavits etc. I had a stressfree time as opposed to the time I had applied by myself.</p>
-                            <strong>Mr. Vinoj KV</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/bussiness-man.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>The team here helped me attain my UK tourist visa and meticulously helped me arrange all documents in order for the process. They are super knowledgeable and helpful. Would strongly recommend everyone to avail their services.</p>
-                            <strong>Mr.Soumya Sen</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/user.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>I am elated to share my heartfelt appreciation for the extraordinary services during the process of obtaining my Australia visa. Their exceptional guidance and unwavering support have played an integral role in fulfilling my dreams.</p>
-                            <strong>Mr. Aakarsh GV</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-            
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/man.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>Global Visa Internationals is the right place to find solutions to all your immigration and visa process. Their team works so well I got my things done with in a week. Their team put a lot of efforts and dedication to my profile. I received an amazing service from them must recommend immigration and visa consultant in Bangalore.</p>
-                            <strong>Ms.Pavan Maruthi</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-
-                        <div className={styles.clientReview}>
-                            <div ><img src="images/user.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>Got my Australian sports visa within 10 days as promised. Professional and efficient visa agency.
-                            </p>
-                            <strong>Mr. Pranit Ramchandani</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/man.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>We got our Japanese visitor visa through Global Visa Internationals for four us in the family. Our experience has been good and the team is fantastic. Paperwork, document submission and getting the visa all done in 2 weeks.
-
-                            </p>
-                            <strong>Ms.Lakshminarayana U</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-
-                        <div className={styles.clientReview}>
-                            <div ><img src="/images/boy.png" alt="Customer Image" loading="lazy"/></div>
-                            <p>I approached Global Visa Internationals for my wife's tourist visa to Austria. Excellent work was done by Anusha and her team at GVI. From writing the cover letter to collecting and verifying all the documents as per the checklist, this team did a great job. My wife was granted an Austrian tourist visa within a week of submitting the documents. We are extremely happy and grateful for this. I highly recommend Global Visa Internationals to anyone who is looking for help with their visa process.</p>
-                            <strong>Mr. Shridhar patil</strong>
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-   
-
-  
-
-        
+    <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+ 
       <section id="gallery">
       <h2 className={styles.subtitle}>Gallery</h2>
       <div className={styles.galleryCarouselWrapper}>

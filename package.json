@@ -1,5 +1,5 @@
 {
-  "name": "gvi3",
+  "name": "globalvisainternationals",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -38,13 +38,13 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/global-visainternationals/globalvisainternationals.git"
+    "url": "git+https://github.com/global-visainternationals/Global-Visa-Internationals.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/global-visainternationals/globalvisainternationals/issues"
+    "url": "https://github.com/global-visainternationals/Global-Visa-Internationals/issues"
   },
-  "homepage": "https://github.com/global-visainternationals/globalvisainternationals#readme"
+  "homepage": "https://github.com/global-visainternationals/Global-Visa-Internationals#readme"
 }
