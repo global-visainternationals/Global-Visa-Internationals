@@ -14,8 +14,8 @@ image: "/images/immigration-warning.jpg"
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Global Visa Internationals",
-  "url": "https://www.globalvisa-internationals.com",
-  "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+  "url": "https://www.globalvisainternationals.com",
+  "logo": "https://www.globalvisainternationals.com/gvilogo.png",
   "description": "Unlock Your UK Adventure! Global Visa Internationals provides expert guidance for your UK tourist visa application. Simplify the process and explore Britain's wonders. Contact us today!",
   "founder": {
     "@type": "Organization",
@@ -50,7 +50,7 @@ image: "/images/immigration-warning.jpg"
 
 The U.S. Department of Homeland Security (DHS) under the Trump administration has issued a stark warning to undocumented immigrants, emphasizing strict enforcement of immigration laws. Foreign nationals overstaying their visas or failing to register with the federal government face significant consequences, including fines, imprisonment, and a potential lifetime ban from legal immigration to the United States.
 
-> 📢 **Need urgent legal guidance from a US immigration lawyer in Bengaluru? [Contact our experts today](https://www.globalvisa-internationals.com/contact-us)**. Get immediate assistance with **visa overstay help** and **deportation defense**.
+> 📢 **Need urgent legal guidance from a US immigration lawyer in Bengaluru? [Contact our experts today](https://www.globalvisainternationals.com/contact-us)**. Get immediate assistance with **visa overstay help** and **deportation defense**.
 
 ## Key Takeaways for Bengaluru Residents:
 
@@ -101,12 +101,12 @@ Learn about the DHS's voluntary departure option and its benefits, including how
 
 Ensure your US immigration compliance with professional guidance from a trusted **immigration law firm** in Bengaluru.
 
-> ✅ **Get a free consultation in Bengaluru! [Book your appointment](https://www.globalvisa-internationals.com/consultation)** with Global Visa Internationals for **legal immigration assistance**.
+> ✅ **Get a free consultation in Bengaluru! [Book your appointment](https://www.globalvisainternationals.com/consultation)** with Global Visa Internationals for **legal immigration assistance**.
 
 ---
 
-🌍 *We provide services in English, Hindi, Tamil, and Kannada, catering to the diverse needs of Bengaluru residents. यदि आपको इस लेख का अनुवाद हिंदी या तमिल/कन्नड़ में चाहिए, तो कृपया [हमसे संपर्क करें](https://www.globalvisa-internationals.com/contact-us)।*
+🌍 *We provide services in English, Hindi, Tamil, and Kannada, catering to the diverse needs of Bengaluru residents. यदि आपको इस लेख का अनुवाद हिंदी या तमिल/कन्नड़ में चाहिए, तो कृपया [हमसे संपर्क करें](https://www.globalvisainternationals.com/contact-us)।*
 
 ---
 
-✈️ **Planning legal migration from Bengaluru to Canada, the UK, or Europe?** Explore our [visa services](https://www.globalvisa-internationals.com/services) and secure your future with trusted local experts.
+✈️ **Planning legal migration from Bengaluru to Canada, the UK, or Europe?** Explore our [visa services](https://www.globalvisainternationals.com/services) and secure your future with trusted local experts.

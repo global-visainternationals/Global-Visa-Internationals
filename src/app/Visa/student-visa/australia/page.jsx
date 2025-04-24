@@ -69,9 +69,9 @@ export default function Australia(){
     "@type": "EducationalOrganization",
     "name": "Global Visa Internationals - Australian Student Visa Services",
     "description": "Expert guidance on Australian student visas (Subclass 500), top universities, scholarships, and post-study career support.",
-    "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia",
-    "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
-    "image": "https://www.globalvisa-internationals.com/images/study-in-australia-cover.png",
+    "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia",
+    "logo": "https://www.globalvisainternationals.com/gvilogo.png",
+    "image": "https://www.globalvisainternationals.com/images/study-in-australia-cover.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "GF-9, Business Point, Brigade Road",
@@ -95,7 +95,7 @@ export default function Australia(){
       "@type": "Offer",
       "priceCurrency": "INR",
       "price": "Varies",
-      "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia",
+      "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia",
       "description": "Personalized visa application support, university selection, and scholarship guidance for studying in Australia."
     },
     "hasOfferCatalog": {
@@ -108,7 +108,7 @@ export default function Australia(){
             "@type": "Service",
             "name": "Visa Application Assistance (Subclass 500)",
             "description": "End-to-end support with documentation, application, and interviews.",
-            "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia"
+            "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia"
           }
         },
         {
@@ -117,7 +117,7 @@ export default function Australia(){
             "@type": "Service",
             "name": "University & Course Selection",
             "description": "Help choosing suitable programs based on your goals and eligibility.",
-            "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia"
+            "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia"
           }
         },
         {
@@ -126,7 +126,7 @@ export default function Australia(){
             "@type": "Service",
             "name": "Scholarship Support",
             "description": "Get matched with scholarships and apply with confidence.",
-            "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia"
+            "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia"
           }
         },
         {
@@ -135,7 +135,7 @@ export default function Australia(){
             "@type": "Service",
             "name": "GTE Statement Assistance",
             "description": "Craft a compelling Genuine Temporary Entrant statement to strengthen your case.",
-            "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia"
+            "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia"
           }
         },
         {
@@ -144,7 +144,7 @@ export default function Australia(){
             "@type": "Service",
             "name": "Post-Study Work Visa & PR Pathway Guidance",
             "description": "Plan your future with post-study visa options and PR strategies.",
-            "url": "https://www.globalvisa-internationals.com/Visa/student-visa/australia"
+            "url": "https://www.globalvisainternationals.com/Visa/student-visa/australia"
           }
         }
       ]
@@ -152,7 +152,7 @@ export default function Australia(){
     "potentialAction": {
       "@type": "ContactAction",
       "name": "Contact Us for Visa Help",
-      "target": "https://www.globalvisa-internationals.com/contact"
+      "target": "https://www.globalvisainternationals.com/contact"
     },
     "mainEntity": {
       "@type": "FAQPage",
@@ -216,21 +216,21 @@ export default function Australia(){
   <meta name="description" content="Explore top universities, scholarships, student visa (Subclass 500), and post-study PR options in Australia. Trusted guidance by Global Visa Internationals." />
   <meta name="keywords" content="study in Australia, Australian student visa, subclass 500, study permit Australia, Australia universities, scholarships, international students, PR after study, GTE statement, OSHC, work while studying, courses in Australia" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.globalvisa-internationals.com/Visa/student-visa/australia" />
+  <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
 
   {/* Open Graph / Facebook */}
   <meta property="og:title" content="Study in Australia | Visa, Universities, Scholarships & PR Pathways" />
   <meta property="og:description" content="Expert visa assistance for studying in Australia. Get help with Subclass 500 visa, top courses, scholarships, and career pathways." />
-  <meta property="og:url" content="https://www.globalvisa-internationals.com/Visa/student-visa/australia" />
+  <meta property="og:url" content="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.globalvisa-internationals.com/images/study-in-australia-cover.png" /> 
+  <meta property="og:image" content="https://www.globalvisainternationals.com/images/study-in-australia-cover.png" /> 
   {/* Replace with actual image */}
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Study in Australia | Visa, Scholarships, Universities & PR" />
   <meta name="twitter:description" content="Start your Australian education journey with expert visa and scholarship guidance from Global Visa Internationals." />
-  <meta name="twitter:image" content="https://www.globalvisa-internationals.com/images/study-in-australia-cover.png" />
+  <meta name="twitter:image" content="https://www.globalvisainternationals.com/images/study-in-australia-cover.png" />
 
   {/* Geo Tags */}
   <meta name="geo.region" content="AU" />

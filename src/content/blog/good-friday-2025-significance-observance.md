@@ -15,8 +15,8 @@ category: "Events"
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Global Visa Internationals",
-  "url": "https://www.globalvisa-internationals.com",
-  "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+  "url": "https://www.globalvisainternationals.com",
+  "logo": "https://www.globalvisainternationals.com/gvilogo.png",
   "description": "Unlock your entrepreneurial dreams in Canada with the Start-up Visa program. Learn about eligibility, the application process, post-application steps, and essential FAQs. Your journey to Canadian success starts here.",
   "founder": {
     "@type": "Person",
@@ -152,7 +152,7 @@ Good Friday is an important day for Christians, as it commemorates the crucifixi
 
 **Global Visa Internationals**
 - [ 📞 +91 70222 13466](https://wa.me/+917022213466)
-- [📧 Email : operation@globalvisa-internationals.com](operations@globalvisa-internationals.com)
+- [📧 Email : operation@globalvisainternationals.com](operations@globalvisainternationals.com)
 - [LinkedIn  ](https://www.linkedin.com/company/global-visa-internationals/)
 - [Twitter ](https://twitter.com/GlobalVisaIntern)
 - [Facebook ](https://www.facebook.com/globalvisainternationals/)

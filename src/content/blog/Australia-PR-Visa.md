@@ -14,8 +14,8 @@ category: "PR-Visa"
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Global Visa Internationals",
-  "url": "https://www.globalvisa-internationals.com",
-  "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+  "url": "https://www.globalvisainternationals.com",
+  "logo": "https://www.globalvisainternationals.com/gvilogo.png",
   "description": "Explore the comprehensive guide to Australia's Permanent Residency (PR) visa in 2025. Learn about eligibility criteria, application process, benefits, and FAQs. Start your journey to Australian permanent residency today.",
   "founder": {
     "@type": "Person",

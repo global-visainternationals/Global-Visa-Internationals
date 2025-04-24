@@ -62,21 +62,21 @@ export default function CareerPage() {
   <meta name="description" content="Explore exciting career opportunities at Global Visa Internationals in Bengaluru. Join our expert team helping clients achieve their immigration dreams across Canada, UK, Australia, and more." />
   <meta name="keywords" content="Immigration Careers, Visa Consultant Jobs, Global Visa Internationals Careers, Jobs in Bengaluru, Canada Visa Jobs, Work Visa Consulting Careers" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.globalvisa-internationals.com/career" />
+  <link rel="canonical" href="https://www.globalvisainternationals.com/career" />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Careers at Global Visa Internationals | Join Our Immigration Experts" />
   <meta property="og:description" content="Discover job openings and career growth at Global Visa Internationals. Be part of a fast-growing visa consulting firm in Bengaluru." />
-  <meta property="og:url" content="https://www.globalvisa-internationals.com/career" />
-  <meta property="og:image" content="https://www.globalvisa-internationals.com/gvilogo.png" />
+  <meta property="og:url" content="https://www.globalvisainternationals.com/career" />
+  <meta property="og:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
   <meta property="og:site_name" content="Global Visa Internationals" />
 
   {/* Twitter Cards */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Careers at Global Visa Internationals | Join Our Immigration Experts" />
   <meta name="twitter:description" content="Discover job opportunities at Global Visa Internationals in Bengaluru. Help people achieve their immigration goals." />
-  <meta name="twitter:image" content="https://www.globalvisa-internationals.com/gvilogo.png" />
+  <meta name="twitter:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
   <meta name="twitter:site" content="@GlobalVisaIntern" />
 
   {/* Schema */}
@@ -85,8 +85,8 @@ export default function CareerPage() {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Global Visa Internationals",
-      "url": "https://www.globalvisa-internationals.com",
-      "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+      "url": "https://www.globalvisainternationals.com",
+      "logo": "https://www.globalvisainternationals.com/gvilogo.png",
       "description": "Unlock your entrepreneurial dreams in Canada with the Start-up Visa program...",
       "founder": { "@type": "Person", "name": "Naveen Kumar J" },
       "foundingDate": "2016",

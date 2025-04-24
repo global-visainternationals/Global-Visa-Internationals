@@ -21,12 +21,12 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Global Visa Internationals" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.globalvisa-internationals.com/globalvisainternationals.webp" />
-        <meta property="og:url" content="https://www.globalvisa-internationals.com/" />
+        <meta property="og:image" content="https://www.globalvisainternationals.com/globalvisainternationals.webp" />
+        <meta property="og:url" content="https://www.globalvisainternationals.com/" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://www.globalvisa-internationals.com/globalvisainternationals.webp" />
+        <meta name="twitter:image" content="https://www.globalvisainternationals.com/globalvisainternationals.webp" />
         <meta name="twitter:site" content="@YourTwitterHandle" />
         <meta name="twitter:creator" content="@YourTwitterHandle" />
 
@@ -63,8 +63,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Global Visa Internationals",
-              "url": "https://www.globalvisa-internationals.com",
-              "logo": "https://www.globalvisa-internationals.com/globalvisainternationals.webp",
+              "url": "https://www.globalvisainternationals.com",
+              "logo": "https://www.globalvisainternationals.com/globalvisainternationals.webp",
               "description": "Visa and immigration consultants in Bangalore helping with study, work, and PR visas for Canada, USA, UK, Australia and more.",
               "address": {
                 "@type": "PostalAddress",

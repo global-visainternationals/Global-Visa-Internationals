@@ -214,13 +214,13 @@ const visaTypes = [
   <meta name="bingbot" content="index, follow" />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://www.globalvisa-internationals.com/" />
+  <link rel="canonical" href="https://www.globalvisainternationals.com/" />
 
   {/* Open Graph / Facebook */}
   <meta property="og:title" content="Global Visa Internationals | Trusted Immigration Consultants in Bangalore" />
   <meta property="og:description" content="Expert immigration guidance for Canada, USA, Australia, UK, and Europe. High success rate and transparent process. Trusted visa services for all your needs!" />
-  <meta property="og:image" content="https://www.globalvisa-internationals.com/gvilogo.png" />
-  <meta property="og:url" content="https://www.globalvisa-internationals.com/" />
+  <meta property="og:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
+  <meta property="og:url" content="https://www.globalvisainternationals.com/" />
   <meta property="og:type" content="website" />
 
 
@@ -228,7 +228,7 @@ const visaTypes = [
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Global Visa Internationals | Visa & Immigration Experts" />
   <meta name="twitter:description" content="Get fast and genuine immigration solutions. 75,000+ clients served. Expert PR, Work, Study & Visitor Visa Services in Bangalore." />
-  <meta name="twitter:image" content="https://www.globalvisa-internationals.com/gvilogo.png" />
+  <meta name="twitter:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
 
   {/* Google Fonts & Icons */}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -242,8 +242,8 @@ const visaTypes = [
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Global Visa Internationals",
-      "image": "https://www.globalvisa-internationals.com/gvilogo.png",
-      "url": "https://www.globalvisa-internationals.com/",
+      "image": "https://www.globalvisainternationals.com/gvilogo.png",
+      "url": "https://www.globalvisainternationals.com/",
       "telephone": "+917022213466",
       "priceRange": "$$$",
       "address": {
@@ -282,7 +282,7 @@ const visaTypes = [
         "@type": "ReserveAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://www.globalvisa-internationals.com/contact"
+          "urlTemplate": "https://www.globalvisainternationals.com/contact"
         },
         "resultDescription": "Book a free consultation"
       }

@@ -17,12 +17,12 @@ export default async function BlogPage() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.globalvisa-internationals.com/blog" />
-        <meta property="og:image" content="https://www.globalvisa-internationals.com/images" />
+        <meta property="og:url" content="https://www.globalvisainternationals.com/blog" />
+        <meta property="og:image" content="https://www.globalvisainternationals.com/images" />
         <meta property="og:image:alt" content="Blog on Global Visa Internationals" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://www.globalvisa-internationals.com/images" />
+        <meta name="twitter:image" content="https://www.globalvisainternationals.com/images" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

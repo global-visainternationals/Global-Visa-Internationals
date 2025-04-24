@@ -7,8 +7,8 @@ export async function generateMetadata({ params }) {
   const post = await getPostBySlug(params.slug);
   if (!post) return {};
 
-  const fullImageUrl = `https://www.globalvisa-internationals.com${post.image}`;
-  const fullPostUrl = `https://www.globalvisa-internationals.com/blog/${post.slug}`;
+  const fullImageUrl = `https://www.globalvisainternationals.com${post.image}`;
+  const fullPostUrl = `https://www.globalvisainternationals.com/blog/${post.slug}`;
 
   return {
     title: post.title,
