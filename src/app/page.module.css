@@ -127,7 +127,7 @@
 
 /* Why Choose Section */
 .whyChooseContainer {
-  text-align: center;
+  text-align:left;
   padding: 10px;
   max-width: 1100px;
   margin: auto;
@@ -140,11 +140,7 @@
   text-align: center;
 }
 
-.whyChooseContainer p {
-  line-height: 1.6;
-  padding: 0 30px;
-  text-align: justify;
-}
+
 
 /* ✅ Mobile Optimization */
 @media (max-width: 768px) {
@@ -176,10 +172,6 @@
     text-align: left;
   }
 
-  .whyChooseContainer p {
-    padding: 0 15px;
-    font-size: 15px;
-  }
 
   .whyChooseContainer h2 {
     font-size: 20px;
