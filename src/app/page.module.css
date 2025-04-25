@@ -102,8 +102,8 @@
 /* Wrapper for image with fixed aspect ratio */
 .imageWrapper {
   position: relative;
-  width: 350px;
-  height: 450px;
+  width: 380px;
+  height: 500px;
   overflow: hidden;
   border: 10px solid #ffffff;
   border-radius: 10px;
@@ -429,8 +429,8 @@
 .visionCard,
 .valuesCard {
   width: 350px;
-  height: 400px;
-  padding: 20px;
+  height: 520px;
+  padding: 10px;
   background: #ffffff;
   border-radius: 10px;
   text-align: center;
@@ -443,8 +443,8 @@
 }
 
 .custImg {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin: 10px 0;
 }
 
@@ -487,12 +487,12 @@
   .valuesCard {
     width: 90%;
     height: auto;
-    padding: 15px;
+    padding: 10x;
   }
 
   .custImg {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
   .missionCard h2,
