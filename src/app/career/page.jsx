@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import styles from './JobForm.module.css';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
-import Head from 'next/head';
-import Script from 'next/script';
+
 
 
 export default function CareerPage() {
@@ -52,76 +51,99 @@ export default function CareerPage() {
       })
       .finally(() => setIsSubmitting(false));
   };
-
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Visa Consultant – Immigration Services",
+    "description": "Join Global Visa Internationals in Bengaluru as a Visa Consultant. Help clients with immigration for Canada, Australia, UK, and more. Ideal for those passionate about guiding people globally.",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "Global Visa Internationals",
+      "value": "GVIC-VC-2025"
+    },
+    "datePosted": "2025-04-25",
+    "validThrough": "2025-06-30T23:59",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Global Visa Internationals",
+      "sameAs": "https://www.globalvisainternationals.com",
+      "logo": "https://www.globalvisainternationals.com/gvilogo.png"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "GF-9, Business Point, Brigade Road",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560025",
+        "addressCountry": "IN"
+      }
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "INR",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": 300000,
+        "unitText": "YEAR"
+      }
+    },
+    "industry": "Immigration and Visa Services",
+    "qualifications": "Graduate in any stream, experience in visa/immigration consulting preferred.",
+    "responsibilities": "Client consultation, documentation review, visa application handling, post-approval support.",
+    "skills": "Communication, detail orientation, visa process knowledge, sales experience a plus",
+    "workHours": "Mon to Sat, 10:00 AM - 6:00 PM",
+    "incentiveCompensation": "Yes",
+    "applicantLocationRequirements": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "url": "https://www.globalvisainternationals.com/career"
+  };
 
 
   return (
     <>
-    <Head>
-  <title>Careers at Global Visa Internationals | Join Our Immigration Experts</title>
-  <meta name="description" content="Explore exciting career opportunities at Global Visa Internationals in Bengaluru. Join our expert team helping clients achieve their immigration dreams across Canada, UK, Australia, and more." />
-  <meta name="keywords" content="Immigration Careers, Visa Consultant Jobs, Global Visa Internationals Careers, Jobs in Bengaluru, Canada Visa Jobs, Work Visa Consulting Careers" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.globalvisainternationals.com/career" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Careers at Global Visa Internationals | Join Our Immigration Experts" />
-  <meta property="og:description" content="Discover job openings and career growth at Global Visa Internationals. Be part of a fast-growing visa consulting firm in Bengaluru." />
-  <meta property="og:url" content="https://www.globalvisainternationals.com/career" />
-  <meta property="og:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
-  <meta property="og:site_name" content="Global Visa Internationals" />
+<head>
+      <title>Careers at Global Visa Internationals | Join Our Immigration Consulting Team</title>
+      <meta
+        name="description"
+        content="Explore career opportunities at Global Visa Internationals. Join our team as a Visa Consultant in Bengaluru and shape global journeys through expert immigration guidance."
+      />
+      <meta
+        name="keywords"
+        content="visa consultant job Bangalore, careers in immigration consultancy, visa jobs India, join global visa internationals, visa consultant openings, immigration services career, jobs at visa company"
+      />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.globalvisainternationals.com/career" />
 
-  {/* Twitter Cards */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Careers at Global Visa Internationals | Join Our Immigration Experts" />
-  <meta name="twitter:description" content="Discover job opportunities at Global Visa Internationals in Bengaluru. Help people achieve their immigration goals." />
-  <meta name="twitter:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
-  <meta name="twitter:site" content="@GlobalVisaIntern" />
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Careers at Global Visa Internationals | Visa Consultant Openings" />
+      <meta property="og:description" content="Apply for Visa Consultant roles at Global Visa Internationals. Help clients with Australia, UK, Canada immigration processes. Bengaluru-based openings." />
+      <meta property="og:url" content="https://www.globalvisainternationals.com/career" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://www.globalvisainternationals.com/images/career-visa-consultant.png" />
 
-  {/* Schema */}
-  <script type="application/ld+json" id="career-org-schema" dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Global Visa Internationals",
-      "url": "https://www.globalvisainternationals.com",
-      "logo": "https://www.globalvisainternationals.com/gvilogo.png",
-      "description": "Unlock your entrepreneurial dreams in Canada with the Start-up Visa program...",
-      "founder": { "@type": "Person", "name": "Naveen Kumar J" },
-      "foundingDate": "2016",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "MG Road",
-        "addressLocality": "Bengaluru",
-        "addressRegion": "Karnataka",
-        "postalCode": "560025",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-7022213466",
-        "contactType": "Customer Support",
-        "areaServed": "IN",
-        "availableLanguage": ["English", "Hindi", "Kannada", "Tamil"]
-      },
-      "areaServed": ["IN", "CA", "UK", "EU"],
-      "sameAs": [
-        "https://www.facebook.com/globalvisainternationals/",
-        "https://www.instagram.com/globalvisa_internationals/",
-        "https://www.linkedin.com/company/global-visa-internationals/",
-        "https://twitter.com/GlobalVisaIntern",
-        "https://www.youtube.com/@globalVisaInternationals",
-        "https://www.google.com/maps/place/Global+Visa+Internationals/@12.967478,77.6035421,17z"
-      ]
-    })
-  }} />
-</Head>
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Visa Consultant Careers | Global Visa Internationals" />
+      <meta name="twitter:description" content="Looking for a career in immigration services? Apply now to join Global Visa Internationals in Bangalore as a Visa Consultant." />
+      <meta name="twitter:image" content="https://www.globalvisainternationals.com/images/career-visa-consultant.png" />
 
+      {/* Geo Tags */}
+      <meta name="geo.region" content="IN-KA" />
+      <meta name="geo.placename" content="Bengaluru" />
+      <meta name="ICBM" content="12.9716,77.5946" />
 
-
-
-
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+    </head>
 
 
 
