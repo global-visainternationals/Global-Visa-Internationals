@@ -58,8 +58,8 @@ export default function SchengenVisaFeeHack() {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Discover the Schengen Visa Fee Hack for Indian Travelers" />
         <meta property="og:description" content="Learn how Indian travelers can claim a 100% refund on their Schengen visa application fee if their visa gets rejected — using a simple travel insurance hack via PolicyBazaar." />
-        <meta property="og:url" content="https://www.globalvisa-internationals.com/blog/discover-schengen-visa-fee-hack/" />
-        <meta property="og:image" content="https://www.globalvisa-internationals.com/images/schengen-visa-fee-refund-hack.png" />
+        <meta property="og:url" content="https://www.globalvisainternationals.com/blog/discover-schengen-visa-fee-hack/" />
+        <meta property="og:image" content="https://www.globalvisainternationals.com/images/schengen-visa-fee-refund-hack.png" />
         <meta property="og:image:alt" content="Discover the Schengen Visa Fee Refund Hack for Indian Travelers" />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="900" />
@@ -68,15 +68,16 @@ export default function SchengenVisaFeeHack() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@GlobalVisaIntern" />
         <meta name="twitter:creator" content="@GlobalVisaIntern" />
-        <meta name="twitter:url" content="https://www.globalvisa-internationals.com/blog/discover-schengen-visa-fee-hack/" />
+        <meta name="twitter:url" content="https://www.globalvisainternationals.com/blog/discover-schengen-visa-fee-hack/" />
         <meta name="twitter:title" content="Discover the Schengen Visa Fee Hack for Indian Travelers" />
         <meta name="twitter:description" content="Learn how Indian travelers can protect their Schengen visa fee by using travel insurance with a special refund feature via PolicyBazaar." />
-        <meta name="twitter:image" content="https://www.globalvisa-internationals.com/images/schengen-visa-fee-refund-hack.png" />
+        <meta name="twitter:image" content="https://www.globalvisainternationals.com/images/schengen-visa-fee-refund-hack.png" />
         <meta name="twitter:image:alt" content="Visa refund hack for Indian travelers heading to Europe" />
+        <meta property="og:image:type" content="image/png" />
 
         <meta itemProp="name" content="Discover the Schengen Visa Fee Hack for Indian Travelers" />
         <meta itemProp="description" content="Find out how Indian travelers can easily claim a 100% refund on their Schengen visa fees if the application is rejected, through a smart travel insurance option." />
-        <meta itemProp="image" content="https://www.globalvisa-internationals.com/images/schengen-visa-fee-refund-hack.png" />
+        <meta itemProp="image" content="https://www.globalvisainternationals.com/images/schengen-visa-fee-refund-hack.png" />
 
         {/* Organization Schema */}
         <script
@@ -86,8 +87,8 @@ export default function SchengenVisaFeeHack() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Global Visa Internationals",
-              "url": "https://www.globalvisa-internationals.com",
-              "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+              "url": "https://www.globalvisainternationals.com",
+              "logo": "https://www.globalvisainternationals.com/gvilogo.png",
               "description": "Discover how Indian travelers can safeguard their Schengen visa application fees with a smart insurance hack and secure refunds in case of visa rejection.",
               "founder": {
                 "@type": "Person",
