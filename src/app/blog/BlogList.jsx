@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const categories = ["All", "Study", "Visit", "Work", "Events", "PR-Visa", "Travel", "VFS Global","Travel Tips"];
+const categories = ["All", "Study", "Visit", "Work", "Events", "PR-Visa", "Travel", "VFS Global", "Travel Tips"];
 const POSTS_PER_PAGE = 9;
 
 export default function BlogList({ posts }) {
@@ -41,23 +41,24 @@ export default function BlogList({ posts }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <Link href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
-                {post.image && (
-                  <div
-                    style={{
-                      width: '100%',
-                      position: 'relative',
-                      aspectRatio: '16 / 9',
-                    }}
-                  >
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      style={{ objectFit: 'contain', borderRadius: '10px' }}
-                    />
-                  </div>
-                )}
+              <Link href={`/blog/${post.slug}`}>
+                <div
+                  style={{
+                    width: '100%',
+                    position: 'relative',
+                    aspectRatio: '16 / 9',
+                    overflow: 'hidden',
+                    borderTopLeftRadius: '16px',
+                    borderTopRightRadius: '16px',
+                  }}
+                >
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
               </Link>
 
               <div className={styles.cardBody}>
@@ -66,19 +67,25 @@ export default function BlogList({ posts }) {
                 </h3>
 
                 <div className={styles.cardMeta}>
-                  <span>👤 {post.author}</span>
+                  <span>👤 <strong>{post.author}</strong></span>
                   <span>
                     📅 {new Date(post.date).toLocaleDateString("en-US", {
                       year: "numeric",
-                      month: "long",
+                      month: "short",
                       day: "numeric",
                     })}
                   </span>
                 </div>
 
-                <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-                  READ MORE
-                </Link>
+                <div className={styles.readMoreWrapper}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className={styles.readMore}
+                    aria-label={`Read more about ${post.title}`}
+                  >
+                    Read More →
+                  </Link>
+                </div>
               </div>
             </motion.article>
           ))}
@@ -91,14 +98,11 @@ export default function BlogList({ posts }) {
             {categories.map((cat) => (
               <li
                 key={cat}
-                className={
-                  filteredCategory === cat
-                    ? `${styles.activeCategory}`
-                    : ''
-                }
+                className={`${filteredCategory === cat ? styles.activeCategory : ''}`}
                 onClick={() => handleCategoryFilter(cat)}
                 role="button"
-                aria-pressed={filteredCategory === cat}
+                tabIndex={0}
+                onKeyDown={(e) => (e.key === 'Enter' ? handleCategoryFilter(cat) : null)}
               >
                 {cat}
               </li>
@@ -120,10 +124,9 @@ export default function BlogList({ posts }) {
           {[...Array(totalPages)].map((_, i) => (
             <button
               key={i + 1}
-              className={
-                currentPage === i + 1 ? styles.activePage : ''
-              }
+              className={currentPage === i + 1 ? styles.activePage : ''}
               onClick={() => setCurrentPage(i + 1)}
+              aria-current={currentPage === i + 1 ? 'page' : undefined}
             >
               {i + 1}
             </button>

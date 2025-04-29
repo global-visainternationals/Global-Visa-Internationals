@@ -1,4 +1,5 @@
-/* General container styles */
+
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -7,166 +8,169 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Grid layout for desktop and larger screens */
+/* Grid wrapper */
 .gridWrapper {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 2rem;
 }
 
-/* Blog grid styling */
+/* Blog Grid */
 .blogGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-/* Card styling */
+/* Card Styles */
 .card {
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
-
-/* Card image styling */
-.cardImage {
-  width: 100%;
-  height: 200px;
+.card img {
+  transition: transform 0.4s ease;
   object-fit: cover;
-  display: block;
+  height: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
-/* Card body styling */
+.card:hover img {
+  transform: scale(1.05);
+}
+
 .cardBody {
-  padding: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
-/* Card title */
 .cardTitle {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
   margin-bottom: 0.75rem;
-  color: #222;
-  line-height: 1.4;
 }
 
-/* Card title link */
 .cardTitle a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.2s;
+  transition: color 0.25s ease;
 }
 
 .cardTitle a:hover {
-  color: #0d9c08;
+  color: #007e33;
 }
 
-/* Meta information */
 .cardMeta {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #777;
   margin-bottom: 1rem;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-/* Read more link */
+/* Read More Button */
 .readMore {
-  display: inline-block;
-  padding: 0.4rem 1rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  border: 1px solid #333;
-  background: transparent;
-  color: #222;
-  cursor: pointer;
+  align-self: start;
+  margin-top: auto;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  color: white;
+  background-color: #007e33;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  border-radius: 4px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .readMore:hover {
-  background: #298b15;
+  background-color: #005d25;
+  transform: scale(1.05);
 }
 
-/* Sidebar styling */
+/* Sidebar Styles */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 40px;
   position: sticky;
   top: 60px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-  color: inherit;
-  transition: color 0.2s;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .sidebar h2 {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 1rem;
 }
 
 .categoryList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: sticky;
-  top: 60px; /* Keeps the sidebar at a fixed position */
-  height: fit-content; /* Ensures it doesn’t stretch */
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .categoryList li {
-  font-size: 0.9rem;
-  padding: 0.5rem 0;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  font-size: 0.85rem;
   color: #209615;
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
+  user-select: none;
+  transition: all 0.3s ease;
 }
 
 .categoryList li:hover {
-  color: #1a4d8f;
+  background-color: #e6f5e6;
+  border-color: #209615;
 }
 
 .activeCategory {
-  font-weight: bold;
-  color: #0070f3;
-  text-decoration: underline;
+  font-weight: 600;
+  color: #fff;
+  background-color: #209615;
+  border-color: #209615;
 }
 
-/* Pagination styling */
+/* Pagination */
 .pagination {
   margin-top: 3rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .pagination button {
-  padding: 0.5rem 1rem;
-  background-color: #f1f1f1;
   border: none;
-  font-size: 0.9rem;
+  border-radius: 9999px;
+  padding: 0.4rem 1rem;
+ 
+  
+  
+  background-color: #f3f3f3;
+  color: #333;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: background-color 0.2s;
-  border-radius: 4px;
 }
 
 .pagination button:hover:not(:disabled) {
@@ -174,55 +178,54 @@
 }
 
 .pagination button:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
-  opacity: 0.6;
+}
+.pagination .activePage {
+  background-color: #209615;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2);
+}
+.categoryList li:focus,
+.pagination button:focus {
+  outline: 2px dashed #209615;
+  outline-offset: 4px;
+}
+.readMoreWrapper {
+  margin-top: 1rem; /* adjust to smaller value if needed */
 }
 
-/* Mobile responsiveness */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  /* Grid layout for smaller screens */
   .gridWrapper {
-    grid-template-columns: 1fr; /* Sidebar will move below the blog grid */
+    grid-template-columns: 1fr;
   }
 
-  /* Sidebar styling for mobile */
   .sidebar {
-    width: 100%;
     position: static;
-    top: auto;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 2rem;
   }
 
-  /* Adjust card styles for mobile */
-  .card {
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Adjust the padding in the blog container for smaller screens */
-  .container {
-    padding: 1rem;
-  }
-
-  /* Adjust pagination for mobile screens */
   .pagination {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  /* Adjust buttons for pagination in mobile view */
   .pagination button {
     width: 100%;
-    padding: 0.6rem;
   }
 
-  /* Make category list items stack vertically on mobile */
-  .categoryList li {
-    padding: 0.75rem 0;
-  }
-
-  /* Remove sticky positioning for smaller screens */
   .categoryList {
-    position: static;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .categoryList li {
+    white-space: nowrap;
   }
 }
