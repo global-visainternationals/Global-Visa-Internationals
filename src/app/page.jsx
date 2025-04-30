@@ -218,6 +218,23 @@ const visaTypes = [
   <meta name="robots" content="index, follow" />
   <meta name="googlebot" content="index, follow" />
   <meta name="bingbot" content="index, follow" />
+  <link rel="preload" as="image" href="https://www.globalvisainternationals.com/gvilogo.png" />
+  <link rel="preload" as="image" href="/images/w-map.webp" />
+  <link rel="preload" as="image" href="/gallery/1.jpg" />
+  <link rel="preload" as="image" href="/gallery/2.jpg" />
+  <link rel="preload" as="image" href="/gallery/3.jpg" />
+  <link rel="preload" as="image" href="/gallery/4.jpg" />
+  <link rel="preload" as="image" href="/gallery/5.jpg" />
+  <link rel="preload" as="image" href="/gallery/6.jpg" />
+  <link rel="preload" as="image" href="/gallery/7.jpg" />
+  <link rel="preload" as="image" href="/gallery/8.jpg" />
+  <link rel="preload" as="image" href="/gallery/9.jpg" />
+  <link rel="preload" as="image" href="/images/networking.png" />
+  <link rel="preload" as="image" href="/images/globe.png" />
+  <link rel="preload" as="image" href="/images/crowd-of-users.png" />
+  <link rel="preload" as="image" href="/images/airplane.png" />
+  <link rel="preload" as="image" href="/images/calendar.png" />
+  <link rel="preload" as="image" href="/images/story.webp" />
 
   {/* Canonical */}
   <link rel="canonical" href="https://www.globalvisainternationals.com/" />
