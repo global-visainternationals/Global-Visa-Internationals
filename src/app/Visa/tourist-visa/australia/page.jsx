@@ -9,8 +9,8 @@ export default function Australia() {
     "@type": "EducationalOrganization",
     "name": "Global Visa Internationals",
     "url": "https://www.globalvisa-internationals.com",
-    "logo": "https://www.globalvisa-internationals.com/gvilogo.png", 
-    "description": "Unlock Your Australia Adventure! Global Visa Internationals provides expert guidance for your Australia tourist visa application. Simplify the process and explore Britain's wonders. Contact us today!",
+    "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+    "description": "Unlock Your Australia Adventure! Global Visa Internationals provides expert guidance for your Australia tourist visa application. Simplify the process and explore Australia's wonders. Contact us today!",
     "founder": {
       "@type": "Organization",
       "name": "Naveen Kumar J"
@@ -38,7 +38,7 @@ export default function Australia() {
       "https://www.linkedin.com/company/globalvisainternationals"
       // Add more links if you have Twitter, YouTube, etc.
     ]
-  
+
   };
     const { executeRecaptcha } = useGoogleReCaptcha();
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -104,16 +104,16 @@ export default function Australia() {
      return(      
            <>    
             <head>
-        <title> Australia Tourist Visa , Top Places to visat Australia| Global visa internationals</title>
-        <meta name="description" content="Your comprehensive guide to Australia student visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta name="keywords" content="Australia student visa, study in Australia, Australia universities, top Australia universities, courses in Australia, MBA Australia, cost of studying Australia, Australia student visa requirements, Australia visa application, international students Australia, student life Australia, Australia education system, Tier 4 visa Australia, Australia scholarships, post study work Australia" />
+        <title> Australia Tourist Visa , Top Places to visit Australia| Global visa internationals</title>
+        <meta name="description" content="Your comprehensive guide to Australia tourist visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
+        <meta name="keywords" content="Australia tourist visa, study in Australia, Australia universities, top Australia universities, courses in Australia, MBA Australia, cost of studying Australia, Australia student visa requirements, Australia visa application, international students Australia, education system Australia" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/student-visa/uk" />
+        <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:title" content="Australia Student Visa: Top Universities, Courses & Application Guide | Global Visa Internationals" />
         <meta property="og:description" content="Your comprehensive guide to Australia student visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta property="og:url" content="https://www.globalvisainternationals.com/Visa/student-visa/uk" />
+        <meta property="og:url" content="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
         <meta property="og:type" content="website" />
         {/* <meta property="og:image" content="URL_TO_YOUR_Australia_IMAGE" /> */}
 
@@ -121,12 +121,12 @@ export default function Australia() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Australia Student Visa: Top Universities, Courses & Application Guide | Global Visa Internationals" />
         <meta name="twitter:description" content="Your comprehensive guide to Australia student visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta name="twitter:url" content="https://www.globalvisainternationals.com/Visa/student-visa/uk" />
+        <meta name="twitter:url" content="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
         {/* <meta name="twitter:image" content="URL_TO_YOUR_Australia_IMAGE" /> */}
 
         {/* Geo-related meta tags */}
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.placename" content="United Kingdom" />
+        <meta name="geo.region" content="AU" />
+        <meta name="geo.placename" content="Australia" />
         <meta name="geo.region" content="IN-KA" />
         <meta name="geo.placename" content="Bengaluru" />
         <meta name="ICBM" content="12.9716,77.5946" />
