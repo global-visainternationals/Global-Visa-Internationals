@@ -18,7 +18,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: x-large;
 }
 
 .imageContainer {
@@ -74,6 +73,8 @@
 .mainHeading{
   display: flex;
   text-align: center;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
   font-size: 25px;
 }
 
@@ -114,19 +115,24 @@
 .textContent {
   max-width: 600px;
   font-size: 16px;
-  color: #444;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
+  color: #444;
+ 
   padding: 10px;
 }
 
 .textContent h2 {
-  font-size: 24px;
+  font-size: 24px;  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ 
   text-align: center;
   color: #277a00;
 }
 
 /* Why Choose Section */
 .whyChooseContainer {
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
   text-align:left;
   padding: 10px;
   max-width: 1100px;
@@ -137,6 +143,8 @@
   color: #277a00;
   margin: 15px 0;
   font-size: 24px;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
   text-align: center;
 }
 
@@ -158,6 +166,8 @@
 
   .textContent {
     font-size: 15px;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
     padding: 0 10px;
     text-align: justify;
   }
@@ -170,6 +180,8 @@
   .whyChooseContainer {
     padding: 10px;
     text-align: left;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
   }
 
 
@@ -234,26 +246,11 @@
 
 /* General Review Card */
 /* General Container Styles */
-.clientReview {
-  width: 320px;
-  overflow: hidden;
-  white-space: normal;
-  height: 250px;
-  border-radius: 10px;
-  padding: 25px;
-  font-size: small; 
-  text-align: justify;
-  flex: 0 0 auto;
-}
 
-.clientReview img {
-  width: 80px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
 
-.clientReviewsContainer, .videoContainer {
+
+
+ .videoContainer {
   overflow: hidden;
   padding: 20px;
   border-radius: 10px; 
@@ -264,13 +261,12 @@
   margin: 20px auto;
 }
 
-.clientReviewsContainer:hover .carouselTrack,
 .videoContainer:hover .carouselTrack {
   animation-play-state: paused;
 }
 
 /* Carousel Wrapper */
-.reviewCarousel, .videoCarousel {
+.videoCarousel {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -419,6 +415,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
@@ -586,6 +584,7 @@
   color: #135502;
   font-size: 16px;
   font-weight: bold;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   padding: 8px 14px;
   border-radius: 6px;
   text-align: center;
@@ -594,6 +593,7 @@
 
 /* Back Side */
 .visaCardBack {
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background-color: #f9f9f9;
   transform: rotateX(180deg);
   padding: 10px;
@@ -620,6 +620,7 @@
   align-items: center;
   text-align: center;
   font-size: 14px;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   padding: 5px;
   border-bottom: 1px dotted #000;
   font-weight: 600;
@@ -681,6 +682,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
@@ -767,6 +769,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4); /* dim background */
   display: flex;
@@ -794,6 +797,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   gap: 0.6rem;
 }
 
@@ -831,6 +835,7 @@
   margin-bottom: 8px;
   border-radius: 10px;
   box-shadow: 0 4px 8px #2c2b2b;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
