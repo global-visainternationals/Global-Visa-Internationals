@@ -239,6 +239,7 @@ const visaTypes = [
 
   {/* Open Graph / Facebook */}
   <meta property="og:title" content="Global Visa Internationals | Trusted Immigration Consultants in Bangalore" />
+  
   <meta property="og:description" content="Expert immigration guidance for Canada, USA, Australia, UK, and Europe. High success rate and transparent process. Trusted visa services for all your needs!" />
   <meta property="og:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
   <meta property="og:url" content="https://www.globalvisainternationals.com/" />
@@ -246,10 +247,18 @@ const visaTypes = [
 
 
   {/* Twitter Card */}
+  <meta name="twitter:title" content="Global Visa Internationals | Visa Experts" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Global Visa Internationals | Visa & Immigration Experts" />
   <meta name="twitter:description" content="Get fast and genuine immigration solutions. 75,000+ clients served. Expert PR, Work, Study & Visitor Visa Services in Bangalore." />
   <meta name="twitter:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
+  <meta property="og:title" content="Trusted Visa Experts in Bangalore" />
+<meta name="twitter:site" content="@GLOBALVISA1505" />
+<meta name="twitter:creator" content="@GLOBALVISA1505" />
+<meta name="twitter:image:alt" content="Global Visa Internationals Logo" />
+
+
+
 
   {/* Google Fonts & Icons */}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
