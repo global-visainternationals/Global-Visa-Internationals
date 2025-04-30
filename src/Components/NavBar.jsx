@@ -28,6 +28,22 @@ const NavBar = () => {
   const handleSubmenuToggle = (menu) => {
     setOpenDropdown((prev) => (prev === menu ? null : menu));
   };
+  const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10);
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+const handleLinkClick = () => {
+  if (window.innerWidth <= 768) {
+    setMenuOpen(false);
+    setOpenDropdown(null);
+  }
+};
+
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -42,7 +58,12 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header className={styles.navContainer} ref={navRef}>
+    <header
+  className={clsx(styles.navContainer, {
+    [styles.scrolled]: scrolled,
+  })}
+  ref={navRef}
+>
       <nav className={styles.navBar} aria-label="Main Navigation">
         {/* Logo */}
         <Link href="/" className={styles.logoLink}>
@@ -58,13 +79,14 @@ const NavBar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={clsx(styles.menu, { [styles.menuOpen]: menuOpen })}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
-          aria-expanded={menuOpen}
-        >
-          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
+        className={clsx(styles.menu, { [styles.menuOpen]: menuOpen })}
+        onClick={toggleMenu}
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+      </button>
+
 
         {/* Navigation Links */}
         <ul className={clsx(styles.navLinks, { [styles.showMenu]: menuOpen })}>
@@ -81,13 +103,18 @@ const NavBar = () => {
             >
               <button
                 className={styles.submenuToggle}
+                aria-haspopup="true"
                 aria-expanded={openDropdown === title}
+                aria-label={`${title} visa dropdown`}
+                tabIndex={0}
                 onClick={() => handleSubmenuToggle(title)}
-                title={`${title} Visa`}
               >
+
                 {title} <FaChevronDown className={clsx(styles.dropdownIcon, { [styles.rotate]: openDropdown === title })} />
               </button>
-              <ul className={clsx(styles.submenu, { [styles.submenuOpen]: openDropdown === title })}>
+              <ul className={clsx(styles.submenu, {
+  [styles.submenuOpen]: openDropdown === title || (menuOpen && window.innerWidth <= 768),
+})}>
                 {countries.map((country) => (
                   <li key={country}>
                     <Link href={`/Visa/${path}/${country.toLowerCase()}`} title={`${title} Visa for ${country}`}>

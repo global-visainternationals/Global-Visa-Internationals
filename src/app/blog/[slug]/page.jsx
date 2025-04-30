@@ -1,10 +1,9 @@
-// src/app/blog/[slug]/page.jsx
 import { getPostBySlug } from '@/lib/blog';
 import { notFound } from 'next/navigation';
+import styles from '@/content/blog/blog.module.css';
 
 export async function generateMetadata({ params }) {
   const post = await getPostBySlug(params.slug);
-
   if (!post) return { title: 'Post Not Found' };
 
   return {
@@ -23,12 +22,18 @@ export default async function BlogPostPage({ params }) {
   const { Content } = post;
 
   return (
-    <article style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-      <h1>{post.title}</h1>
-      <p><strong>Category:</strong> {post.category} | <strong>Author:</strong> {post.author}</p>
+    <article className={styles.article}>
+      <h1 className={styles.blogTitle}>{post.title}</h1>
+      <div className={styles.meta}>
+        <span><strong>Category:</strong> {post.category}</span>
+        <span>|</span>
+        <span><strong>Author:</strong> {post.author}</span>
+      </div>
       <p><em>{new Date(post.date).toLocaleDateString()}</em></p>
 
-      <Content />
+      <div className={styles.content}>
+        <Content />
+      </div>
     </article>
   );
 }
