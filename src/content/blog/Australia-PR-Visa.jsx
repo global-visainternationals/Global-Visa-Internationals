@@ -41,6 +41,7 @@ export default function PostContent() {
         <meta name="description" content="Discover the latest Australia PR visa process, eligibility criteria, and top benefits. Updated 2025 guide for students, skilled workers, and families." />
         <meta name="keywords" content="Australia PR visa, Australian permanent residency, Australia immigration, Australia visa 2025, migrate to Australia, study in Australia, work in Australia, skilled migration Australia, visa process Australia, eligibility for Australia PR, benefits of Australia PR, subclass 189 visa, subclass 190 visa, subclass 491 visa, employer nomination scheme, skills assessment Australia, points test Australia, Australian citizenship, regional Australia visa" />
         <meta name="author" content="Global Visa Internationals Team" />
+        <link rel="preload" as="image" href="" />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Australia PR Visa: Process, Eligibility, and Benefits (2025 Guide)" />
@@ -48,6 +49,7 @@ export default function PostContent() {
         <meta property="og:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
         <meta property="og:image:alt" content="Australia PR Visa" />
         <meta property="og:image:width" content="1200" /> 
+        <link rel="preload" as="image" href="${metadata.image}" />
 
         <meta property="og:url" content="https://www.globalvisainternationals.com/blog/study-in-australia" />
         <meta property="og:type" content="article" />

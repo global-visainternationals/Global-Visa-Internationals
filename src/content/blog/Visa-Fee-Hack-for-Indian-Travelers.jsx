@@ -54,6 +54,7 @@ export default function SchengenVisaFeeHack() {
         <meta name="author" content="Global Visa Internationals" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preload" as="image" href="https://www.globalvisainternationals.com/images/schengen-visa-fee-refund-hack.png" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Discover the Schengen Visa Fee Hack for Indian Travelers" />

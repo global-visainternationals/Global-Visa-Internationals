@@ -37,6 +37,9 @@ export const metadata = {
   <meta name="author" content={metadata.author} />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" as="image" href="/Images/Basava-Jayanti.png" />
+  <link rel="canonical" href="https://www.globalvisainternationals.com/blog/Basava-Jayanti-2025" />
+  
 
   {/* Open Graph (Facebook/WhatsApp) */}
   <meta property="og:locale" content="en_US" />

@@ -355,7 +355,7 @@ const visaTypes = [
             <h2 className={styles.subtitle}>Our Story</h2>
             <p>We at Global Visa Internationals, proud to be India's finest visa consultants, are dedicated to making your dreams into reality. With our 11+ years of experience as leading visa consultants in Bangalore, we have successfully managed to process over 55,000+ visas and offer over 75,000 expert visa advice sessions till date. You can confidently rely on our vast visa and immigration consulting experience in India.</p>
               
-            <p>We are committed to providing an end-to-end visa solution in India for all categories of different visas, including work visa Bangalore, study visa Bangalore, business visa Bangalore, travel visa Bangalore, dependent visa Bangalore, permanent residency in Bangalore, and refusal assistance Bangalore. We aim to ensure your entire hassle-free visa and trouble-free visa experience in Bangalore. Whether you want to expand your career abroad with our guidance, gain superior education abroad through our expert consultation, or begin a new life abroad with our support, we can guide you through it with superior professional visa advice in sync with your needs in Bangalore. We can help you follow your aspirations abroad from Bangalore.</p>
+            <p>We are committed to providing an end-to-end visa solution in India for all categories of different visas, including work visa , study visa , business visa , travel visa e, dependent visa, permanent residency in, and refusal assistance . We aim to ensure your entire hassle-free visa and trouble-free visa experience in Bangalore. Whether you want to expand your career abroad with our guidance, gain superior education abroad through our expert consultation, or begin a new life abroad with our support, we can guide you through it with superior professional visa advice in sync with your needs in Bangalore. We can help you follow your aspirations abroad from Bangalore.</p>
 
             <p>At Global Visa Internationals, we value efficiency in the visa process, transparency in our dealings, and the human touch in our client relationships in the visa and immigration sector in Bangalore. This is what sets us apart as reliable immigration consultants in Bangalore. We handle the complexities of the visa process, so you can have a more convenient and smoother visa experience. Start your journey to a world of opportunities today with the leading visa agency in Bangalore!
             </p>
@@ -365,7 +365,7 @@ const visaTypes = [
       </section>
 
       
-<section className={styles.whyChooseContainer} id="why-us">
+<section className={styles.whyChooseContainer} id="Why Global Visa Internationals?">
       <h2 className={styles.subtitle}>Why Global Visa Internationals?</h2>
 <ul>
   <li>Benefit from 11+ Years of Proven Expertise in visa and immigration consultancy services in Bangalore since 2013.</li>
@@ -429,8 +429,10 @@ const visaTypes = [
             </div> 
     </section>
 
+    <section id='Client Reviews'>
     <h2 className={styles.subtitle}>Client Reviews</h2>
     <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+    </section>
  
       <section id="gallery">
       <h2 className={styles.subtitle}>Gallery</h2>
@@ -460,8 +462,9 @@ const visaTypes = [
 
 
 {/* Our Values */}
+<section id='Our Values'>
 <h2 className={styles.subtitle}>Our Values</h2>
-<section className={styles.missionVisionValues} id="ourvalues">
+<section className={styles.missionVisionValues} id="missionVisionValues">
   <div className={styles.missionCard}>
     <h2>OUR MISSION</h2>
     <div >
@@ -504,7 +507,7 @@ const visaTypes = [
     
   </div>
 </section>
-
+</section>
 
 {/* Our Visa & Immigration Services */}
 <section id="services">
@@ -537,7 +540,7 @@ const visaTypes = [
                     <ul>
                       {visa.countries.map((country, i) => (
                         <li key={i}>
-                          <a href={`/Visa/${visa.type.toLowerCase().replace(/ /g, "-")}/${country}`}>
+                          <a href={`/Visa/${visa.type.toLowerCase().replace(/ /g, "-")}/${country.toLowerCase().replace(/ /g, "-")}`}>
                             {country.replace("-", " ").toUpperCase()}
                           </a>
                         </li>
