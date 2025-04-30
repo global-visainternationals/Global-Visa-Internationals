@@ -45,7 +45,10 @@ export default function PostContent() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Australia PR Visa: Process, Eligibility, and Benefits (2025 Guide)" />
         <meta property="og:description" content="Explore PR visa options for Australia, including Subclass 189, 190, and 491. Understand points test, eligibility, and how to apply." />
-        <meta property="og:image" content="/images/Australia-PR-Visa.webp" />
+        <meta property="og:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+        <meta property="og:image:alt" content="Australia PR Visa" />
+        <meta property="og:image:width" content="1200" /> 
+
         <meta property="og:url" content="https://www.globalvisainternationals.com/blog/study-in-australia" />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="en_AU" />
@@ -55,7 +58,9 @@ export default function PostContent() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Australia PR Visa: Process, Eligibility, and Benefits (2025 Guide)" />
         <meta name="twitter:description" content="Detailed guide on Australia's PR visa process, skilled migration pathways, and benefits in 2025." />
-        <meta name="twitter:image" content="/images/Australia-PR-Visa.webp" />
+        <meta name="twitter:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+        <meta itemProp="image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+
         <meta name="twitter:creator" content="@globalvisas" />
 
         {/* GEO Meta Tags */}
