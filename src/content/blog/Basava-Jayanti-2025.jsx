@@ -40,7 +40,8 @@ export const metadata = {
           <meta property="og:title" content={metadata.title} />
           <meta property="og:description" content={metadata.excerpt} />
           <meta property="og:url" content="YOUR_ARTICLE_URL_HERE" /> {/* Replace with the actual URL of your article */}
-          <meta property="og:image" content={metadata.image} />
+          <meta property="og:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+
           <meta property="og:image:alt" content={metadata.title} />
           <meta property="og:site_name" content="Global Visa Internationals" />
   
@@ -50,13 +51,18 @@ export const metadata = {
           <meta name="twitter:url" content="YOUR_ARTICLE_URL_HERE" /> {/* Replace with the actual URL of your article */}
           <meta name="twitter:title" content={metadata.title} />
           <meta name="twitter:description" content={metadata.excerpt} />
-          <meta name="twitter:image" content={metadata.image} />
-          <meta name="twitter:image:alt" content={metadata.title} />
+          <meta name="twitter:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+          <meta itemProp="image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+
           <meta property="og:image:type" content="image/png" /> {/* Adjust type if necessary */}
   
           <meta itemProp="name" content={metadata.title} />
           <meta itemProp="description" content={metadata.excerpt} />
           <meta itemProp="image" content={metadata.image} />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+
   
           {/* Organization Schema (Keep this if it's relevant to your overall site) */}
           <script
