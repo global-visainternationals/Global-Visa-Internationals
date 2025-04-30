@@ -29,85 +29,88 @@ export const metadata = {
     return (
       <>
         <Head>
-          <title>{metadata.title}</title>
-          <meta name="description" content={metadata.excerpt} />
-          <meta name="keywords" content={metadata.keywords.join(', ')} />
-          <meta name="author" content={metadata.author} />
-          <meta name="robots" content="index, follow" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="article" />
-          <meta property="og:title" content={metadata.title} />
-          <meta property="og:description" content={metadata.excerpt} />
-          <meta property="og:url" content="YOUR_ARTICLE_URL_HERE" /> {/* Replace with the actual URL of your article */}
-          <meta property="og:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+  <title>Basava Jayanti - Vision of Shri Basavanna | Global Visa Internationals</title>
 
-          <meta property="og:image:alt" content={metadata.title} />
-          <meta property="og:site_name" content="Global Visa Internationals" />
-  
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@GlobalVisaIntern" /> {/* Replace with your Twitter handle */}
-          <meta name="twitter:creator" content="@GlobalVisaIntern" /> {/* Replace with your Twitter handle */}
-          <meta name="twitter:url" content="YOUR_ARTICLE_URL_HERE" /> {/* Replace with the actual URL of your article */}
-          <meta name="twitter:title" content={metadata.title} />
-          <meta name="twitter:description" content={metadata.excerpt} />
-          <meta name="twitter:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
-          <meta itemProp="image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+  {/* SEO Meta Tags */}
+  <meta name="description" content={metadata.excerpt} />
+  <meta name="keywords" content={metadata.keywords.join(', ')} />
+  <meta name="author" content={metadata.author} />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <meta property="og:image:type" content="image/png" /> {/* Adjust type if necessary */}
-  
-          <meta itemProp="name" content={metadata.title} />
-          <meta itemProp="description" content={metadata.excerpt} />
-          <meta itemProp="image" content={metadata.image} />
-          <meta property="og:image:type" content="image/png" />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+  {/* Open Graph (Facebook/WhatsApp) */}
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Basava Jayanti - Vision of Shri Basavanna | Global Visa Internationals" />
+  <meta property="og:description" content={metadata.excerpt} />
+  <meta property="og:url" content="https://www.globalvisainternationals.com/blog/Basava-Jayanti-2025" />
+  <meta property="og:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+  <meta property="og:image:alt" content="Basava Jayanti - Vision of Shri Basavanna" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Global Visa Internationals" />
 
-  
-          {/* Organization Schema (Keep this if it's relevant to your overall site) */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Global Visa Internationals",
-                "url": "https://www.globalvisainternationals.com",
-                "logo": "https://www.globalvisainternationals.com/gvilogo.png",
-                "description": "Your description about Global Visa Internationals",
-                "founder": {
-                  "@type": "Person",
-                  "name": "Naveen Kumar J"
-                },
-                "foundingDate": "2016",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "MG Road",
-                  "addressLocality": "Bengaluru",
-                  "addressRegion": "Karnataka",
-                  "postalCode": "560025",
-                  "addressCountry": "IN"
-                },
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "+91-7022213466",
-                  "contactType": "Customer Support",
-                  "areaServed": "IN",
-                  "availableLanguage": ["English", "Hindi", "Kannada", "Tamil"]
-                },
-                "areaServed": ["IN", "CA", "UK", "EU"],
-                "sameAs": [
-                  "https://www.facebook.com/globalvisainternationals/",
-                  "https://www.instagram.com/globalvisa_internationals/",
-                  "https://www.linkedin.com/company/global-visa-internationals/",
-                  "https://twitter.com/GlobalVisaIntern",
-                  "https://www.youtube.com/@globalVisaInternationals",
-                  "https://www.google.com/maps/place/Global+Visa+Internationals/@12.967478,77.6035421,17z"
-                ]
-              })
-            }}
-          />
-        </Head>
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@GlobalVisaIntern" />
+  <meta name="twitter:creator" content="@GlobalVisaIntern" />
+  <meta name="twitter:url" content="https://www.globalvisainternationals.com/blog/Basava-Jayanti-2025" />
+  <meta name="twitter:title" content="Basava Jayanti - Vision of Shri Basavanna | Global Visa Internationals" />
+  <meta name="twitter:description" content={metadata.excerpt} />
+  <meta name="twitter:image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+  <meta name="twitter:image:alt" content="Basava Jayanti - Vision of Shri Basavanna" />
+
+  {/* Schema.org (Google) */}
+  <meta itemProp="name" content="Basava Jayanti - Vision of Shri Basavanna | Global Visa Internationals" />
+  <meta itemProp="description" content={metadata.excerpt} />
+  <meta itemProp="image" content={`https://www.globalvisainternationals.com${metadata.image}`} />
+
+  {/* Organization JSON-LD */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Global Visa Internationals",
+        "url": "https://www.globalvisainternationals.com",
+        "logo": "https://www.globalvisainternationals.com/gvilogo.png",
+        "description": "Your description about Global Visa Internationals",
+        "founder": {
+          "@type": "Person",
+          "name": "Naveen Kumar J"
+        },
+        "foundingDate": "2016",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "MG Road",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "postalCode": "560025",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7022213466",
+          "contactType": "Customer Support",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi", "Kannada", "Tamil"]
+        },
+        "areaServed": ["IN", "CA", "UK", "EU"],
+        "sameAs": [
+          "https://www.facebook.com/globalvisainternationals/",
+          "https://www.instagram.com/globalvisa_internationals/",
+          "https://www.linkedin.com/company/global-visa-internationals/",
+          "https://twitter.com/GlobalVisaIntern",
+          "https://www.youtube.com/@globalVisaInternationals",
+          "https://www.google.com/maps/place/Global+Visa+Internationals/@12.967478,77.6035421,17z"
+        ]
+      })
+    }}
+  />
+</Head>
+
 
           <main className="prose lg:prose-xl max-w-4xl mx-auto px-4 py-12">
           <div className={Styles.meta}>
