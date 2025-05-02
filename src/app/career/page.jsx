@@ -236,7 +236,7 @@ export default function CareerPage() {
           required
           max={new Date().toISOString().split("T")[0]}
           title="Select your date of birth"
-        >D.O.B</input>
+        />
       </div>
     </div>
 
