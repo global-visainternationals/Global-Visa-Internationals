@@ -62,11 +62,13 @@
     display: none;
     align-items: center;
     flex-direction: column;
-    
     border-radius: 10px;
     padding: 15px;
     height: fit-content;
     
+}
+.formtitle{
+    font-size: 25px;
 }
 
 .formSection {
@@ -74,7 +76,6 @@
     align-items: center;
     flex-direction: column;
     width: 400px; 
-    
     border-radius: 10px;
     padding: 20px;
     margin-top: 40px;
@@ -245,7 +246,7 @@ to {
     .heading {
       font-size: 1.5rem;
     }
-  
+
     .description {
       font-size: 0.95rem;
     }
@@ -316,6 +317,9 @@ to {
         position: relative; /* Prevents overlap */
         margin-top: 20px;
         margin-bottom: 80px;
+    }
+    .formtitle{
+        font-size: 17px;
     }
     .formSection1 {
         display: flex;
