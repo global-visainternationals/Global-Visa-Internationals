@@ -31,10 +31,7 @@
   width: 120px;
   height: auto;
   margin-right: 10px;
-  
-}
-.scrolled {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding-top:15px ;
 }
 
 /* Navigation Links */
@@ -49,17 +46,15 @@
   color: #000;
   font-weight: 700;
   text-decoration: none;
-  padding: 8px 12px;
-  transition: background-color 0.2s, transform 0.2s;
+  padding: 5px 8px;
   border-radius: 6px;
 }
 
 .navLinks a:hover,
-.navLinks a:focus,
-.submenu li a:hover {
-  background-color: #1e6b18;
+.navLinks a:focus {
+  background-color: #257c1d;
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* Dropdown Menu */
@@ -90,7 +85,6 @@
   min-width: 150px;
   border-radius: 10px;
   visibility: hidden;
-  transition: all 0.3s ease;
   opacity: 0;
   padding: 0;
 }
@@ -100,8 +94,6 @@
   opacity: 1;
   padding: 10px ;
   border-bottom: 1px dotted #000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  padding: 8px 0;
 }
 
 .submenu li {
@@ -112,10 +104,12 @@
   list-style: none;
   
 }
+
 .submenu li a {
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background 0.3s;
+  display: block;
+  padding: 10px;
+  color: #000;
+  font-weight: 600;
 }
 
 .submenu li a:hover {
@@ -153,10 +147,6 @@
     transform: translateY(-10px);
     pointer-events: none;
   }
-  .submenu {
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-  
 
   .submenuContainer:hover .submenu {
     display: block;
@@ -215,14 +205,10 @@
     backdrop-filter: blur(2px);
     padding: 10px;
     z-index: 999;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateX(100%);
   }
 
   .showMenu {
-   
-    pointer-events: all;
-    transform: translateX(0);
     opacity: 1;
+    pointer-events: all;
   }
 }
