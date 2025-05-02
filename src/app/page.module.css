@@ -311,6 +311,7 @@
   border-radius: 50%;
 }
 }
+/* 
 /* Gallery Carousel */
 .galleryCarouselWrapper {
   width: 100%;
@@ -330,7 +331,7 @@
 .gallerySlide {
   position: absolute;
   width: 500px;
-  height: 450px;
+  height: 450x;
   transition: all 0.5s ease-in-out;
   display: none;
   opacity: 0;
@@ -391,6 +392,9 @@
   background: rgba(255, 255, 255, 1);
   transform: translateY(-50%) scale(1.1);
 }
+.galleryNavBtn:focus-visible {
+  outline: 1px solid #277a00;
+}
 
 .galleryPrevBtn {
   left: 10%;
@@ -398,9 +402,6 @@
 
 .galleryNextBtn {
   right: 10%;
-}
-.galleryNavBtn:focus-visible {
-  outline: 1px solid #277a00;
 }
 
 @media (max-width: 768px) {
