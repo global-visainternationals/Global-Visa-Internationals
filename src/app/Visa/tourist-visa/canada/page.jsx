@@ -149,7 +149,7 @@ export default function Canada() {
     <h1 className={styles.Title}>Discovering Canada: A Traveler's Paradise</h1>
     <p>Canada, a land of immense natural beauty and vibrant multicultural cities, stands as a premier destination for travelers from around the globe. From the towering peaks of the Rocky Mountains to the historic streets of Quebec City and the bustling metropolis of Toronto, Canada offers a diverse range of experiences to captivate every visitor. This guide aims to provide comprehensive information for planning your tourist visit to this extraordinary country, ensuring you are well-prepared to discover its many wonders. At Global Visa Internationals, we understand that embarking on an international journey involves careful planning, and we are here to partner with you to ensure your experience in Canada is smooth, seamless, and truly unforgettable. </p>
     <div className={styles.formSection1}>
-      <h4>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
+      <h4 className={styles.subTitle}>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
                   <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
@@ -311,23 +311,23 @@ export default function Canada() {
             </div>
           )}
                 </div> 
-                <h3>A Year of Adventure: Best Times to Visit Canada</h3>
+                <h3 className={styles.subTitle}>A Year of Adventure: Best Times to Visit Canada</h3>
                 <p>Canada's diverse climate offers unique experiences throughout the year, making it a year-round destination for tourism.</p>
                 <ul>
-                  <li><h3>Summer (June to August)</h3>Summer in Canada, from June to August, brings warm weather and clear skies, creating ideal conditions for a wide range of outdoor adventures. This is the perfect time for hiking through the stunning trails of Banff and Jasper National Parks, canoeing or kayaking on the pristine lakes, and camping under the vast Canadian skies. With long daylight hours and pleasant temperatures, popular sites like Lake Louise and Moraine Lake are fully accessible, allowing visitors to fully immerse themselves in their breathtaking beauty.   </li>
-                  <li><h3>Winter (December to February)</h3>For snow enthusiasts, winter in Canada, particularly from December to February, offers a magical experience. The Canadian Rockies, including Banff, Lake Louise, and Sunshine Village, become a haven for skiing and snowboarding, boasting prime conditions with fluffy, dry powder, especially in February. Beyond the slopes, visitors can enjoy ice skating on frozen lakes and embark on serene snowshoeing adventures through the winter landscapes. The sight of snow-capped peaks and vast lakes covered in ice creates a truly unforgettable winter wonderland.   </li>
-                  <li><h3>Shoulder Seasons (Spring: March to May; Fall: September to November)</h3>The shoulder seasons in Canada, spring (March to May) and fall (September to November), offer a unique blend of pleasant weather, fewer crowds, and distinct seasonal attractions. Spring sees the return of life to the landscapes, making it a good time for camping, hiking, and wildlife spotting as animals emerge from hibernation. With fewer tourists before the summer rush, visitors can enjoy a more tranquil experience. March brings the sweet tradition of maple syrup season in Quebec , while Vancouver bursts into color with its stunning cherry blossoms. Fall transforms Canada into a tapestry of vibrant colors, making it an ideal time for hiking and admiring the autumn foliage, particularly in Quebec City and the Rockies. With the summer crowds having departed, a more serene atmosphere prevails. September also offers a chance to witness the mesmerizing Northern Lights in regions like the Yukon.   </li>
+                  <li><h3 className={styles.subTitle}>Summer (June to August)</h3>Summer in Canada, from June to August, brings warm weather and clear skies, creating ideal conditions for a wide range of outdoor adventures. This is the perfect time for hiking through the stunning trails of Banff and Jasper National Parks, canoeing or kayaking on the pristine lakes, and camping under the vast Canadian skies. With long daylight hours and pleasant temperatures, popular sites like Lake Louise and Moraine Lake are fully accessible, allowing visitors to fully immerse themselves in their breathtaking beauty.   </li>
+                  <li><h3 className={styles.subTitle}>Winter (December to February)</h3>For snow enthusiasts, winter in Canada, particularly from December to February, offers a magical experience. The Canadian Rockies, including Banff, Lake Louise, and Sunshine Village, become a haven for skiing and snowboarding, boasting prime conditions with fluffy, dry powder, especially in February. Beyond the slopes, visitors can enjoy ice skating on frozen lakes and embark on serene snowshoeing adventures through the winter landscapes. The sight of snow-capped peaks and vast lakes covered in ice creates a truly unforgettable winter wonderland.   </li>
+                  <li><h3 className={styles.subTitle}>Shoulder Seasons (Spring: March to May; Fall: September to November)</h3>The shoulder seasons in Canada, spring (March to May) and fall (September to November), offer a unique blend of pleasant weather, fewer crowds, and distinct seasonal attractions. Spring sees the return of life to the landscapes, making it a good time for camping, hiking, and wildlife spotting as animals emerge from hibernation. With fewer tourists before the summer rush, visitors can enjoy a more tranquil experience. March brings the sweet tradition of maple syrup season in Quebec , while Vancouver bursts into color with its stunning cherry blossoms. Fall transforms Canada into a tapestry of vibrant colors, making it an ideal time for hiking and admiring the autumn foliage, particularly in Quebec City and the Rockies. With the summer crowds having departed, a more serene atmosphere prevails. September also offers a chance to witness the mesmerizing Northern Lights in regions like the Yukon.   </li>
                   </ul>
-                <h3>Immerse Yourself in Canadian Culture: Festivals and Events</h3>
+                <h3 className={styles.subTitle}>Immerse Yourself in Canadian Culture: Festivals and Events</h3>
                 <p>Canada's vibrant cultural scene comes alive throughout the year with a diverse array of festivals and events.</p>
                 <ul>
-                  <li><h3>Summer Festivals</h3>During the summer months, Canada hosts numerous festivals celebrating a wide range of interests. Music lovers can enjoy the renowned Montreal International Jazz Festival. Vancouver lights up with the spectacular Celebration of Light, an international fireworks competition. Toronto comes alive with the vibrant Toronto Caribbean Carnival , while Calgary hosts the iconic Calgary Stampede, a celebration of rodeo and cowboy culture. Winnipeg showcases its multiculturalism with Folkorama , and Cape Breton Island in Nova Scotia celebrates its Celtic heritage with the Celtic Colours International Festival.   </li>
+                  <li><h3 className={styles.subTitle}>Summer Festivals</h3>During the summer months, Canada hosts numerous festivals celebrating a wide range of interests. Music lovers can enjoy the renowned Montreal International Jazz Festival. Vancouver lights up with the spectacular Celebration of Light, an international fireworks competition. Toronto comes alive with the vibrant Toronto Caribbean Carnival , while Calgary hosts the iconic Calgary Stampede, a celebration of rodeo and cowboy culture. Winnipeg showcases its multiculturalism with Folkorama , and Cape Breton Island in Nova Scotia celebrates its Celtic heritage with the Celtic Colours International Festival.   </li>
 
-                  <li><h3>Winter Festivals</h3>Winter in Canada is far from dull, with numerous festivals embracing the snowy season. Quebec City hosts the world-famous Carnaval de Québec, a grand winter carnival featuring ice sculptures and parades. Ottawa celebrates winter with Winterlude, offering ice sculptures and skating along the Rideau Canal. Niagara Falls illuminates with the Winter Festival of Lights , while Winnipeg celebrates French Canadian and Métis culture at the Festival du Voyageur. Jasper in Alberta offers a range of winter activities, music, and food during Jasper in January.   </li>
+                  <li><h3 className={styles.subTitle}>Winter Festivals</h3>Winter in Canada is far from dull, with numerous festivals embracing the snowy season. Quebec City hosts the world-famous Carnaval de Québec, a grand winter carnival featuring ice sculptures and parades. Ottawa celebrates winter with Winterlude, offering ice sculptures and skating along the Rideau Canal. Niagara Falls illuminates with the Winter Festival of Lights , while Winnipeg celebrates French Canadian and Métis culture at the Festival du Voyageur. Jasper in Alberta offers a range of winter activities, music, and food during Jasper in January.   </li>
 
-                  <li><h3>Spring Festivals</h3>Spring brings a sense of renewal and celebration across Canada. Ottawa bursts into color with the Canadian Tulip Festival , while Vancouver showcases its beautiful cherry blossoms during the Vancouver Cherry Blossom Festival. Quebec celebrates its maple syrup season with visits to Sugar Shacks , and Stratford, Ontario, hosts the renowned Stratford Spring Theatre Season.   </li><li>Fall FestivalsAs the leaves turn golden, Canada continues its festival season with a variety of events. Toronto hosts the prestigious Toronto International Film Festival (TIFF) , while Cape Breton Island comes alive with the Celtic Colours International Festival. Kitchener-Waterloo, Ontario, celebrates its German heritage with Oktoberfest , and Jasper National Park offers a celestial experience at the Jasper Dark Sky Festival. Wine enthusiasts can indulge in the Fall Okanagan Wine Festival in British Columbia.   </li>
+                  <li><h3 className={styles.subTitle}>Spring Festivals</h3>Spring brings a sense of renewal and celebration across Canada. Ottawa bursts into color with the Canadian Tulip Festival , while Vancouver showcases its beautiful cherry blossoms during the Vancouver Cherry Blossom Festival. Quebec celebrates its maple syrup season with visits to Sugar Shacks , and Stratford, Ontario, hosts the renowned Stratford Spring Theatre Season.   </li><li>Fall FestivalsAs the leaves turn golden, Canada continues its festival season with a variety of events. Toronto hosts the prestigious Toronto International Film Festival (TIFF) , while Cape Breton Island comes alive with the Celtic Colours International Festival. Kitchener-Waterloo, Ontario, celebrates its German heritage with Oktoberfest , and Jasper National Park offers a celestial experience at the Jasper Dark Sky Festival. Wine enthusiasts can indulge in the Fall Okanagan Wine Festival in British Columbia.   </li>
                   <div className={styles.formSection1}>
-      <h4>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
+      <h4 className={styles.subTitle}>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
                   <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
@@ -401,9 +401,9 @@ export default function Canada() {
           )}
                 </div> 
                 </ul>
-                <h2>Planning Your Canadian Journey: Essential Travel Information</h2>
+                <h2 className={styles.subTitle}>Planning Your Canadian Journey: Essential Travel Information</h2>
                 <p>To help you plan your trip to Canada, here is essential information regarding travel costs and daily expenses.</p>
-                <h3>Navigating the Skies: Average Flight Costs to Canada</h3>
+                <h3 className={styles.subTitle}>Navigating the Skies: Average Flight Costs to Canada</h3>
                 <p>The cost of flights to Canada varies depending on your departure location, the specific Canadian city you are flying into, the airline you choose, and the time of year you plan to travel.</p>
                 <table className={styles.table}>
                   <thead>
@@ -449,7 +449,7 @@ export default function Canada() {
                 </table>
                 <p className={styles.note}><b>Note:</b> These are average estimates and actual prices may vary.</p>
 
-                <h2>Your Home Away From Home: Accommodation Options in Canada</h2>
+                <h2 className={styles.subTitle}>Your Home Away From Home: Accommodation Options in Canada</h2>
                 <p>Canada offers a wide range of accommodation options to suit every budget and preference.</p>
                 <table className={styles.table}>
                   <thead>
@@ -568,7 +568,7 @@ export default function Canada() {
             </div>
           )}
                 </div> 
-            <h2>Everyday Expenses: Average Daily Living Costs</h2>
+            <h2 className={styles.subTitle}>Everyday Expenses: Average Daily Living Costs</h2>
             <p>The average daily living expenses for tourists in Canada can vary based on your travel style and spending habits.</p>
             <table className={styles.table}>
               <tr>
@@ -624,16 +624,16 @@ export default function Canada() {
             </table>
 
             <p className={styles.note}><b>Note:</b> These are average estimates and actual costs may vary.</p>
-            <h2>Why Canada? Unveiling the Allure of a Top Tourist Destination</h2>
+            <h2 className={styles.subTitle}>Why Canada? Unveiling the Allure of a Top Tourist Destination</h2>
             <p>Canada's desirability as a tourist destination stems from a multitude of factors that cater to a wide range of travelers.</p>
             <ul>
-              <li><h4>Breathtaking Landscapes and Natural Beauty</h4>From coast to coast, Canada is blessed with breathtaking landscapes and iconic natural wonders. The majestic mountains of the Rockies, with their snow-capped peaks and turquoise lakes like Lake Louise and Moraine Lake, offer unparalleled scenic beauty. The sheer power of Niagara Falls captivates millions of visitors each year. The rugged coastlines of Nova Scotia, the vast forests of Ontario, and the unique tidal phenomena of the Bay of Fundy showcase Canada's diverse geography. In the northern territories, the mesmerizing Northern Lights dance across the night sky, offering a truly unforgettable spectacle. This natural beauty provides endless opportunities for outdoor activities, including hiking, canoeing, kayaking, skiing, snowboarding, and wildlife viewing.   </li>
-              <li><h4>Rich Cultural Experiences and Warm Hospitality</h4>Beyond its natural wonders, Canada offers rich cultural experiences and is renowned for its warm and welcoming hospitality. As a multicultural nation, Canada embraces diversity, with vibrant cities like Vancouver, Toronto, Montreal, and Quebec City showcasing a blend of Indigenous traditions, French and British heritage, and influences from around the world. Canadians are known for their politeness and friendly nature, making visitors feel at home. Throughout the year, numerous festivals celebrate music, art, food, and culture, providing immersive experiences into Canada's diverse heritage.   </li>
-              <li><h4>Safety and Security: Your Worry-Free Destination</h4>
+              <li><h4 className={styles.subTitle}>Breathtaking Landscapes and Natural Beauty</h4>From coast to coast, Canada is blessed with breathtaking landscapes and iconic natural wonders. The majestic mountains of the Rockies, with their snow-capped peaks and turquoise lakes like Lake Louise and Moraine Lake, offer unparalleled scenic beauty. The sheer power of Niagara Falls captivates millions of visitors each year. The rugged coastlines of Nova Scotia, the vast forests of Ontario, and the unique tidal phenomena of the Bay of Fundy showcase Canada's diverse geography. In the northern territories, the mesmerizing Northern Lights dance across the night sky, offering a truly unforgettable spectacle. This natural beauty provides endless opportunities for outdoor activities, including hiking, canoeing, kayaking, skiing, snowboarding, and wildlife viewing.   </li>
+              <li><h4 className={styles.subTitle}>Rich Cultural Experiences and Warm Hospitality</h4>Beyond its natural wonders, Canada offers rich cultural experiences and is renowned for its warm and welcoming hospitality. As a multicultural nation, Canada embraces diversity, with vibrant cities like Vancouver, Toronto, Montreal, and Quebec City showcasing a blend of Indigenous traditions, French and British heritage, and influences from around the world. Canadians are known for their politeness and friendly nature, making visitors feel at home. Throughout the year, numerous festivals celebrate music, art, food, and culture, providing immersive experiences into Canada's diverse heritage.   </li>
+              <li><h4 className={styles.subTitle}>Safety and Security: Your Worry-Free Destination</h4>
               Canada consistently ranks as one of the safest countries in the world, offering a secure and stable environment for travelers. Major Canadian cities are known for their low crime rates and visible policing, ensuring visitors can explore with peace of mind. The country boasts a reliable healthcare system, providing access to quality medical services if needed. Canada also has safe and well-maintained transportation systems, including public transit and roads. Additionally, most tourist areas in Canada experience a low risk of major natural disasters, contributing to a worry-free travel experience.</li>
             </ul>
             <div className={styles.formSection1}>
-      <h4>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
+      <h4 className={styles.subTitle}>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
                   <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
@@ -706,46 +706,46 @@ export default function Canada() {
             </div>
           )}
                 </div> 
-          <h2>Smooth Sailing: Understanding the Canadian Tourist Visa Process</h2>
+          <h2 className={styles.subTitle}>Smooth Sailing: Understanding the Canadian Tourist Visa Process</h2>
           <p>For many international travelers, a Canadian tourist visa is required to enter the country. Understanding the process can help ensure a smooth journey.</p>
-          <h3>Eligibility and Requirements for a Canadian Tourist Visa:</h3>
+          <h3 className={styles.subTitle}>Eligibility and Requirements for a Canadian Tourist Visa:</h3>
           <p>To be eligible for a Canadian tourist visa, you generally need to meet the following detailed requirements:</p>
           <ul>
-            <li><strong>Valid Passport:</strong>
+            <li><strong className={styles.subTitle}>Valid Passport:</strong>
               <ul>
                 <li>You must hold a valid passport.</li>
                 <li>The passport must be valid for the entire duration of your intended stay in Canada. It's often recommended that your passport have at least six months of validity beyond your planned departure date from Canada.</li>
                 <li>Ensure there are sufficient blank pages in your passport for any necessary visa stamps.</li>
               </ul>
             </li>
-            <li><strong>Good Health:</strong>
+            <li><strong className={styles.subTitle}>Good Health:</strong>
               <ul>
                 <li>You must be in good health.</li>
                 <li>You may be required to undergo a medical examination by a panel physician designated by Immigration, Refugees and Citizenship Canada (IRCC), depending on your country of origin and intended length of stay.</li>
                 <li>Certain medical conditions may render you inadmissible to Canada.</li>
               </ul>
             </li>
-            <li><b>No Criminal Record:</b>
+            <li><b className={styles.subTitle}>No Criminal Record:</b>
               <ul>
                 <li>You must not have any criminal record or be involved in any criminal activity.</li>
                 <li>You may be required to provide police certificates from your country of residence and any other country where you have lived for six months or more since the age of 18.</li>
                 <li>Past criminal convictions could lead to your visa application being refused.</li>
               </ul>
             </li>
-            <li><strong>Demonstrate Strong Ties to Your Home Country:</strong>
+            <li><strong className={styles.subTitle}>Demonstrate Strong Ties to Your Home Country:</strong>
               <ul>
                 <li>You must convince the immigration authorities that you will leave Canada at the end of your authorized stay. This is crucial to demonstrate you are a genuine temporary resident. Strong ties can include:
                   <ul>
-                    <li><strong>Ongoing Studies: Enrollment verification from an educational institution in your home country.</strong> A letter from your employer confirming your position, salary, and that you are expected to return to your job.</li>
-                    <li><strong>Property Ownership:</strong> Documents proving ownership of a house, land, or other significant assets in your home country.</li>
-                    <li><strong>Financial Assets:</strong> Bank statements, investment records, or other financial documents demonstrating your economic stability in your home country.</li>
-                    <li><strong>Family Ties: </strong>Marriage certificate, birth certificates of dependent children residing in your home country, or other documents demonstrating significant family responsibilities.</li>
-                    <li><strong>Ongoing Studies:</strong> Enrollment verification from an educational institution in your home country.</li>
+                    <li><strong className={styles.subTitle}>Ongoing Studies:</strong> Enrollment verification from an educational institution in your home country. A letter from your employer confirming your position, salary, and that you are expected to return to your job.</li>
+                    <li><strong className={styles.subTitle}>Property Ownership:</strong> Documents proving ownership of a house, land, or other significant assets in your home country.</li>
+                    <li><strong className={styles.subTitle}>Financial Assets:</strong> Bank statements, investment records, or other financial documents demonstrating your economic stability in your home country.</li>
+                    <li><strong className={styles.subTitle}>Family Ties: </strong>Marriage certificate, birth certificates of dependent children residing in your home country, or other documents demonstrating significant family responsibilities.</li>
+                    <li><strong className={styles.subTitle}>Ongoing Studies:</strong> Enrollment verification from an educational institution in your home country.</li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><b>Proof of Sufficient Funds:</b>
+            <li><b className={styles.subTitle}>Proof of Sufficient Funds:</b>
               <ul>
                 <li>You must demonstrate that you have enough money to support yourself during your stay in Canada and to return home.</li>
                 <li>The required amount of funds will vary depending on:
@@ -756,7 +756,7 @@ export default function Canada() {
                     </li>
                   </ul>
                 </li>
-                <li><b>Acceptable proof of funds may include:</b>
+                <li><b className={styles.subTitle}>Acceptable proof of funds may include:</b>
                   <ul>
                     <li>Bank statements for the past few months.</li>
                     <li>Fixed deposit certificates.</li>
@@ -769,14 +769,14 @@ export default function Canada() {
               </ul>
             </li>
             
-            <li><b>Letter of Invitation (If Applicable):</b>
+            <li><b className={styles.subTitle}>Letter of Invitation (If Applicable):</b>
               <ul>
                 <li>If you are visiting family or friends in Canada, a letter of invitation from them can be helpful.</li>
                 <li>The letter should include details about the inviter (their status in Canada, contact information, relationship to you), details about you (your name, date of birth, purpose and duration of visit), and details about accommodation and financial support, if any.</li>
                 <li>While a letter of invitation is not mandatory in all cases, it can strengthen your application by providing additional context for your visit.</li>
               </ul>
             </li>
-            <li><b>Biometric Information (If Required):</b>
+            <li><b className={styles.subTitle}>Biometric Information (If Required):</b>
               <ul>
                 <li>Citizens from certain countries are required to provide biometric information (fingerprints and a photograph) as part of their visa application.</li>
                 <li>You will typically need to attend an appointment at a Visa Application Centre (VAC) in your country of residence to provide your biometrics.</li>
@@ -858,34 +858,34 @@ export default function Canada() {
             </div>
           )}
                 </div> 
-                <h2>Steps Involved in the Visa Application Process:</h2>
+                <h2 className={styles.subTitle}>Steps Involved in the Visa Application Process:</h2>
                 <p>The process of applying for a Canadian tourist visa involves the following detailed steps:</p>
                 <ol type='I'>
-                  <li><b>Determine Visa Requirements:</b>
+                  <li><b className={styles.subTitle}>Determine Visa Requirements:</b>
                     <ul>
                       <li>First and foremost, determine if you actually need a tourist visa to travel to Canada.</li>
                       <li>Citizens of certain countries are visa-exempt and may only require an Electronic Travel Authorization (eTA) for air travel.</li>
                       <li>Use the official Government of Canada website (IRCC) to check the visa requirements based on your citizenshi</li>
                     </ul>
                   </li>
-                  <li><b>Gather Necessary Supporting Documents:</b>
+                  <li><b className={styles.subTitle}>Gather Necessary Supporting Documents:</b>
                     <ul>
-                      <li><b>Collect all the required documents to support your application. This may include:</b>
+                      <li>Collect all the required documents to support your application. This may include:
                         <ul>
-                          <li><strong>Passport:</strong> Ensure it meets the validity requirements mentioned earlier. Include copies of the bio-data page and any previous visas or entry stamps.</li>
-                          <li><strong>Proof of Financial Resources:</strong> Gather bank statements, fixed deposit certificates, investment records, or letters of support and financial documents from your host in Canada, as applicable. Ensure these documents are recent and clearly show sufficient funds.</li>
-                          <li><strong>Proof of Ties to Home Country:</strong> Collect employment letters, property ownership documents, marriage certificate, birth certificates of dependents, school enrollment letters, etc.</li>
-                          <li><strong>Travel History: </strong>Include copies of previous visas, entry/exit stamps in your passport, and any other evidence of your travel history.</li>
-                          <li><strong>Letter of Invitation (If Applicable):</strong> Obtain a detailed letter of invitation from your host in Canada, along with their proof of status in Canada (e.g., copy of their Permanent Resident card, citizenship certificate, or valid visa).</li>
-                          <li><strong>Purpose of Travel:</strong> Provide details about your intended trip, such as flight bookings (if available, but not recommended to purchase before visa approval), hotel reservations (if applicable), and a detailed itinerary of your planned activities in Canada.</li>
-                          <li><strong>Family Information Form:</strong> Complete the required family information form accurately and comprehensively.</li>
+                          <li><strong className={styles.subTitle}>Passport:</strong> Ensure it meets the validity requirements mentioned earlier. Include copies of the bio-data page and any previous visas or entry stamps.</li>
+                          <li><strong className={styles.subTitle}>Proof of Financial Resources:</strong> Gather bank statements, fixed deposit certificates, investment records, or letters of support and financial documents from your host in Canada, as applicable. Ensure these documents are recent and clearly show sufficient funds.</li>
+                          <li><strong className={styles.subTitle}>Proof of Ties to Home Country:</strong> Collect employment letters, property ownership documents, marriage certificate, birth certificates of dependents, school enrollment letters, etc.</li>
+                          <li><strong className={styles.subTitle}>Travel History: </strong>Include copies of previous visas, entry/exit stamps in your passport, and any other evidence of your travel history.</li>
+                          <li><strong className={styles.subTitle}>Letter of Invitation (If Applicable):</strong> Obtain a detailed letter of invitation from your host in Canada, along with their proof of status in Canada (e.g., copy of their Permanent Resident card, citizenship certificate, or valid visa).</li>
+                          <li><strong className={styles.subTitle}>Purpose of Travel:</strong> Provide details about your intended trip, such as flight bookings (if available, but not recommended to purchase before visa approval), hotel reservations (if applicable), and a detailed itinerary of your planned activities in Canada.</li>
+                          <li><strong className={styles.subTitle}>Family Information Form:</strong> Complete the required family information form accurately and comprehensively.</li>
                           <li>Digital Photo: Ensure you have a digital photograph that meets the specific requirements of IRCC.</li>
-                          <li><strong>Any Other Supporting Documents:</strong> Depending on your individual circumstances, you may need to provide additional documents as requested1 by IRCC.</li>
+                          <li><strong className={styles.subTitle}>Any Other Supporting Documents:</strong> Depending on your individual circumstances, you may need to provide additional documents as requested1 by IRCC.</li>
                         </ul>
                       </li>
                     </ul>
                   </li>
-                  <li><b>Complete the Online Application:</b>
+                  <li><b className={styles.subTitle}>Complete the Online Application:</b>
                     <ul>
                       <li>The primary method for applying for a Canadian tourist visa is online through the official IRCC website.</li>
                       <li>Create an account on the IRCC portal.</li>
@@ -893,53 +893,53 @@ export default function Canada() {
                       <li>Upload all the required supporting documents in the specified formats and sizes. Ensure the scanned documents are clear and legible.</li>
                     </ul>
                   </li>
-                  <li><b>Pay the Application Fee:</b>
+                  <li><b className={styles.subTitle}>Pay the Application Fee:</b>
                     <ul>
                       <li>A non-refundable application fee of $100 CAD per person is required.</li>
                       <li>Payment is typically made online using a credit card or other accepted methods.</li>
                       <li>Keep a record of your payment confirmation.</li>
                     </ul>
                   </li>
-                  <li><b>Pay the Biometric Fee (If Applicable):</b>
+                  <li><b className={styles.subTitle}>Pay the Biometric Fee (If Applicable):</b>
                     <ul>
                       <li>If you are required to provide biometrics, an additional fee of $85 CAD per person may apply.</li>
                       <li>This fee is usually paid online at the same time as the application fee.</li>
                     </ul>
                   </li>
-                  <li><b>Submit the Application:</b>
+                  <li><b className={styles.subTitle}>Submit the Application:</b>
                     <ul>
                       <li>Once you have completed the online form, uploaded all documents, and paid the necessary fees, you can submit your application electronically.</li>
                     </ul>
                   </li>
-                  <li><b>Provide Biometrics (If Required):</b>
+                  <li><b className={styles.subTitle}>Provide Biometrics (If Required):</b>
                     <ul>
                       <li>After submitting your online application and paying the biometric fee (if applicable), you will receive a biometric instruction letter.</li>
                       <li>You will need to schedule an appointment at an authorized Visa Application Centre (VAC) in your country of residence to provide your fingerprints and photograph.</li>
                       <li>Ensure you bring a copy of your biometric instruction letter and your passport to your appointment.</li>
                     </ul>
                   </li>
-                  <li><b>Processing of the Application:</b>
+                  <li><b className={styles.subTitle}>Processing of the Application:</b>
                     <ul>
                       <li>Once your application and biometrics (if required) are received, IRCC will begin processing your application.</li>
                       <li>Processing times can vary significantly based on factors such as your country of residence, the volume of applications being processed, and the complexity of your case. It can take anywhere from a few weeks to several months.</li>
                       <li>You can usually track the status of your application through your IRCC online account.</li>
                     </ul>
                   </li>
-                  <li><b>Passport Request:</b>
+                  <li><b className={styles.subTitle}>Passport Request:</b>
                     <ul>
                       <li>If your application is approved, you will receive a passport request letter from IRCC.</li>
                       <li>You will need to submit your original passport to the designated VAC or Canadian visa office to have the visa counterfoil (sticker) placed in it.</li>
                       <li>Follow the instructions provided in the passport request letter carefully regarding how and where to submit your passport.</li>
                     </ul>
                   </li>
-                  <li><b>Visa Stamping and Return of Passport:</b>
+                  <li><b className={styles.subTitle}>Visa Stamping and Return of Passport:</b>
                     <ul>
                       <li>Once your passport is received, the visa will be printed and affixed to one of the blank pages.</li>
                       <li>Your passport will then be returned to you. Ensure you check the details on the visa sticker for any errors.</li>
                     </ul>
                   </li>
                 </ol>
-                <h2>Conclusion: Your Canadian Adventure Starts Here - Let Global Visa Internationals Be Your Guide</h2>
+                <h2 className={styles.subTitle}>Conclusion: Your Canadian Adventure Starts Here - Let Global Visa Internationals Be Your Guide</h2>
                 <p>Canada beckons with its breathtaking landscapes, diverse cultures, and warm hospitality, promising an unforgettable travel experience. From the towering peaks of the Rockies to the charming historical sites of Quebec and the dynamic urban life of Toronto, a Canadian adventure offers something for every traveler. While the anticipation of exploring this vast and welcoming nation is thrilling, navigating the visa application process can sometimes feel overwhelming.</p>
                 <p>At Global Visa Internationals, we are dedicated to simplifying this journey for you. Our team possesses the in-depth knowledge and expertise regarding Canadian visa regulations to provide comprehensive guidance through each stage of the application. We are committed to ensuring a seamless and stress-free experience by offering invaluable assistance with:</p>
                 <ul>
