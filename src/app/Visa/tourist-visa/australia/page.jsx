@@ -8,8 +8,8 @@ export default function Australia() {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Global Visa Internationals",
-    "url": "https://www.globalvisa-internationals.com",
-    "logo": "https://www.globalvisa-internationals.com/gvilogo.png",
+    "url": "https://www.globalvisainternationals.com",
+    "logo": "https://www.globalvisainternationals.com/gvilogo.png",
     "description": "Unlock Your Australia Adventure! Global Visa Internationals provides expert guidance for your Australia tourist visa application. Simplify the process and explore Australia's wonders. Contact us today!",
     "founder": {
       "@type": "Organization",
@@ -108,7 +108,7 @@ export default function Australia() {
         <meta name="description" content="Your comprehensive guide to Australia tourist visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
         <meta name="keywords" content="Australia tourist visa, study in Australia, Australia universities, top Australia universities, courses in Australia, MBA Australia, cost of studying Australia, Australia student visa requirements, Australia visa application, international students Australia, education system Australia" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
+        <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/tourist-visa-visa/australia" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:title" content="Australia Student Visa: Top Universities, Courses & Application Guide | Global Visa Internationals" />
@@ -178,8 +178,10 @@ export default function Australia() {
         <li>Adelaide: A charming city in South Australia known for its museums, galleries, and festivals. Explore the Adelaide Botanic Garden and the historic Port Adelaide. The Barossa Valley and McLaren Vale wine regions are also nearby.</li>
         
       </ol>
+      
       <div className={styles.formSection1}>
-                  <h2>Immigration Inquiry Form</h2>
+      <h4>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
+                  <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
                       <div>
@@ -276,7 +278,7 @@ export default function Australia() {
     <li>Luxury Traveler: AUD 621 - AUD 699 per day (approx. INR 34,200 - INR 38,500), staying in high-end accommodations, dining at top restaurants, and engaging in exclusive experiences.</li>
 </ul>
 For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (approximately INR 8,250 - INR 16,500) per person for living expenses, excluding flights and visa costs. This would cover accommodation, food, local transport, and some sightseeing.
-<h2>Example Costs:</h2>
+<h2 className={styles.subTitle}>Example Costs:</h2>
 <ul>
   <li>Accommodation (per night): Budget hostels (AUD 37-42), mid-range hotels (AUD 100-112), luxury hotels (AUD 270+).</li>
   <li>Meals: Budget meal (AUD 10-15), mid-range restaurant (AUD 25-50), fine dining (AUD 80+).</li>
@@ -285,7 +287,7 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
 </li>
 <li>Activities and Tours: Costs for tours and activities will vary greatly depending on what you choose to do. For example, a day trip to the Great Barrier Reef can cost anywhere from AUD 150 to AUD 300 or more.</li>
 </ul>
-<h2>Budget Calculator:</h2>
+<h2 className={styles.subTitle}>Budget Calculator:</h2>
 <ul>
   <li>Therefore, for a 10-day trip to Australia, excluding flights and visa, you might budget:
     <ul>
@@ -296,12 +298,17 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
   </li>
   <li>Keep in mind that these are rough estimates, and actual costs can vary.</li>
 </ul>
-<h2>Best Time to Visit</h2>
-<p>Australia's seasons are opposite to those in the Northern Hemisphere, so plan accordingly!</p>
-<ul>
-  <li>Best Time to Visit Chart: [Embed chart or infographic showing best times to visit different regions]</li>
-</ul>
-<h2>Engaging and Informative Content Enhancements</h2>
+<h2 className={styles.subTitle}>Tips for a Successful Australian Trip:</h2>
+
+<ol>
+  <li>Plan Ahead: Research the best time to visit, popular tourist attractions, and budget-friendly accommodations.</li>
+  <li>Book in Advance: Reserve flights and accommodations to avoid last-minute hassles.</li>
+  <li>Stay Safe: Be aware of local customs and laws, and carry necessary documents and valuables.</li>
+  <li>Be Flexible: Adjust your plans based on unexpected events or changes in the itinerary.</li>
+  <li>Enjoy the Journey: Take breaks, relax, and immerse yourself in the beauty of Australia.</li>
+</ol>
+<h2 className={styles.subTitle}>Top Attractions in Australia:</h2>
+
 <ul>
   <li>Local Insights & Hidden Gems:
     <ul>
@@ -332,8 +339,30 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
     </ul>
   </li>
 </ul>
+<ol>
+  <li>Great Barrier Reef: A UNESCO World Heritage site, the world's largest coral reef system, and a paradise for divers and snorkelers.</li>
+  <li>Uluru (Ayers Rock): A sacred site for Aboriginal Australians, known for its stunning sunsets and cultural significance.</li>
+  <li>Sydney Opera House: A masterpiece of modern architecture, home to some of the world's most famous operas.</li>
+  <li>Melbourne Cricket Ground: A historic stadium where the Australian national team plays.</li>
+  <li>Wagga Wagga: A charming town known for its apple orchards and scenic views.</li>
+  <li>Mount Kosciuszko National Park: A stunning national park offering hiking trails, waterfalls, and scenic drives.</li>
+  <li>Gold Coast: A tropical paradise with world-class beaches, surfing, and live music festivals.</li>
+</ol>
+<h2 className={styles.subTitle}>Additional Tips:</h2>
+<ol>
+  <li>Be Prepared for Weather: Australia experiences a diverse climate, with hot summers and cold winters. Pack accordingly and be prepared for unexpected weather changes.</li>
+  <li>Learn Local Languages: Knowing a few words in the local language can go a long way in making your trip more enjoyable.</li>
+  <li>Stay Hydrated: Australia's hot climate can make dehydration a concern. Drink plenty of water, especially during hot weather.</li>
+  <li>Consider a Visa Extension: If you plan to stay longer than your visa allows, consider applying for a visa extension before your current visa expires.</li>
+  <li>Respect Local Customs: Australia has a rich cultural heritage, and it's important to respect local customs and traditions.</li>
+  <li>Enjoy the Adventure: Australia offers a wide range of outdoor activities, from hiking to surfing, and it's a great place to experience the outdoors.</li>
+</ol>
+
+
+
   <div className={styles.formSection1}>
-                  <h2>Immigration Inquiry Form</h2>
+  <h4>Contact Global Visa Internationals for Visa and Documentation Assistance:</h4>
+                  <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
                       <div>
@@ -405,7 +434,7 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
             </div>
           )}
                 </div> 
-                <h2>Applying for an Australian Tourist Visa</h2>
+                <h2 className={styles.subTitle}>Applying for an Australian Tourist Visa</h2>
 <p>Indian citizens need to apply for a Tourist Stream (subclass 600) visa to visit Australia for tourism. Here are the key requirements and steps:</p>
 <ul>
   <li>Eligibility: You must genuinely intend to visit Australia for tourism purposes only, have sufficient funds for your stay, and not intend to work in Australia. You must be outside Australia when you apply and when the visa is decided.</li>
@@ -426,7 +455,7 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
 </ul>
 <p>It is crucial to provide accurate information and all necessary documents to avoid delays or rejection of your visa application.</p>
 
-<h2>Why Choose Global Visa Internationals?</h2>
+<h2 className={styles.subTitle}>Why Choose Global Visa Internationals?</h2>
 <p>At Global Visa Internationals, we understand that the visa application process can be complex and time-consuming. That's why we offer:</p>
 <ul>
   <li>Personalized Guidance: Our experienced consultants provide tailored support throughout your application journey</li>
@@ -439,9 +468,9 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
 <p>Let Global Visa Internationals assist you in navigating the visa application process and planning your dream Australian adventure!</p>
 </div>
 
-
 <div className={styles.formSection}>
-                  <h2>Immigration Inquiry Form</h2>
+
+                  <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
                       <div>
