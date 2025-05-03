@@ -150,7 +150,7 @@ export default function CareerPage() {
     <div className={styles.JobSec}>
       <div className={styles.JobData}>
         <h2 className={styles.Title}>Job Title: Documentation Executive</h2>
-        <p><strong>Job Overview:</strong> This role involves assisting clients with documentation related to their visa applications. Success in this role comes from clear communication, attention to detail, and the ability to guide clients effectively.</p>
+        <p><strong  className={styles.subTitle}>Job Overview:</strong> This role involves assisting clients with documentation related to their visa applications. Success in this role comes from clear communication, attention to detail, and the ability to guide clients effectively.</p>
 
         <h3 className={styles.subTitle}>Responsibilities and Duties:</h3>
         <ul>
@@ -186,6 +186,10 @@ export default function CareerPage() {
           <li>Experience: 0–3 years in sales, preferably in education/immigration sectors.</li>
           <li>Skills: Communication, persuasion, CRM tools, time management.</li>
         </ul>
+        <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
       </div>
 
       <div className={styles.formSection}>

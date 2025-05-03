@@ -1,6 +1,6 @@
  "use client";
 import styles from './Australia.module.css';
-import React,  { useState } from 'react';
+import React,  { useState,useEffect } from 'react';
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function Australia() {
@@ -100,7 +100,13 @@ export default function Australia() {
         setIsSubmitting(false);
       });
     };
-  
+  //reviews
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
      return(      
            <>    
             <head>
@@ -466,6 +472,14 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
 </ul>
 <p>We at Global Visa Internationals, proud to be India's finest visa consultants, are dedicated to making your dreams into reality. With our 11+ years of experience as leading visa consultants in Bangalore, we have successfully managed to process over 55,000+ visas and offer over 75,000 expert visa advice sessions till date. You can confidently rely on our vast visa and immigration consulting experience in India.</p>
 <p>Let Global Visa Internationals assist you in navigating the visa application process and planning your dream Australian adventure!</p>
+<section id='Client Reviews'>
+          <h2 className={styles.subtitle}>Client Reviews</h2>
+          <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
+          <section id='Client Reviews'>
+                    <h2 className={styles.subtitle}>Client Reviews</h2>
+                    <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+                    </section>
 </div>
 
 <div className={styles.formSection}>

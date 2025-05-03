@@ -535,6 +535,11 @@ export default function newzeland(){
                               <h3>22. What are the visa requirements for studying in New Zealand?</h3>
                               <p>The visa requirements for studying in New Zealand depend on your academic program and the duration of your stay. Generally, you will need a New Zealand student visa, which can be obtained through the New Zealand Immigration Service.</p>
 
+                              <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
+                    
                     </div>
 
 
@@ -616,5 +621,9 @@ export default function newzeland(){
             )}
                   </div>      
               </div>
+              <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
                 </>  
         ); }

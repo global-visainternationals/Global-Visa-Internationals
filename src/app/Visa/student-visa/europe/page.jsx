@@ -435,7 +435,10 @@ const [showPopup, setShowPopup] = useState(false);
                         </ul>
                         <p className={styles.note}>📞 Contact us today for a free consultation and unlock your path to European education with confidence.</p>
 
-
+                        <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
                     </div>
                      <div className={styles.formSection}>
                                         <h2>Immigration Inquiry Form</h2>
@@ -512,5 +515,9 @@ const [showPopup, setShowPopup] = useState(false);
                                       </div>   
                        
               </div>
+              <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
                 </>  
         ); }

@@ -472,6 +472,10 @@ export default function Canada(){
                         <p>After completing your studies, you may be eligible for a Post-Graduation Work Permit (PGWP), allowing you to work in Canada for up to three years. This valuable experience can enhance your employability and provide a pathway to permanent residency.</p>
                         <h3 className={styles.subTitle}>Conclusion</h3>
                         <p>Studying in Canada is an incredible opportunity to gain a world-class education while immersing yourself in a multicultural society. At Global Visa Internationals, we are committed to helping you navigate the complexities of the student visa process, ensuring you have the best chance of success. Contact us today to start your journey toward a brighter future in Canada!</p>
+                        <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
                         </div>
     
                         <div className={styles.formSection}>
@@ -548,5 +552,9 @@ export default function Canada(){
             )}
                   </div>   
               </div>
+              <section id='Client Reviews'>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
                 </>  
         ); }

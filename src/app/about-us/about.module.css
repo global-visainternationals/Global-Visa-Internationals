@@ -51,12 +51,21 @@
 .aboutSec {
     display: flex;
     justify-content: center;
-    padding: 40px;
     max-width: 1000px;
     margin: 0 auto;
     
 }
-
+.subTitle{
+    text-align: center;
+    color: #277a00;
+    font-size: 28px;
+}
+.subTitle2{
+    color: #277a00;
+}
+.subTitle1{
+    color: #277a00;
+}
 .whydata {
     flex: 1; /* Takes available space */
     align-items: center;
@@ -92,7 +101,7 @@
 }
 .whydata ul li strong {
     font-weight: 900;
-    color: #313030;
+    color: #277a00;
 }
 
 

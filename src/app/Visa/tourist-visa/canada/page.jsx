@@ -1,6 +1,6 @@
  "use client";
 import styles from './Canada.module.css';
-import React,  { useState } from 'react';
+import React,  { useState,useEffect } from 'react';
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function Canada() {
@@ -41,6 +41,14 @@ export default function Canada() {
       ]
   
     };
+    //review
+    
+      useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://static.elfsight.com/platform/platform.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }, []);
     const { executeRecaptcha } = useGoogleReCaptcha();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
@@ -953,6 +961,10 @@ export default function Canada() {
                 </ul>
                 <p>With our support, you can focus on the excitement of your upcoming Canadian adventure while we handle the complexities of the visa process. Contact us today to embark on your journey to Canada with confidence!</p>
                 <p>Let Global Visa Internationals be your trusted partner in transforming your Canadian dream into a reality. Contact us today, and allow our experienced team to expertly guide you through the visa application process, so you can focus on the excitement of planning your incredible Canadian adventure.</p>
+<section id='Client Reviews'>
+          <h2 className={styles.subtitle}>Client Reviews</h2>
+          <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
 </div>
 <div className={styles.formSection}>
 
