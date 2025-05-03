@@ -558,7 +558,7 @@ export default function Australia(){
                           <li><strong>Ongoing Support and Updates: </strong>We will keep you informed throughout the application process and address any queries or concerns you may have promptly.</li></ul>
                         
                         <p className={styles.note}>Don't let the complexities of the visa process deter you from pursuing your academic dreams in Australia. Contact Global Visa Internationals today and let us be your trusted partner in making your Australian education a reality!</p>
-                        <h3>Frequently Asked Questions (FAQs)</h3>
+                        
                         <div className={styles.formSection1}>
                             <h2>Immigration Inquiry Form</h2>
                                 <form  id="inquiry-form" onSubmit={handleSubmit}>
@@ -632,6 +632,7 @@ export default function Australia(){
                                 </div>
                                     )}
                                           </div> 
+                                          <h3>Frequently Asked Questions (FAQs)</h3>
                         <ol>
                           <h4>
                             <li>What is the duration of the Australian student visa?</li>
