@@ -195,126 +195,136 @@ const visaTypes = [
 
   return (
     <>
-{/* SEO Meta Tags */}
-<Head>
+<head>
 <title>Global Visa Internationals | Trusted Immigration Consultants in Bangalore</title>
-  <meta name="description" content="Leading immigration consultants in Bangalore offering visa services for Canada PR, USA, UK, Australia, Schengen, and other countries. Over 75,000 clients served with fast and genuine guidance. Contact us for transparent visa services!" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charSet="UTF-8" />
-  
+      <meta name="description" content="Leading immigration consultants in Bangalore offering expert visa services for Canada PR, USA, UK, Australia, Schengen, and more. Over 75,000 happy clients. Fast, genuine guidance and transparent pricing!" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charSet="UTF-8" />
 
-  {/* Title & Meta Description */}
+      {/* Canonical */}
+      <link rel="canonical" href="https://www.globalvisainternationals.com/" />
 
-  {/* Favicon */}
-  <link rel="icon" type="image/png" href="/gvilogo.png" />
+      {/* Favicons */}
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-  {/* Keywords */}
-  <meta name="keywords" content="Immigration Consultants in Bangalore, Visa Agents, Canada PR, Study Abroad, Work Visa, Visitor Visa, Dependent Visa, Business Visa, Refusal Visa, Fast Visa Services, Australia Student Visa, Schengen Visa Agents, Trusted Immigration Consultants, Global Visa Services, Bangalore Immigration Experts" />
+      {/* Keywords */}
+      <meta name="keywords" content="Immigration Consultants in Bangalore, Visa Agents, Canada PR, Study Abroad, Work Visa, Visitor Visa, Dependent Visa, Business Visa, Refusal Visa, Fast Visa Services, Australia Student Visa, Schengen Visa Agents, Trusted Immigration Consultants, Global Visa Services, Bangalore Immigration Experts" />
 
-  {/* Author & Robots */}
-  <meta name="author" content="Global Visa Internationals" />
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
-  <meta name="bingbot" content="index, follow" />
-  <link rel="preload" as="image" href="https://www.globalvisainternationals.com/gvilogo.png" />
-  <link rel="preload" as="image" href="/images/w-map.webp" />
-  <link rel="preload" as="image" href="/gallery/1.jpg" />
-  <link rel="preload" as="image" href="/gallery/2.jpg" />
-  <link rel="preload" as="image" href="/gallery/3.jpg" />
-  <link rel="preload" as="image" href="/gallery/4.jpg" />
-  <link rel="preload" as="image" href="/gallery/5.jpg" />
-  <link rel="preload" as="image" href="/gallery/6.jpg" />
-  <link rel="preload" as="image" href="/gallery/7.jpg" />
-  <link rel="preload" as="image" href="/gallery/8.jpg" />
-  <link rel="preload" as="image" href="/gallery/9.jpg" />
-  <link rel="preload" as="image" href="/images/networking.png" />
-  <link rel="preload" as="image" href="/images/globe.png" />
-  <link rel="preload" as="image" href="/images/crowd-of-users.png" />
-  <link rel="preload" as="image" href="/images/airplane.png" />
-  <link rel="preload" as="image" href="/images/calendar.png" />
-  <link rel="preload" as="image" href="/images/story.webp" />
+      {/* Robots & Author */}
+      <meta name="author" content="Global Visa Internationals" />
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="bingbot" content="index, follow" />
 
-  {/* Canonical */}
-  <link rel="canonical" href="https://www.globalvisainternationals.com/" />
+      {/* Open Graph */}
+      <meta property="og:title" content="Global Visa Internationals - Trusted Immigration Consultants in Bangalore" />
+      <meta property="og:description" content="Over 75,000 happy clients. Expert PR, Work, Study & Visit visa services for Canada, Australia, USA, UK and more. Genuine, fast and transparent support." />
+      <meta property="og:image" content="https://www.globalvisainternationals.com/banner.webp" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content="https://www.globalvisainternationals.com/" />
+      <meta property="og:type" content="website" />
 
-  {/* Open Graph / Facebook */}
-  <meta property="og:title" content="Trusted Visa Experts in Bangalore" />
-<meta property="og:description" content="Expert immigration guidance for Canada, USA, Australia, UK, and Europe. High success rate and transparent process. Trusted visa services for all your needs!" />
-<meta property="og:image" content="https://www.globalvisainternationals.com/gvilogo.png" />
-<meta property="og:url" content="https://www.globalvisainternationals.com/" />
-<meta property="og:type" content="website" />
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Global Visa Internationals - Top Visa Agents in Bangalore" />
+      <meta name="twitter:description" content="PR, Work, Study & Visit Visas made easy. 75,000+ clients served. Fast, trusted and affordable immigration consultants in Bangalore." />
+      <meta name="twitter:image" content="https://www.globalvisainternationals.com/banner.webp" />
+      <meta name="twitter:image:alt" content="Global Visa Internationals Banner" />
+      <meta name="twitter:site" content="@GLOBALVISA1505" />
+      <meta name="twitter:creator" content="@GLOBALVISA1505" />
+      <meta name="twitter:url" content="https://www.globalvisainternationals.com/" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Trusted Visa Experts in Bangalore" />
-<meta name="twitter:description" content="Get fast and genuine immigration solutions. 75,000+ clients served. Expert PR, Work, Study & Visitor Visa Services in Bangalore." />
-<meta name="twitter:image" content="https://www.globalvisainternationals.com/gvilogo.png" /> 
-<meta name="twitter:image:alt" content="Global Visa Internationals Logo" /> 
-<meta name="twitter:site" content="@GLOBALVISA1505" />
-<meta name="twitter:creator" content="@GLOBALVISA1505" />
+      {/* Fonts & Icons */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossOrigin="anonymous" />
+
+      {/* Preload Key Images */}
+      <link rel="preload" as="image" href="/banner.webp" />
+      <link rel="preload" as="image" href="/images/w-map.webp" />
+      <link rel="preload" as="image" href="/gallery/1.jpg" />
+      <link rel="preload" as="image" href="/images/networking.png" />
+      <link rel="preload" as="image" href="/images/story.webp" />
+
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Global Visa Internationals",
+            url: "https://www.globalvisainternationals.com",
+            logo: "https://www.globalvisainternationals.com/gvilogo.png",
+            sameAs: [
+              "https://www.facebook.com/globalvisa.globalvisa",
+              "https://www.instagram.com/globalvisa_internationals/",
+              "https://x.com/GLOBALVISA1505"
+            ]
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Global Visa Internationals",
+            image: "https://www.globalvisainternationals.com/gvilogo.png",
+            url: "https://www.globalvisainternationals.com/",
+            telephone: "+917022213466",
+            priceRange: "$$$",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "GF-9, Business Point, Brigade Road",
+              addressLocality: "Bangalore",
+              addressRegion: "Karnataka",
+              postalCode: "560025",
+              addressCountry: "IN"
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 12.9674808,
+              longitude: 77.606117
+            },
+            sameAs: [
+              "https://www.facebook.com/globalvisa.globalvisa",
+              "https://www.instagram.com/globalvisa_internationals/",
+              "https://x.com/GLOBALVISA1505"
+            ],
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "10:00",
+                closes: "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Saturday",
+                opens: "10:00",
+                closes: "14:00"
+              }
+            ],
+            potentialAction: {
+              "@type": "ReserveAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://www.globalvisainternationals.com/contact"
+              },
+              resultDescription: "Book a free consultation"
+            }
+          }),
+        }}
+      />
+</head>
 
 
-
-
-  {/* Google Fonts & Icons */}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5c5e5c5e5c5e5c5e5c5e5c5e5c5e" crossOrigin="anonymous" />
-
-  {/* Structured Data - Local Business & Services */}
-  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Global Visa Internationals",
-      "image": "https://www.globalvisainternationals.com/gvilogo.png",
-      "url": "https://www.globalvisainternationals.com/",
-      "telephone": "+917022213466",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "GF-9, Business Point, Brigade Road",
-        "addressLocality": "Bangalore",
-        "addressRegion": "Karnataka",
-        "postalCode": "560025",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 12.9674808,
-        "longitude": 77.606117
-      },
-      "sameAs": [
-        "https://www.facebook.com/globalvisa.globalvisa",
-        "https://www.instagram.com/globalvisa_internationals/",
-        "https://x.com/GLOBALVISA1505"
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "19:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "10:00",
-          "closes": "14:00"
-        }
-      ],
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.globalvisainternationals.com/contact"
-        },
-        "resultDescription": "Book a free consultation"
-      }
-    }
-  ` }} />
-</Head>
 
 
 
@@ -331,7 +341,7 @@ const visaTypes = [
       </div>
     </section>
 
-      <h1 className={styles.mainHeading}>
+     <h1 className={styles.mainHeading}>
         Global Visa Internationals - Trusted Visa & Immigration Consultant
       </h1>
 
