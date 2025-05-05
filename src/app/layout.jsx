@@ -86,6 +86,16 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+          <script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </script>
       </head>
       <body>
         <GoogleReCaptchaProvider
