@@ -53,23 +53,7 @@ export default function Footer() {
                 <div className={styles.footerContent}>
                     <p>&copy; {new Date().getFullYear()} Global Visa Internationals. All Rights Reserved.</p>
 
-                    <div className={styles.socialIcons}>
-                        <a href="http://linkedin.com/company/globalvisainternationals" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <img className={styles.footerImg} src="/images/linkedInB.png" alt="LinkedIn" />
-                        </a>
-                        <a href="https://www.youtube.com/@GLOBALVISAINTERNATIONALS" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                            <img className={styles.footerImg} src="/images/youtube.png" alt="YouTube" />
-                        </a>
-                        <a href="https://x.com/GLOBALVISA1505" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                            <img className={styles.footerImg} src="/images/twitter.png" alt="Twitter" />
-                        </a>
-                        <a href="https://instagram.com/globalvisa_internationals/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <img className={styles.footerImg} src="/images/instagram.png" alt="Instagram" />
-                        </a>
-                        <a href="https://facebook.com/globalvisa.globalvisa" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <img className={styles.footerImg} src="/images/facebook.png" alt="Facebook" />
-                        </a>
-                    </div>
+                    
 
                     {/* Contact and Address Info */}
                     <address className={styles.footerContact}>
@@ -104,6 +88,23 @@ export default function Footer() {
                         <Link href="/terms-and-conditions" className={styles.text}>Terms & Conditions</Link>
                     </div>
                 </div>
+                <div className={styles.socialIcons}>
+                        <a href="http://linkedin.com/company/globalvisainternationals" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img className={styles.footerImg} src="/images/linkedInB.png" alt="LinkedIn" />
+                        </a>
+                        <a href="https://www.youtube.com/@GLOBALVISAINTERNATIONALS" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <img className={styles.footerImg} src="/images/youtube.png" alt="YouTube" />
+                        </a>
+                        <a href="https://x.com/GLOBALVISA1505" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <img className={styles.footerImg} src="/images/twitter.png" alt="Twitter" />
+                        </a>
+                        <a href="https://instagram.com/globalvisa_internationals/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img className={styles.footerImg} src="/images/instagram.png" alt="Instagram" />
+                        </a>
+                        <a href="https://facebook.com/globalvisa.globalvisa" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <img className={styles.footerImg} src="/images/facebook.png" alt="Facebook" />
+                        </a>
+                    </div>
             </footer>
         </>
     );

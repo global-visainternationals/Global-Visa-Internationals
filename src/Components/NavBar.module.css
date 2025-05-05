@@ -107,7 +107,6 @@
 
 .submenu li a {
   display: block;
-  padding: 10px;
   color: #000;
   font-weight: 600;
 }
@@ -150,6 +149,9 @@
 
   .submenuContainer:hover .submenu {
     display: block;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;

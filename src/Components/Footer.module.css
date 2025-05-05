@@ -1,14 +1,9 @@
-.bold {
-  color: #000000;
-  font-size: 2ch;
-}
 
-.cont {
-  color: #1b1b1b;
-}
+
+
 
 .text {
-  color: #000000;
+  color: #1b1b1b;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -19,27 +14,25 @@
 
 /* Footer container */
 .Footer {
-  background: #ffffff;
-  color: #000000;
+  color: #000;
   padding: 20px 10px;
-  border: 5px solid #478537;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-top: 2px solid #478537;
   text-align: center;
   position: relative;
   z-index: 1;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
 }
 
 .footerContent {
-  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 /* Footer Paragraph */
 .footerContent p {
-  font-size: 14px;
   line-height: 1.6;
   margin: 5px 0;
 }
@@ -54,9 +47,9 @@
 }
 
 .footerImg {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -65,21 +58,13 @@
   opacity: 0.8;
 }
 
-/* Contact Section */
-.footerContact {
-  margin-top: 10px;
-}
 
 .footerContact a {
-  color: #000;
-  text-decoration: none;
+  font-weight: bold;
   font-size: 14px;
   transition: color 0.3s ease-in-out;
 }
 
-.footerContact a:hover {
-  color: #00bcd4;
-}
 
 /* Floating Action Icons */
 .callIcon,
@@ -89,13 +74,13 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
-  background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .whatsappIcon {
@@ -105,7 +90,11 @@
 .callIcon {
   left: 15px;
 }
-
+.callIcon,
+.whatsappIcon :hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 /* Responsive Icons */
 @media (max-width: 600px) {
   .callIcon,
