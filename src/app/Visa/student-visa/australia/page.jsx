@@ -154,59 +154,59 @@ export default function Australia(){
       "name": "Contact Us for Visa Help",
       "target": "https://www.globalvisainternationals.com/contact"
     },
-    // "mainEntity": {
-    //   "@type": "FAQPage",
-    //   "mainEntity": [
-    //     {
-    //       "@type": "Question",
-    //       "name": "How long is the Australian student visa valid?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "The visa duration matches your course length, plus extra time for travel and graduation."
-    //       }
-    //     },
-    //     {
-    //       "@type": "Question",
-    //       "name": "Can I work while studying in Australia?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "Yes, international students can work up to 48 hours per fortnight during the semester."
-    //       }
-    //     },
-    //     {
-    //       "@type": "Question",
-    //       "name": "Can I bring my family on a student visa?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "Yes, dependents can be included. They may also work in Australia under certain conditions."
-    //       }
-    //     },
-    //     {
-    //       "@type": "Question",
-    //       "name": "What is the cost of applying for a student visa?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "Visa fees vary. Check the official Australian Immigration website for the latest fees."
-    //       }
-    //     },
-    //     {
-    //       "@type": "Question",
-    //       "name": "Can Global Visa Internationals help if I have gaps or previous refusals?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "Yes. We specialize in handling complex cases including gaps and previous visa refusals."
-    //       }
-    //     },
-    //     {
-    //       "@type": "Question",
-    //       "name": "How can I contact Global Visa Internationals?",
-    //       "acceptedAnswer": {
-    //         "@type": "Answer",
-    //         "text": "Visit our website or call us at +917022213466 for expert assistance."
-    //       }
-    //     }
-    //   ]
-    // }
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long is the Australian student visa valid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The visa duration matches your course length, plus extra time for travel and graduation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I work while studying in Australia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, international students can work up to 48 hours per fortnight during the semester."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I bring my family on a student visa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, dependents can be included. They may also work in Australia under certain conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of applying for a student visa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visa fees vary. Check the official Australian Immigration website for the latest fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Global Visa Internationals help if I have gaps or previous refusals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialize in handling complex cases including gaps and previous visa refusals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact Global Visa Internationals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit our website or call us at +917022213466 for expert assistance."
+          }
+        }
+      ]
+    }
   };
   
          return(      
@@ -632,7 +632,7 @@ export default function Australia(){
                                 </div>
                                     )}
                                           </div> 
-                                          <h3>Frequently Asked Questions (FAQs)</h3>
+                                          {/* <h3>Frequently Asked Questions (FAQs)</h3>
                         <ol>
                           <h4>
                             <li>What is the duration of the Australian student visa?</li>
@@ -751,7 +751,7 @@ export default function Australia(){
                             <li>What if I want to study in Australia but have a low academic score?</li>
                           </h4>
                           <p>Having a low academic score may affect your chances of obtaining a student visa. However, you can still apply and provide additional documentation to demonstrate your genuine intention to study and your commitment to improving your academic performance.</p>
-                        </ol>
+                        </ol> */}
 
     
                     </div>
