@@ -7,8 +7,15 @@
     font-size: 16px;
     line-height: 1.5;
 }
+
 .Title{
     margin-top: 70px;
+    color: #1d7e0a;
+}
+.subTitle{
+    display: flex;
+    text-align: left;
+    color: #1d7e0a;
 }
 @media screen and (min-width: 1024px),
 screen and (max-width: 768px),
