@@ -613,7 +613,7 @@ export default function Australia(){
                           <h4>
                             <li>Can I apply for permanent residency after studying in Australia?</li>
                           </h4>
-                          <p>                        Yes, depending on your qualifications and other factors, you may be eligible to apply for a post-study work visa or other pathways to permanent residency after completing your studies.</p>
+                          <p>Yes, depending on your qualifications and other factors, you may be eligible to apply for a post-study work visa or other pathways to permanent residency after completing your studies.</p>
                           <h4>
                             <li>What is the cost of the student visa application?</li>
                           </h4>
