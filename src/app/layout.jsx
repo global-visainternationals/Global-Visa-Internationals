@@ -96,6 +96,20 @@ export default function RootLayout({ children }) {
             });
           `}
         </script>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
+        <script>
+  gtag('event', 'ads_conversion_Contact_Us_1', {
+    // <event_parameters>
+  });
+</script>
+{/* <!-- Google tag (gtag.js) event --> */}
+<script>
+  gtag('event', 'ads_conversion_Contact_Us_1', {
+    // <event_parameters>
+  });
+</script>
+
+
       </head>
       <body>
         <GoogleReCaptchaProvider
