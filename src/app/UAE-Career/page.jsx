@@ -102,6 +102,37 @@ export default function UAECareer() {
       };
     return (
        <>
+       <head>
+        <title>Work in UAE – Direct Company Jobs with Free Visa Processing by Global Visa Internationals</title>
+        <meta name="description" content="Explore direct job opportunities in UAE with Global Visa Internationals. Free visa processing and no hidden charges. Apply now!" />
+        <meta name="keywords" content="UAE jobs, Global Visa Internationals, free visa processing, direct company jobs, construction jobs, MEP jobs" />
+        <meta name="author" content="Global Visa Internationals" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="keywords" content="UAE jobs, Global Visa Internationals, free visa processing, direct company jobs, construction jobs, MEP jobs" />
+        <meta property="og:title" content="Work in UAE – Direct Company Jobs with Free Visa Processing by Global Visa Internationals" />
+        <meta property="og:description" content="Explore direct job opportunities in UAE with Global Visa Internationals. Free visa processing and no hidden charges. Apply now!" />
+        <meta property="og:image" content="https://www.globalvisainternationals.com/globalvisainternationals.webp" />
+        <meta property="og:url" content="https://www.globalvisainternationals.com/uae-career" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Global Visa Internationals" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Work in UAE – Direct Company Jobs with Free Visa Processing by Global Visa Internationals" />
+        <meta name="twitter:description" content="Explore direct job opportunities in UAE with Global Visa Internationals. Free visa processing and no hidden charges. Apply now!" />
+        <meta name="twitter:image" content="https://www.globalvisainternationals.com/globalvisainternationals.webp" />
+        <meta name="twitter:site" content="@YourTwitterHandle" />
+        <meta name="twitter:creator" content="@YourTwitterHandle" />
+        <link rel="icon" href="/globalvisainternationals.webp" type="image/webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5" crossOrigin="anonymous" />
+        
+       </head>
         <section className={Styles.UAECareer}>
             <div className={Styles.JobData }>
                 
