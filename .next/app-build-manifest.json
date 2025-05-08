@@ -1,3 +1,212 @@
 {
-  "pages": {}
+  "pages": {
+    "/api/contact/route": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/chunks/app/api/contact/route-e9593c897254edba.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/eefb12a93387673c.css",
+      "static/chunks/8e1d74a4-6f92db90d6f8ca32.js",
+      "static/chunks/6766-2f1bac8edda2e905.js",
+      "static/chunks/6874-17dd20506f3c463a.js",
+      "static/chunks/2362-2151c9d529d1128f.js",
+      "static/chunks/app/layout-ffd9723ec8eda5bc.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/chunks/app/not-found-b77015327271ab7a.js"
+    ],
+    "/Visa/student-visa/europe/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/387c4ce713952aa1.css",
+      "static/chunks/app/Visa/student-visa/europe/page-88c3c26b94a5372c.js"
+    ],
+    "/UAE-Career/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/a1cf57e572fe45db.css",
+      "static/chunks/app/UAE-Career/page-435f393c4bb97f56.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/chunks/app/_not-found/page-b7c4624292c60d21.js"
+    ],
+    "/Visa/student-visa/canada/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/c926f3508805aaba.css",
+      "static/chunks/6766-2f1bac8edda2e905.js",
+      "static/chunks/app/Visa/student-visa/canada/page-efdb58833b3a6cf1.js"
+    ],
+    "/Visa/student-visa/uk/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/b2285ed7348be2d4.css",
+      "static/chunks/app/Visa/student-visa/uk/page-97f7a7e48e4139af.js"
+    ],
+    "/Visa/student-visa/australia/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/22a90b15aec74874.css",
+      "static/chunks/app/Visa/student-visa/australia/page-2e2f8174a8f5eb65.js"
+    ],
+    "/Visa/tourist-visa/australia/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/9dc6e715651ed566.css",
+      "static/chunks/app/Visa/tourist-visa/australia/page-77181b80f92de99e.js"
+    ],
+    "/Visa/student-visa/usa/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/9395004b68c60b4e.css",
+      "static/chunks/app/Visa/student-visa/usa/page-7e8d0b925bfa03cd.js"
+    ],
+    "/Visa/tourist-visa/canada/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/2a4f3e438e4bd54e.css",
+      "static/chunks/app/Visa/tourist-visa/canada/page-19b59fb17a9a7fe8.js"
+    ],
+    "/Visa/student-visa/new-zealand/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/ea3e5f21cc782ea7.css",
+      "static/chunks/app/Visa/student-visa/new-zealand/page-69dd5b510bf81d4b.js"
+    ],
+    "/Visa/tourist-visa/uk/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/e25b8e35ab2c7f55.css",
+      "static/chunks/app/Visa/tourist-visa/uk/page-165b659c2ad78fdc.js"
+    ],
+    "/Visa/tourist-visa/europe/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/f339041bba0a98fd.css",
+      "static/chunks/app/Visa/tourist-visa/europe/page-36eeb330d66c7cce.js"
+    ],
+    "/blog/[slug]/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/199dd162ebcce43a.css",
+      "static/chunks/app/blog/[slug]/page-2da31eb3103f4d41.js"
+    ],
+    "/Visa/tourist-visa/usa/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/b4cf0a381306cc1d.css",
+      "static/chunks/app/Visa/tourist-visa/usa/page-a5306fe27236c7d5.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/199dd162ebcce43a.css",
+      "static/chunks/6766-2f1bac8edda2e905.js",
+      "static/chunks/6874-17dd20506f3c463a.js",
+      "static/chunks/8544-71f567ab27575008.js",
+      "static/chunks/app/blog/page-a53cd2f6e32369bb.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/e99123f4ef5db804.css",
+      "static/chunks/6766-2f1bac8edda2e905.js",
+      "static/chunks/app/about-us/page-4d250008a18ea6aa.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/f26adfb1dcd336f9.css",
+      "static/chunks/5085-e7ca284870cb392c.js",
+      "static/chunks/app/contact/page-f46e5e414705c81e.js"
+    ],
+    "/career/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/e097803db29470f4.css",
+      "static/chunks/app/career/page-8ee88767b93055f5.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/fab0f5760fbb606f.css",
+      "static/chunks/6766-2f1bac8edda2e905.js",
+      "static/chunks/7093-1837b91ef4e5bbe4.js",
+      "static/chunks/app/page-99f0e3bdcdb8bdbf.js"
+    ],
+    "/privacy-policy/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/aacfa260ceaedeb7.css",
+      "static/chunks/app/privacy-policy/page-19aa7c1b6d03c186.js"
+    ],
+    "/terms-and-conditions/page": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/css/b394994503f7c923.css",
+      "static/chunks/app/terms-and-conditions/page-41eef26f91585658.js"
+    ],
+    "/api/job-posting/route": [
+      "static/chunks/webpack-46caca40e2d37266.js",
+      "static/chunks/4bd1b696-86ebb163023890db.js",
+      "static/chunks/1684-71e96d8610d6e944.js",
+      "static/chunks/main-app-7e6f9f7151aee163.js",
+      "static/chunks/app/api/job-posting/route-aeb5c38bd0e79952.js"
+    ]
+  }
 }

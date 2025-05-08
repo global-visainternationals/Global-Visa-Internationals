@@ -13,6 +13,23 @@ const nextConfig = {
     config.cache = false;
     return config;
   },
+
+  // ✅ Add proper 301 redirects
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'globalvisainternationals.com',
+          },
+        ],
+        destination: 'https://www.globalvisainternationals.com/:path*',
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
 };
 
 export default withMDX(nextConfig);
