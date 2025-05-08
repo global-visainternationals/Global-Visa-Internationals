@@ -100,7 +100,8 @@ const NavBar = () => {
           ))}
 
           <li><Link href="/blog" title="Blog">Blog</Link></li>
-          <li><Link href="/career" title="Contact Us">Career</Link></li>
+          <li><Link href="/career" title="Career">Career</Link></li>
+          <li><Link href="/UAE-Career" title="UAE-Career">UAE-Career</Link></li>
           <li><Link href="/contact" title="Contact Us">Contact</Link></li>
         </ul>
       </nav>
