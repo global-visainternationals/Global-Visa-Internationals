@@ -251,7 +251,16 @@ export default function Australia(){
                           <input  className={styles.input} type="text" name="name" placeholder="Enter your name" required />
                         </div>
                         <div>
-                          <input  className={styles.input} type="text" name="phone" placeholder="Enter your phone number" required />
+                        <input 
+                          className={styles.input} 
+                          type="tel" 
+                          name="phone" 
+                          placeholder="Enter your phone number" 
+                          pattern="[0-9]{10}" 
+                          minLength="10" 
+                          maxLength="10" 
+                          required 
+                        />
                         </div>
                       </div>
 

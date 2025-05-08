@@ -36,7 +36,7 @@
     border-radius: 10px;
 }
 .textContent{
-    max-width: 600px;
+    max-width: 60%;
     font-size: 16px;
     color: #201e1e;
     line-height: 1.5;
@@ -51,7 +51,7 @@
 .aboutSec {
     display: flex;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 90%;
     margin: 0 auto;
     
 }

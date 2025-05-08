@@ -1,5 +1,5 @@
  "use client";
-import styles from './Australia.module.css';
+import styles from './USA.module.css';
 import React,  { useState,useEffect } from 'react';
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
@@ -109,84 +109,132 @@ export default function Australia() {
   }, []);
      return(      
            <>    
-            <head>
-        <title> Australia Tourist Visa , Top Places to visit Australia| Global visa internationals</title>
-        <meta name="description" content="Your comprehensive guide to Australia tourist visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta name="keywords" content="Australia tourist visa, study in Australia, Australia universities, top Australia universities, courses in Australia, MBA Australia, cost of studying Australia, Australia student visa requirements, Australia visa application, international students Australia, education system Australia" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.globalvisainternationals.com/Visa/tourist-visa-visa/australia" />
+       <head>
+       <title>USA Tourist Visa From India | Cost, Process & Top Attractions</title>
+      <meta
+        name="description"
+        content="Apply for a USA Tourist Visa (B-2) with expert guidance from Global Visa Internationals. Know the visa process, fees, documents required, and explore top tourist destinations in the USA."
+      />
+      <meta
+        name="keywords"
+        content="USA tourist visa, apply for US tourist visa from India, B2 visa USA, cost of USA trip, flight to USA cost, US visa consultants in India, tourist attractions in USA, visa process USA, USA visa fees"
+      />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.globalvisainternationals.com/visa/tourist-visa/usa" />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Australia Student Visa: Top Universities, Courses & Application Guide | Global Visa Internationals" />
-        <meta property="og:description" content="Your comprehensive guide to Australia student visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta property="og:url" content="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
-        <meta property="og:type" content="website" />
-        {/* <meta property="og:image" content="URL_TO_YOUR_Australia_IMAGE" /> */}
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Apply for USA Tourist Visa From India | Global Visa Internationals" />
+      <meta
+        property="og:description"
+        content="Planning to visit the USA? Get expert assistance for your B-2 visa application, flight booking, cost estimate, and must-visit places. Start your USA journey with Global Visa Internationals."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.globalvisainternationals.com/visa/tourist-visa/usa" />
+      <meta property="og:image" content="https://www.globalvisainternationals.com/images/usa-tourist-visa-banner.jpg" />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Australia Student Visa: Top Universities, Courses & Application Guide | Global Visa Internationals" />
-        <meta name="twitter:description" content="Your comprehensive guide to Australia student visas, top-ranked universities, popular courses, costs, and the application process. Unlock your Australia education dream with Global Visa Internationals." />
-        <meta name="twitter:url" content="https://www.globalvisainternationals.com/Visa/student-visa/australia" />
-        {/* <meta name="twitter:image" content="URL_TO_YOUR_Australia_IMAGE" /> */}
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="USA Tourist Visa | Application, Cost & Documents Needed" />
+      <meta
+        name="twitter:description"
+        content="Explore the USA with the right tourist visa. Get visa application support, interview preparation, and travel cost breakdown from Global Visa Internationals."
+      />
+      <meta name="twitter:image" content="https://www.globalvisainternationals.com/images/usa-tourist-visa-banner.jpg" />
+      <meta name="twitter:url" content="https://www.globalvisainternationals.com/visa/tourist-visa/usa" />
 
-        {/* Geo-related meta tags */}
-        <meta name="geo.region" content="AU" />
-        <meta name="geo.placename" content="Australia" />
-        <meta name="geo.region" content="IN-KA" />
-        <meta name="geo.placename" content="Bengaluru" />
-        <meta name="ICBM" content="12.9716,77.5946" />
+      {/* Geo Location Tags */}
+      <meta name="geo.region" content="US" />
+      <meta name="geo.placename" content="USA" />
+      <meta name="geo.region" content="IN-KA" />
+      <meta name="geo.placename" content="Bengaluru" />
+      <meta name="ICBM" content="12.9716,77.5946" />
 
-        {/* Structured Data - EducationalOrganization Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
+      {/* Structured Data - Local Business / Organization */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Global Visa Internationals",
+            "url": "https://www.globalvisainternationals.com",
+            "logo": "https://www.globalvisainternationals.com/logo.png",
+            "description": "Leading visa consultancy offering expert USA tourist visa assistance from India. We help with B-2 visa application, documentation, interview prep, and more.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "MG Road",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "KA",
+              "postalCode": "560025",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-7022213466",
+              "contactType": "Customer Support"
+            },
+            "sameAs": [
+              "https://www.facebook.com/GlobalVisaInternationals",
+              "https://www.linkedin.com/company/globalvisainternationals",
+              "https://twitter.com/GlobalVisaIntl"
+            ]
+          })
+        }}
+      />
+</head>
+
   <div className={styles.imageContainer}>
-    <img src="/images/Australia1.png" alt="Australia Image" className={styles.AustraliaImage} />
+    <img src="/images/USA1.png" alt="USA Image" className={styles.USAImage} />
   </div>
 
-         <div className={styles.AustraliaSec}>
+         <div className={styles.USASec}>
 
 
-<div className={styles.AustraliaData}>
-    <h1 className={styles.Title}> Your Comprehensive Guide to the Australia Tourist Visa | Global visa internationals</h1>
-    <p>Australia, a land of breathtaking landscapes, unique wildlife, and vibrant cities, beckons travelers from all corners of the globe. A tourist visa allows you to explore this magnificent country for leisure, offering an unforgettable experience filled with natural beauty and cultural richness.
-      </p>
-      <p></p>
-      <h3 className={styles.subTitle}>Why Choose Australia for Tourism? What Makes It Special?</h3>
-      <p>Australia offers a plethora of unique experiences that set it apart as a top tourist destination:</p>
+<div className={styles.USAData}>
+    <h1 className={styles.Title}> Explore the Wonders of the USA: Your Dream Tourist Visa Awaits!</h1>
+    <p>Dreaming of experiencing the vibrant energy of New York City, the breathtaking landscapes of the Grand Canyon, or the glitz and glamour of Hollywood? The United States of America offers a kaleidoscope of experiences for every traveler. From iconic landmarks and bustling cities to stunning natural wonders and diverse cultures, a USA tourist visa opens the door to unforgettable adventures.</p>
+      
+      <h3 className={styles.subTitle}>Why Choose USA for Tourism? What Makes It Special?</h3>
+      <p>The USA is more than just a destination; it's a melting pot of cultures, a land of innovation, and a showcase of unparalleled beauty. Here's what makes it so special:</p>
       
       <ul>
-        <li>Diverse Landscapes: From the iconic Outback with its red deserts and ancient rock formations like Uluru to lush rainforests, pristine beaches, and the underwater wonders of the Great Barrier Reef, Australia boasts an incredibly varied natural environment.
+        <li>Iconic Landmarks: Stand in awe of the Statue of Liberty, walk across the Golden Gate Bridge, and witness the power of Niagara Falls. These are just a few of the world-famous landmarks that will leave you spellbound.
           
         </li>
-        <li><strong>Unique Wildlife:</strong> Encounter iconic animals found nowhere else on Earth, such as kangaroos, koalas, wombats, and the elusive platypus. Explore national parks and wildlife sancWorld-Class Cities: Experience the cosmopolitan flair of Sydney with its iconic Opera House and Harbour Bridge, the cultural heart of Melbourne with its laneways and vibrant arts scene, and the laid-back charm of Brisbane and Perth.</li>
-        <li><strong>Aboriginal Culture:</strong> Discover the rich and ancient culture of Australia's Aboriginal people, the oldest living culture in the world. Explore sacred sites, learn about Dreamtime stories, and witness traditional art and ceremonies.</li>
-        <li><strong>Adventure Activities:</strong> Whether you're into surfing world-famous breaks, diving or snorkeling in the Great Barrier Reef, hiking through stunning national parks, or exploring the vast Outback, Australia offers endless opportunities for adventure.</li>
-        <li><strong>Stunning Beaches:</strong> Relax on the golden sands of Bondi Beach, explore the silica white shores of Whitehaven Beach in the Whitsundays, or discover countless other breathtaking coastal havens.</li>
+        <li><b className={styles.subTitle}>Diverse Landscapes:</b> From the snow-capped peaks of the Rocky Mountains and the vast plains of the Midwest to the sunny beaches of California and the lush forests of the Pacific Northwest, the USA boasts a breathtaking variety of natural landscapes. Adventure awaits at every turn, whether you're hiking, skiing, or simply soaking in the scenery.</li>
+
+        <li><b className={styles.subTitle}>Vibrant Cities:</b> Immerse yourself in the fast-paced life of New York City, explore the cultural richness of Boston, experience the music scene in Nashville, or enjoy the laid-back vibes of Los Angeles. Each American city has its own unique character and charm.</li>
+        
+        <li><b className={styles.subTitle}>World-Class Entertainment:</b> Catch a Broadway show in New York, explore the movie studios in Hollywood, experience the thrill of Las Vegas, or enjoy the magic of Disneyland. The USA offers endless entertainment options for all ages.</li>
+
+        <li><b className={styles.subTitle}>Rich History and Culture:</b> Discover the nation's history in Washington D.C., explore the jazz heritage of New Orleans, or delve into the Native American cultures of the Southwest. The USA's diverse history and cultural tapestry offer fascinating insights.</li>
       </ul>
-      <h3 className={styles.subTitle}>Must-Visit Tourist Spots in Australia</h3>
-      <p>Australia is brimming with incredible places to explore. Here are some of the main tourist spots you shouldn't miss:</p>
+      <h3 className={styles.subTitle}>Must-Visit Tourist Spots in USA</h3>
+      <p>Your USA adventure wouldn't be complete without visiting some of these incredible destinations:</p>
       <ol>
-        <li>Sydney: Home to the iconic Sydney Opera House and Harbour Bridge. Explore Bondi Beach, the historic Rocks district, and enjoy a ferry ride across the harbor.</li>
+        <li>New York City, New York: Experience the iconic skyline, visit Times Square, explore Central Park, and immerse yourself in world-class museums and theaters.</li>
         <br />
-        <li>Great Barrier Reef: The world's largest coral reef system, offering unparalleled snorkeling and diving experiences amidst diverse marine life. Located off the coast of Queensland.</li>
+        <li>Los Angeles, California: Discover Hollywood glamour, stroll along the Walk of Fame, relax on the beaches of Santa Monica and Malibu, and visit world-famous theme parks.</li>
         <br />
-        <li>MUluru (Ayers Rock): A massive sandstone monolith in the heart of the Northern Territory, sacred to the Aboriginal Anangu people. Witness stunning sunsets and learn about its cultural significance.</li>
+        <li>San Francisco, California: Ride a cable car, visit Alcatraz Island, walk across the Golden Gate Bridge, and explore the city's unique neighborhoods.</li>
         <br />
-        <li>The Whitsunday Islands: A group of idyllic islands off the coast of Queensland, famous for their pristine beaches, turquoise waters, and sailing opportunities.</li>
-        <li>Kakadu National Park: A UNESCO World Heritage site in the Northern Territory, rich in Aboriginal culture, diverse wildlife (including crocodiles and kangaroos), and stunning landscapes.</li>
-        <li>Gold Coast: A vibrant city in Queensland known for its beautiful beaches, surfing spots (like Surfers Paradise), theme parks, and lively nightlife.</li>
-        <li>Perth: A sunny coastal city in Western Australia with beautiful beaches like Cottesloe and Scarborough, and Kings Park offering panoramic city views. Don't miss a trip to Rottnest Island to see the adorable quokkas.</li>
-        <li>Brisbane: A laid-back city in Queensland with the South Bank Parklands, a cultural and recreational hub, and the Lone Pine Koala Sanctuary.</li>
-        <li>Adelaide: A charming city in South Australia known for its museums, galleries, and festivals. Explore the Adelaide Botanic Garden and the historic Port Adelaide. The Barossa Valley and McLaren Vale wine regions are also nearby.</li>
+        <li>Grand Canyon National Park, Arizona: Witness the awe-inspiring beauty and vastness of one of the world's natural wonders. Hike along the rim or take a mule ride into the canyon.</li>
+
+        <li>Yellowstone National Park, Wyoming, Montana, Idaho: Explore geysers, hot springs, and abundant wildlife in America's first national park.</li>
+
+        <li>Miami, Florida: Enjoy the vibrant nightlife, beautiful beaches, Art Deco architecture, and Latin American culture.</li>
+
+        <li>Washington D.C.: Explore the nation's capital, visit iconic monuments and memorials, and delve into history at the Smithsonian museums.</li>
+
+        <li>Las Vegas, Nevada: Experience the dazzling lights, world-class entertainment, and vibrant casino scene.</li>
+
+        <li>Niagara Falls, New York: Witness the sheer power and beauty of these majestic waterfalls.</li>
+        <li>Orlando, Florida: Discover the magic of world-renowned theme parks like Walt Disney World and Universal Studios.</li>
         
       </ol>
       
       <div className={styles.formSection1}>
-      <h4>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
+      <h4 className={styles.subTitle}>Contact Global visa Internationals for Visa Documentation Assistance:</h4>
                   <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
@@ -259,115 +307,90 @@ export default function Australia() {
             </div>
           )}
                 </div> 
-                <h2 className={styles.subTitle}>Tailor Your Australian Adventure</h2>
-  <p>Not sure where to start? Take our quick quiz to discover your perfect Australian getaway!</p>
 
-<h2 className={styles.subTitle}>Sample Itineraries</h2>
-<p>Get inspired with these sample itineraries:</p>
-<ul>
-  <li>7-Day East Coast Highlights: Sydney, Brisbane, Gold Coast, Great Barrier Reef</li>
-  <li>14-Day Best of Australia: Sydney, Melbourne, Uluru, Great Barrier Reef</li>
-  <li>10-Day West Coast Adventure: Perth, Exmouth, Broome</li>
-</ul>
+                <h2 className={styles.subTitle}>Planning Your Trip: Understanding the Costs</h2>
+      <p>Traveling to the USA can be an exciting adventure, but it's essential to plan your budget wisely. Here are some key cost considerations:</p>
+      <p className={styles.subTitle}>Cost Breakdown: How Much Does a USA Trip Cost from India?</p>
+      <table className={styles.table}>
+        <thead>
+          <th>Expense Category</th>
+          <th>Estimated Cost</th>
+          <th>Notes</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flight Charges</td>
+            <td>₹70,000 – ₹1,50,000+ (return airfare)</td>
+            <td>Varies by season, airline, and destination</td>
+          </tr>
+          <tr>
+            <td>Accommodation</td>
+            <td>See detailed table below</td>
+            <td>From hostels to luxury hotels</td>
+          </tr>
+          <tr>
+            <td>Food</td>
+            <td>$20 – $100+ per day</td>
+            <td>Budget to fine dining</td>
+          </tr>
+          <tr>
+            <td>Transportation</td>
+            <td>$30 – $100+ per day</td>
+            <td>Includes car rental, public transport, ride-sharing</td>
+          </tr>
+          <tr>
+            <td>Attractions & Activities</td>
+            <td>$5 – $50+ per activity</td>
+            <td>Museums, theme parks, guided tours, etc.</td>
+          </tr>
+          <tr>
+            <td>Visa Fee (B-2)</td>
+            <td>	$185</td>
+            <td>Paid online or at authorized banks</td>
+          </tr>
+          <tr>
+            <td>Travel Insurance</td>
+            <td>$50 – $200+</td>
+            <td>Highly recommended</td>
+          </tr>
+          <tr>
+            <td>Miscellaneous</td>
+            <td>Varies</td>
+            <td>Shopping, souvenirs, unforeseen expenses</td>
+          </tr>
+        </tbody>
+      </table>
 
-<h2>Cost of Traveling to Australia</h2>
-<p>The cost of a trip to Australia can vary significantly depending on your travel style, duration of stay, and preferences. Here's a general breakdown of potential expenses:</p>
-<ul>
-  <li>Visa Cost: The current fee for an Australian tourist visa (subclass 600) is approximately AUD 190 (around INR 10,500), but this is subject to change.</li>
-  <br />
-  <li>Flight Charges: Return flights from India to Australia can range significantly based on the time of booking, airline, and route. On average, you might expect to pay anywhere from INR 22,000 to INR 50,000 or more for a round-trip ticket per person. Prices can be lower or higher depending on the season and availability.</li>
-  <br />
-  <li>Living Expenses: Daily living expenses for a tourist in Australia can vary widely based on your accommodation choices, dining preferences, and activities. Here's a general estimate:
- <ul>   
-    <li>Budget Traveler: AUD 89 - AUD 100 per day (approx. INR 4,900 - INR 5,500), potentially staying in hostels, cooking some meals, and using public transport.</li>
-    <li>Mid-Range Traveler: AUD 230 - AUD 259 per day (approx. INR 12,700 - INR 14,300), staying in comfortable hotels or Airbnb, eating out occasionally, and participating in some tours.</li>
-    <li>Luxury Traveler: AUD 621 - AUD 699 per day (approx. INR 34,200 - INR 38,500), staying in high-end accommodations, dining at top restaurants, and engaging in exclusive experiences.</li>
-</ul>
-For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (approximately INR 8,250 - INR 16,500) per person for living expenses, excluding flights and visa costs. This would cover accommodation, food, local transport, and some sightseeing.
-<h2 className={styles.subTitle}>Example Costs:</h2>
-<ul>
-  <li>Accommodation (per night): Budget hostels (AUD 37-42), mid-range hotels (AUD 100-112), luxury hotels (AUD 270+).</li>
-  <li>Meals: Budget meal (AUD 10-15), mid-range restaurant (AUD 25-50), fine dining (AUD 80+).</li>
-  <li>Local Transport (daily): Public transport pass (AUD 8-16 in major cities), individual taxi ride (AUD 3-7 base fare).</li>
-</ul>
-</li>
-<li>Activities and Tours: Costs for tours and activities will vary greatly depending on what you choose to do. For example, a day trip to the Great Barrier Reef can cost anywhere from AUD 150 to AUD 300 or more.</li>
-</ul>
-<h2 className={styles.subTitle}>Budget Calculator:</h2>
-<ul>
-  <li>Therefore, for a 10-day trip to Australia, excluding flights and visa, you might budget:
-    <ul>
-      <li>Budget: AUD 890 - AUD 1000 (approx. INR 49,000 - INR 55,000)</li>
-      <li>Mid-Range: AUD 2300 - AUD 2590 (approx. INR 126,500 - INR 142,500)</li>
-      <li>Luxury: AUD 6210 - AUD 6990 (approx. INR 341,500 - INR 384,500)</li>
-    </ul>
-  </li>
-  <li>Keep in mind that these are rough estimates, and actual costs can vary.</li>
-</ul>
-<h2 className={styles.subTitle}>Tips for a Successful Australian Trip:</h2>
-
-<ol>
-  <li>Plan Ahead: Research the best time to visit, popular tourist attractions, and budget-friendly accommodations.</li>
-  <li>Book in Advance: Reserve flights and accommodations to avoid last-minute hassles.</li>
-  <li>Stay Safe: Be aware of local customs and laws, and carry necessary documents and valuables.</li>
-  <li>Be Flexible: Adjust your plans based on unexpected events or changes in the itinerary.</li>
-  <li>Enjoy the Journey: Take breaks, relax, and immerse yourself in the beauty of Australia.</li>
-</ol>
-<h2 className={styles.subTitle}>Top Attractions in Australia:</h2>
-
-<ul>
-  <li>Local Insights & Hidden Gems:
-    <ul>
-      <li>Explore the ancient Aboriginal rock art in the Kimberley region.</li>
-      <li>Swim with whale sharks on Ningaloo Reef.</li>
-      <li>Hike the Overland Track in Tasmania's pristine wilderness.</li>
-    </ul>
-  </li>
-  <li>Cultural Snippets:
-    <ul>
-      <li>"G'day" means hello!</li>
-      <li>Australians love their "barbies" (barbecues).</li>
-      <li>Don't forget to try some "Vegemite" on toast!</li>
-    </ul>
-  </li>
-  <li>Food & Drink Highlights:
-    <ul>
-      <li>Indulge in fresh seafood like Sydney rock oysters.</li>
-      <li>Taste world-class wines in the Barossa Valley.</li>
-      <li>Experience a traditional Aussie barbecue with friends.</li>
-    </ul>
-  </li>
-  <li>Sustainability & Responsible Tourism Tips:
-    <ul>
-      <li>Choose eco-certified tour operators.</li>
-      <li>Respect Aboriginal sacred sites and cultural practices.</li>
-      <li>Reduce your plastic consumption and dispose of waste responsibly.</li>
-    </ul>
-  </li>
-</ul>
-<ol>
-  <li>Great Barrier Reef: A UNESCO World Heritage site, the world's largest coral reef system, and a paradise for divers and snorkelers.</li>
-  <li>Uluru (Ayers Rock): A sacred site for Aboriginal Australians, known for its stunning sunsets and cultural significance.</li>
-  <li>Sydney Opera House: A masterpiece of modern architecture, home to some of the world's most famous operas.</li>
-  <li>Melbourne Cricket Ground: A historic stadium where the Australian national team plays.</li>
-  <li>Wagga Wagga: A charming town known for its apple orchards and scenic views.</li>
-  <li>Mount Kosciuszko National Park: A stunning national park offering hiking trails, waterfalls, and scenic drives.</li>
-  <li>Gold Coast: A tropical paradise with world-class beaches, surfing, and live music festivals.</li>
-</ol>
-<h2 className={styles.subTitle}>Additional Tips:</h2>
-<ol>
-  <li>Be Prepared for Weather: Australia experiences a diverse climate, with hot summers and cold winters. Pack accordingly and be prepared for unexpected weather changes.</li>
-  <li>Learn Local Languages: Knowing a few words in the local language can go a long way in making your trip more enjoyable.</li>
-  <li>Stay Hydrated: Australia's hot climate can make dehydration a concern. Drink plenty of water, especially during hot weather.</li>
-  <li>Consider a Visa Extension: If you plan to stay longer than your visa allows, consider applying for a visa extension before your current visa expires.</li>
-  <li>Respect Local Customs: Australia has a rich cultural heritage, and it's important to respect local customs and traditions.</li>
-  <li>Enjoy the Adventure: Australia offers a wide range of outdoor activities, from hiking to surfing, and it's a great place to experience the outdoors.</li>
-</ol>
-
+      <h3 className={styles.subTitle}>Accommodation Costs in the USA</h3>
+   <table className={styles.table}>
+    <thead>
+      <th>Type</th>
+      <th>Average Price per Night (USD)</th>
+      <th>Details</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hotels</td>
+        <td>$100 – $500+</td>
+        <td>Depends on city, location, and star rating</td>
+      </tr>
+      <tr>
+        <td>Airbnb/Vacation Rentals</td>
+        <td>$80 – $300+</td>
+        <td>Ideal for families or longer stays</td>
+      </tr>
+      <tr>
+        <td>Hostels (Dorm Beds)</td>
+        <td>$30 – $80</td>
+        <td>Great for solo travelers and budget-conscious visitors</td>
+      </tr>
+    </tbody>
+   </table>
+   <p className={styles.note}>Planning Tip: A 10-day trip to the USA (excluding flights) can cost anywhere between $1,500 and $5,000+ per person, depending on your travel style and choices.</p>
 
 
   <div className={styles.formSection1}>
-  <h4>Contact Global Visa Internationals for Visa and Documentation Assistance:</h4>
+  <h4 className={styles.subTitle}>Contact Global Visa Internationals for Visa and Documentation Assistance:</h4>
                   <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
@@ -440,26 +463,80 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
             </div>
           )}
                 </div> 
-                <h2 className={styles.subTitle}>Applying for an Australian Tourist Visa</h2>
-<p>Indian citizens need to apply for a Tourist Stream (subclass 600) visa to visit Australia for tourism. Here are the key requirements and steps:</p>
-<ul>
-  <li>Eligibility: You must genuinely intend to visit Australia for tourism purposes only, have sufficient funds for your stay, and not intend to work in Australia. You must be outside Australia when you apply and when the visa is decided.</li>
-  <li>Online Application: The application must be submitted online through the Department of Home Affairs website (ImmiAccount).</li>
-  <li>Required Documents: You will generally need to provide:
-    <ul>
-      <li>A valid passport with at least six months of validity.</li>
-      <li>Proof of sufficient funds (e.g., bank statements for the last 3 months showing a minimum balance of approximately AUD 5,000 or INR 3.5 Lakhs per person).</li>
-      <li>Evidence of your intention to return to your home country (e.g., a letter from your employer, proof of study, family ties, property ownership).</li>
-      <li>Details of your planned itinerary in Australia.</li>
-      <li>A copy of your national identity card (e.g., Aadhaar card, PAN card).</li>
-      <li>Passport-sized photographs.</li>
-      <li>Other supporting documents may be required based on your individual circumstances.</li>
-    </ul>
-  </li>
-  <li>Visa Fee: The current visa application fee is approximately AUD 190.</li>
-  <li>Processing Time: The processing time for an Australian tourist visa can vary but is generally around 3 to 4 weeks after submission of all required documents. It's advisable to apply well in advance of your intended travel dates.</li>
-</ul>
-<p>It is crucial to provide accurate information and all necessary documents to avoid delays or rejection of your visa application.</p>
+                
+<h2 className={styles.subTitle}> USA Tourist Visa Process from India (B-2 Visa)</h2>
+<table className={styles.table}>
+  <thead>
+    <th>Step</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Check Eligibility</td>
+      <td>You must have temporary intent, sufficient funds, and strong ties to India</td></tr>
+    <tr>
+      <td>2. Fill DS-160 Form</td>
+      <td>Online visa application form. Accuracy is crucial</td>
+    </tr>
+    <tr>
+      <td>3.Pay Visa Fee</td>
+      <td>	$185 (non-refundable)</td>
+    </tr>
+    <tr>
+      <td>4.Schedule Interview</td>
+      <td>Book appointment at U.S. Embassy/Consulates (Delhi, Mumbai, Chennai, Kolkata, Hyderabad)</td>
+    </tr>
+    <tr>
+      <td>5. Prepare Documents</td>
+      <td>Passport, DS-160 confirmation, fee receipt, proof of funds, ties to India, etc.</td>
+    </tr>
+    <tr>
+      <td>6. Attend Visa Interview</td>
+      <td>Be honest and confident. The officer will evaluate your intent and documentation</td>
+    </tr>
+    <tr>
+      <td>7. Wait for Processing</td>
+      <td>If approved, your passport will be returned with the visa stamped</td>
+    </tr>
+  </tbody>
+</table>
+<h3 className={styles.subTitle}>Need Help With the DS-160 or Interview Prep?</h3>
+<p>Traveling the USA on tourist visa (B-2) process can feel overwhelming — but you don’t have to do it alone. At Global Visa Internationals, we offer end-to-end support to ensure your application is error-free and your interview is successful.</p>
+<b className={styles.subTitle}>Here’s how we make your USA visa journey seamless:</b>
+<ol>
+  <h3><li className={styles.subTitle}>Expert DS-160 Form Filling Assistance</li></h3>
+  <p>Filling out the DS-160 form incorrectly is one of the most common reasons for visa delays or denials. Our experts will help you:</p>
+  <ul>
+    <li>Complete the form accurately, avoiding costly mistakes</li>
+    <li>Review all sections (travel history, background, purpose of visit)</li>
+    <li>Upload the correct digital photo as per U.S. embassy requirements</li>
+  </ul>
+ <h3> <li className={styles.subTitle}> One-on-One Personalized Visa Consultation</li></h3>
+ <p>Your case is unique — so we offer customized guidance based on:</p>
+ <ul>
+  <li>Your travel plans and itinerary</li>
+  <li>Financial documents and proof of funds</li>
+  <li>Employment and family ties in India</li>
+  <p>You’ll have a dedicated visa expert to answer all your questions.</p>
+ </ul>
+  <h3><li className={styles.subTitle}> Mock Interviews with Real Consulate Questions</li></h3>
+  <p>Get real-time practice with visa interview questions asked at:</p>
+  <ul>
+    <li className={styles.subTitle}>U.S. Consulates in Mumbai, Delhi, Chennai, Kolkata & Hyderabad
+    Our mock sessions include:</li>
+    <li>Behavioral coaching on how to answer confidently</li>
+    <li>Commonly asked B-2 visa questions (and how to respond)</li>
+    <li>Realistic role-playing with personalized feedback</li>
+  </ul>
+  <h3><li className={styles.subTitle}>Complete Document Checklist & Review</li></h3>
+  <p>We’ll guide you on gathering all required documents, including:</p>
+  <ul>
+    <li>Valid passport, DS-160 confirmation, fee receipts</li>
+    <li>Proof of finances, return intent, hotel bookings, flight details</li>
+    <li>Sponsorship or invitation letters (if applicable)</li>
+    <p>We’ll review everything to ensure it meets U.S. consulate standards.</p>
+  </ul>
+</ol>
 
 <h2 className={styles.subTitle}>Why Choose Global Visa Internationals?</h2>
 <p>At Global Visa Internationals, we understand that the visa application process can be complex and time-consuming. That's why we offer:</p>
@@ -478,7 +555,7 @@ For a moderate trip, you should budget at least AUD 150 - AUD 300 per day (appro
 
         <div className={styles.formSection}>
 
-                  <h1 className={styles.formtitle}>Visa And Immigration Inquiry Form</h1>
+                  <h1 className={styles.subTitle}>Visa And Immigration Inquiry Form</h1>
                   <form  id="inquiry-form" onSubmit={handleSubmit}>
                     <div className={styles.row}>
                       <div>

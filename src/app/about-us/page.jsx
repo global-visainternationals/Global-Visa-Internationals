@@ -245,10 +245,7 @@ We cover all the major visa categories such as:
   <li>Visa Refusals & Appeals</li>
 </ol>
 
-<section id='Client Reviews'>
-          <h2 className={styles.subtitle}>Client Reviews</h2>
-          <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
-          </section>
+
 
 <strong className={styles.subTitle1}> Client-Centric Culture </strong>
 <p> We treat every client with the same empathy, commitment, and care as we would our own family. We ensure that your immigration journey will be smooth, stress-free, and ultimately successful with our dedicated support.</p>
@@ -331,7 +328,10 @@ We cover all the major visa categories such as:
         </section>
       
       
-      
+        <section id='Client Reviews'>
+          <h2 className={styles.subtitle}>Client Reviews</h2>
+          <div className="elfsight-app-f560162c-1e98-4995-97af-3da789ac6ec5" data-elfsight-app-lazy></div>
+          </section>
         
                        
       
