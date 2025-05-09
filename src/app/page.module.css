@@ -182,6 +182,8 @@
   }
 
   .whyChooseContainer {
+    max-width: 95%;
+    margin: 0 auto;
     padding: 10px;
     text-align: left;
     font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
