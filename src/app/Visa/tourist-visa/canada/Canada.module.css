@@ -263,15 +263,15 @@ to {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        max-width: 100%;
+        max-width: 95%;
     }
     .CanadaData {
-        min-width: 100%;
+        min-width: 95%;
         text-align:left; /* Centers text for better readability */
         padding: 10px;
     }
     .formSection {
-        width: 90%; /* Increases width for mobile */
+        width: 95%; /* Increases width for mobile */
         position: relative; /* Prevents overlap */
         margin-top: 20px;
         margin-bottom: 80px;
@@ -283,8 +283,8 @@ to {
     
     .formSection1 {
         display: flex;
-        
-        width: 90%; /* Increases width for mobile */
+  
+        width: 95%; /* Increases width for mobile */
         position: relative; /* Prevents overlap */
         margin-top: 20px;
         margin-bottom: 80px;
